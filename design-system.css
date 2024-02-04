@@ -34,5 +34,9 @@ nav {
 /* Styling for the c-side-navbar list items */
 .c-side-navbar__sub-item a {
     text-decoration: none;   
-    color: var(--clr-primary);   
+    color: var(--clr-primary); 
+}
+.c-mobile-navbar__link a{
+    text-decoration: none;   
+    color: var(--clr-primary); 
 }
