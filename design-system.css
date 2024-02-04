@@ -3,11 +3,19 @@
 /* Set text alignment for all nav elements to left */
 nav {
     text-align: left;
+    
   }
+
+/* Remove default text decoration from anchor elements */
+a {
+    text-decoration: none;
+}
 
 /* Mobile Navbar */
 
-
+.c-mobile-navbar{
+    padding: 15px 0 0 10px;
+}
 
 /* Remove default list styling and spacing */
 .c-mobile-navbar .c-mobile-navbar__items {
@@ -16,6 +24,12 @@ nav {
     padding: 0;
     display: none;
 }
+
+.c-side-navbar__list, .c-side-navbar__sub-list{
+    list-style-type: none;
+}
+
+
 
 /* Style mobile navbar items as a vertical column */
 .c-mobile-navbar__items {
@@ -48,4 +62,9 @@ nav {
 .c-mobile-navbar__toggle {
     float: right;
     padding-right: 20px;
+}
+
+/* Change color of "01 Colours" to --clr-secondary */
+.c-side-navbar__sub-item:nth-child(1) a {
+    color: var(--clr-secondary);
 }
