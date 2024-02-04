@@ -11,10 +11,16 @@ a {
     text-decoration: none;
 }
 
+/* Top Navbar */
+/* Adjust padding for the top navigation bar */
+.c-navbar{
+    padding: 15px 0 0 10px;
+}
+
 /* Mobile Navbar */
 
 .c-mobile-navbar{
-    padding: 15px 0 0 10px;
+    padding: 15px 0 10px 10px;
 }
 
 /* Remove default list styling and spacing */
