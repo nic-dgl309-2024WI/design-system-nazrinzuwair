@@ -1,17 +1,22 @@
 /* Header - Mobile device */
 
+/* Set text alignment for all nav elements to left */
 nav {
     text-align: left;
   }
 
-.mobile-navbar .show-items{
+/* Mobile Navbar */
+
+/* Remove default list styling and spacing */
+.c-mobile-navbar .c-mobile-navbar__items{
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: none;
 }
 
-.show-items {
+/* Style mobile navbar items as a vertical column */
+.c-mobile-navbar__items {
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
