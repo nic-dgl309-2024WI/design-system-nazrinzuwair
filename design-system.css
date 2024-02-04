@@ -1,0 +1,19 @@
+/* Header - Mobile device */
+
+nav {
+    text-align: left;
+  }
+
+.mobile-navbar .show-items{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+}
+
+.show-items {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    
+  }
