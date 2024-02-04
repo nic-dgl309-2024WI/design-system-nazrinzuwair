@@ -1,0 +1,8 @@
+/* Grayscale color variables */
+:root {
+    --clr-primary: black;
+    --clr-secondary: #333; 
+    --clr-accent: #333; 
+    --clr-light: #f4f4f4; 
+    --clr-white: white;
+  }
