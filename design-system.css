@@ -7,8 +7,10 @@ nav {
 
 /* Mobile Navbar */
 
+
+
 /* Remove default list styling and spacing */
-.c-mobile-navbar .nav-items{
+.c-mobile-navbar .c-mobile-navbar__items {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -16,12 +18,11 @@ nav {
 }
 
 /* Style mobile navbar items as a vertical column */
-.nav-items {
+.c-mobile-navbar__items {
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
-    
-  }
+}
 
 /* Styling for the heading inside the c-side-navbar */
 .c-side-navbar__heading{
@@ -36,7 +37,15 @@ nav {
     text-decoration: none;   
     color: var(--clr-primary); 
 }
+
+/* Styling for the c-mobile-navbar__link anchor tags */
 .c-mobile-navbar__link a{
     text-decoration: none;   
     color: var(--clr-primary); 
+}
+
+/* Styling for the toggle icon on the right */
+.c-mobile-navbar__toggle {
+    float: right;
+    padding-right: 20px;
 }
