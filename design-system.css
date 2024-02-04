@@ -8,7 +8,7 @@ nav {
 /* Mobile Navbar */
 
 /* Remove default list styling and spacing */
-.c-mobile-navbar .c-mobile-navbar__items{
+.c-mobile-navbar .nav-items{
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -16,9 +16,17 @@ nav {
 }
 
 /* Style mobile navbar items as a vertical column */
-.c-mobile-navbar__items {
+.nav-items {
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
     
   }
+
+
+.c-side-navbar__heading{
+    font-size: 16px;
+    color: var(--clr-primary);
+    font-weight: normal;
+    padding: 12px 0;
+}  
