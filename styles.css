@@ -1,10 +1,10 @@
 /* Grayscale color variables */
 :root {
-  --clr-primary: #333333; /* dark gray for primary text */
+  --clr-primary: #121212; /* dark gray for primary text */
   --clr-primary-light: #666666; /* medium gray for light variation */
   --clr-primary-dark: #1f1f1f; /* dark gray for dark variation */
   
-  --clr-secondary: #C1E1B7; /* soft green for primary background */
+  --clr-secondary: #62B04A; /* soft green for primary background */
   --clr-secondary-light: #d5edcc; /* lighter green for light variation */
   --clr-secondary-dark: #7ea27d; /* darker green for dark variation */
   
