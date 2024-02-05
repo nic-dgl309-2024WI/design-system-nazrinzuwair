@@ -80,8 +80,26 @@ a{
 /* Desktop view media query */
 @media screen and (min-width: 768px) {
     /* Hide toggle icon */
+
+ 
     .c-mobile-navbar__toggle {
         display: none;
     }
 
-|    
+    .c-mobile-navbar__elements .c-mobile-navbar__items{
+        display: flex;
+    }
+
+
+  .c-mobile-navbar__links-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end; 
+    }
+
+
+
+
+    
+
+}   
