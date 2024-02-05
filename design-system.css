@@ -15,6 +15,7 @@ a {
 /* Adjust padding for the top navigation bar */
 .c-navbar{
     padding: 15px 0 0 10px;
+    color: var(--clr-primary); 
 }
 
 /* Mobile Navbar */
@@ -58,8 +59,8 @@ a {
     color: var(--clr-primary); 
 }
 
-/* Styling for the c-mobile-navbar__link anchor tags */
-.c-mobile-navbar__link a{
+/* Styling for the anchor tags */
+a{
     text-decoration: none;   
     color: var(--clr-primary); 
 }
