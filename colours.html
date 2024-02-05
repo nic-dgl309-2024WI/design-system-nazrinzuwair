@@ -95,6 +95,11 @@
             <p class="swatch-hex">#121212</p>
             <p class="swatch-uses">Primary Text, Headings</p>
         </div>
+        <div class="swatch-primary-light">
+            <p class="swatch-class bg-light">bg-primary-light</p>
+            <p class="swatch-hex">#0D0D0D</p>
+            <p class="swatch-uses">Primary Background</p>
+        </div>
         <div class="swatch-secondary">
             <p class="swatch-class bg-secondary">bg-secondary</p>
             <p class="swatch-hex">#62B04A</p>
@@ -110,6 +115,48 @@
             <p class="swatch-hex">#F5F5F5</p>
             <p class="swatch-uses">Secondary Background</p>
         </div>
+    </div>
+    
+    <!-- Color Combinations -->
+    <h2>Colour combinations that can be used</h2>
+    <div class="colour-combinations">
+        <div class="combination">
+            <p class="text-color text-light">Text: #121212</p>
+            <p class="background-color bg-primary">Background: #FF7F50</p>
+            <p class="contrast-ratio">Contrast Ratio: Pass (7.49:1)</p>
+        </div>
+        <div class="combination">
+            <p class="text-color text-light">Text: #121212</p>
+            <p class="background-color bg-primary-light">Background: #F5F5F5</p>
+            <p class="contrast-ratio">Contrast Ratio: Pass (17.18:1)</p>
+        </div>
+        <div class="combination">
+            <p class="text-color text-white">Text: #0D0D0D</p>
+            <p class="background-color bg-secondary">Background: #62B04A</p>
+            <p class="contrast-ratio">Contrast Ratio: Pass (7.24:1)</p>
+        </div>
+
+        <h2>Colour combinations that cannot be used</h2>
+        <div class="combination">
+            <p class="text-color text-white">Text: #ffffff</p>
+            <p class="background-color bg-secondary-light">Background: #d5edcc</p>
+            <p class="contrast-ratio">Contrast Ratio: Fail (1.24:1)</p>
+        </div>
+        <div class="combination">
+            <p class="text-color text-white">Text: #ffffff</p>
+            <p class="background-color bg-accent">Background: #F5F5F5</p>
+            <p class="contrast-ratio">Contrast Ratio: Fail (1.09:1)</p>
+        </div>
+        <div class="combination">
+            <p class="text-color text-white">Text: #ffffff</p>
+            <p class="background-color bg-accent-light">Background: #ffad80</p>
+            <p class="contrast-ratio">Contrast Ratio: Fail (1.81:1)</p>
+        </div>
+        
+    </div>
+
+
+
 </main>
 
 
