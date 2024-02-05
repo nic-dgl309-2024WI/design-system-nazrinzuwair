@@ -72,6 +72,6 @@ a{
 }
 
 /* Change color of "01 Colours" to --clr-secondary */
-.c-side-navbar__sub-item:nth-child(1) a {
+#coloursItem a {
     color: var(--clr-secondary);
 }
