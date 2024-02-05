@@ -1,10 +1,19 @@
 /* Grayscale color variables */
 :root {
-    --clr-primary: #333333; /* dark gray for primary text */
-    --clr-secondary: #C1E1B7; /* soft green for primary background */
-    --clr-accent: #FF7F50; /* coral orange for accent */
-    --clr-light: #F5F5F5; /* light gray for secondary background */
-    --clr-gray: #666666; /* medium gray for secondary text */
+  --clr-primary: #333333; /* dark gray for primary text */
+  --clr-primary-light: #666666; /* medium gray for light variation */
+  --clr-primary-dark: #1f1f1f; /* dark gray for dark variation */
+  
+  --clr-secondary: #C1E1B7; /* soft green for primary background */
+  --clr-secondary-light: #d5edcc; /* lighter green for light variation */
+  --clr-secondary-dark: #7ea27d; /* darker green for dark variation */
+  
+  --clr-accent: #FF7F50; /* coral orange for accent */
+  --clr-accent-light: #ffad80; /* lighter orange for light variation */
+  --clr-accent-dark: #cc6633; /* darker orange for dark variation */
+  
+  --clr-light: #F5F5F5; /* light gray for secondary background */
+  --clr-white: #666666; /* medium gray for secondary text */
   
   }
 
