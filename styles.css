@@ -1,10 +1,11 @@
 /* Grayscale color variables */
 :root {
-    --clr-primary: black;
-    --clr-secondary: #333; 
-    --clr-accent: #333; 
-    --clr-light: #f4f4f4; 
-    --clr-white: white;
+    --clr-primary: #333333; /* dark gray for primary text */
+    --clr-secondary: #C1E1B7; /* soft green for primary background */
+    --clr-accent: #FF7F50; /* coral orange for accent */
+    --clr-light: #F5F5F5; /* light gray for secondary background */
+    --clr-gray: #666666; /* medium gray for secondary text */
+  
   }
 
 
