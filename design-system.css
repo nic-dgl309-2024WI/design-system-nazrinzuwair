@@ -76,6 +76,20 @@ a{
     color: var(--clr-secondary);
 }
 
+/* Style for hover state */
+.c-navbar__link:hover,
+.c-mobile-navbar__link:hover,
+.c-mobile-navbar__mobilelink:hover,
+.c-side-navbar__sub-item a:hover {
+    color: var(--clr-secondary);
+}
+
+/* Style for active state */
+.c-navbar__link:active,
+.c-mobile-navbar__mobilelink a:active {
+    font-weight: bold;
+    color: var(--clr-secondary);
+}
 
 /* Desktop view media query */
 @media screen and (min-width: 768px) {
