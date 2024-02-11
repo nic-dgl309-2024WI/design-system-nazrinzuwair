@@ -1,5 +1,7 @@
 /* Grayscale color variables */
 
+/*-----------------------Color Varialbles------------------------------------*/
+
 :root {
 
   /* Primary Colors */
@@ -14,7 +16,34 @@
 
  }
    
+/*------------------------------------Utility Classes------------------------------------*/
+.u-text-primary{ 
+  color: var(--clr-primary-text); 
+}
 
+.u-bg-primary { 
+  background-color: var(--clr-primary-bg); 
+}
+
+.u-bg-accent-primary { 
+  background-color: var(--clr-primary-accent); 
+}
+
+.u-text-secondary { 
+  color: var(--clr-secondary-text); 
+}
+
+.u-bg-secondary { 
+  background-color: var(--clr-secondary-bg); 
+}
+
+.u-accent-secondary { 
+  background-color: var(--clr-secondary-accent); 
+}
+
+.u-text-active{
+  color: var(--clr-primary-accent); ;
+}
 
 /* CSS Reset */
 * {
