@@ -41,8 +41,16 @@ html{
   --font-weight-heading: 700; /* Bold */
   --font-weight-body: 400; /* Regular */
   --font-weight-buttons: 500; /* Medium */
-  --font-weight-forms: 400; /* Regular */
 
+   /* Letter spacing */
+ 
+   --letter-spacing-1: 1px;
+   --letter-spacing-2: 2px; 
+   --letter-spacing-3: 3px; 
+
+   --line-height-body: 1.5;
+   --line-height-heading: 1.2;
+   --line-height-list:1.4;
 
  }
    
@@ -137,8 +145,36 @@ html{
   font-size: var(--font-size-forms);
 }
 
+/* Utility classes for letter spacing */
+.u-letter-spacing-1 {
+  letter-spacing: 1px;
+}
+
+.u-letter-spacing-2 {
+  letter-spacing: 2px;
+}
+
+.u-letter-spacing-3 {
+  letter-spacing: 3px;
+}
+
+/* Utility classes for line height */
+.u-line-height-body {
+  line-height: 1.5;
+}
+
+.u-line-height-heading {
+  line-height: 1.2;
+}
+
+.u-line-height-list {
+  line-height: 1.4;
+}
+
+
+
 /* Heading (H1) */
-.u-font-heading {
+.u-font-headings {
   font-family: 'Lato', sans-serif;
   font-size: 2.8rem;
   font-weight: 700;
@@ -165,7 +201,7 @@ html{
 }
 
 /* Body Text (P) */
-.u-font-body {
+.u-font-body-text {
   font-family: 'Roboto', sans-serif;
   font-size: 1.6rem;
   font-weight: 400;
@@ -183,7 +219,7 @@ html{
 }
 
 /* Buttons, CTAs */
-.u-font-button {
+.u-font-buttons {
   font-family: 'Poppins', sans-serif;
   font-size: 2.0rem;
   font-weight: 500;
