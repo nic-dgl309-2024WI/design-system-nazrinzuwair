@@ -1,5 +1,6 @@
 /* Header - Mobile device */
 
+
 /* Set text alignment for all nav elements to left */
 nav {
     text-align: left;
@@ -93,6 +94,9 @@ a{
   }
 
 
+
+  
+
 /* ---------------- Colours.html Page Coding Begins Here -------------------- */
 
 
@@ -165,10 +169,12 @@ td{
 
 /* Desktop view media query */
 @media screen and (min-width: 768px) {
-    /* Hide toggle icon */
+    body{
+        width: 1170px;
+        margin: auto;
+      }
 
- 
-    .c-mobile-navbar__toggle {
+      .c-mobile-navbar__toggle {
         display: none;
     }
 
@@ -176,18 +182,16 @@ td{
         display: flex;
     }
 
-
-  .c-mobile-navbar__links-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end; 
+    .c-mobilenavbar-topnav{
+        display: flex;
+        justify-content: space-between;
     }
-
-    .color-box {
-        width: 30%;
-    }    
-
-
+      
+    .c-mobile-navbar-right{
+        display: inline-flex;
+        justify-content: flex-end;
+        margin-left: auto; 
+      }
 
     
 
