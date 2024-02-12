@@ -23,6 +23,9 @@ a {
 .c-mobile-navbar{
     padding: 15px 0 10px 10px;
 }
+#nav-items{
+    list-style-type: none;
+}
 
 /* Remove default list styling and spacing */
 .c-mobile-navbar .c-mobile-navbar__items {
