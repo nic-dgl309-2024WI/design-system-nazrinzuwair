@@ -39,10 +39,13 @@
   --font-weight-buttons: 500; /* Medium */
   --font-weight-forms: 400; /* Regular */
 
-  
+
  }
    
 /*------------------------------------Utility Classes------------------------------------*/
+
+/* Color Combinations */
+
 .u-text-primary{ 
   color: var(--clr-primary-text); 
 }
@@ -74,6 +77,141 @@
 .u-text-white{
   color:var(--clr-white)
 }
+
+
+/* Typography */
+
+.u-font-heading {
+  font-family: var(--font-family-heading);
+}
+
+.u-font-body {
+  font-family: var(--font-family-body);
+}
+
+.u-font-buttons {
+  font-family: var(--font-family-buttons);
+}
+
+.u-font-weight-bold {
+  font-weight: var(--font-weight-heading);
+}
+
+.u-font-weight-regular {
+  font-weight: var(--font-weight-body);
+}
+
+.u-font-weight-medium {
+  font-weight: var(--font-weight-buttons);
+}
+
+.u-font-size-h1 {
+  font-size: var(--font-size-h1);
+}
+
+.u-font-size-h2 {
+  font-size: var(--font-size-h2);
+}
+
+.u-font-size-h3 {
+  font-size: var(--font-size-h3);
+}
+
+.u-font-size-p {
+  font-size: var(--font-size-p);
+}
+
+.u-font-size-list {
+  font-size: var(--font-size-list);
+}
+
+.u-font-size-buttons {
+  font-size: var(--font-size-buttons);
+}
+
+.u-font-size-forms {
+  font-size: var(--font-size-forms);
+}
+
+/* Heading (H1) */
+.u-font-heading {
+  font-family: 'Lato', sans-serif;
+  font-size: 2.8rem;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.05em;
+}
+
+/* Subheading (H2) */
+.u-font-subheading {
+  font-family: 'Lato', sans-serif;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.05em;
+}
+
+/* Sub-subheading (H3) */
+.u-font-sub-subheading {
+  font-family: 'Lato', sans-serif;
+  font-size: 2.0rem;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.05em;
+}
+
+/* Body Text (P) */
+.u-font-body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0;
+}
+
+/* List Items */
+.u-font-list-item {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0;
+}
+
+/* Buttons, CTAs */
+.u-font-button {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.0rem;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+}
+
+/* Forms */
+.u-font-form {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* CSS Reset */
 * {
