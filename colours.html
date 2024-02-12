@@ -35,7 +35,7 @@
             <li class="c-side-navbar__item">
                 <h2 class="c-side-navbar__heading">Branding</h2>
                 <ul class="c-side-navbar__sub-list">
-                    <li id="coloursItem" class="c-side-navbar__sub-item"><a href="#">01 Colours</a></li>
+                    <li id="coloursItem" class="c-side-navbar__sub-item c-side-navbar--active"><a href="#">01 Colours</a></li>
                     <li class="c-side-navbar__sub-item"><a href="#">02 Typography</a></li>
                     <li class="c-side-navbar__sub-item"><a href="#">03 Logo</a></li>
                 </ul>
@@ -89,71 +89,51 @@
 <main>
 
     <!-- Swatches for Colors -->
-    <div class="colour-swatch">
-        <div class="swatch-primary">
-            <p class="swatch-class bg-primary">bg-primary</p>
-            <p class="swatch-hex">#121212</p>
-            <p class="swatch-uses">Primary Text, Headings</p>
+    <div class="c-colour-swatch">
+        <h2>Primary Colors</h2>
+        <div class="c-swatch-sublist">
+            <div class="color-box u-bg-secondary"> <span class="u-text-primary">Preview of the combination </span></div>
+            <p>Class Name: u-bg-secondary</p>
+            <p>Hex Code: #A8E1B1</p>
+            <p>Uses: For cards, sub sections</p>
+            <p>Color Combination: u-bg-primary on u-bg-secondary </p>
+            <p>Contrast Ratio: 12.02:01</p>
         </div>
-        <div class="swatch-primary-light">
-            <p class="swatch-class bg-light">bg-primary-light</p>
-            <p class="swatch-hex">#0D0D0D</p>
-            <p class="swatch-uses">Primary Background</p>
+        <div class="c-swatch-sublist">
+            <div class="color-box u-bg-accent-primary"> <span class="u-text-white">Preview of the combination </span></div>
+            <p>Class Name: u-bg-accent-primary</p>
+            <p>Hex Code: #435C00</p>
+            <p>Uses: For CTAs, buttons</p>
+            <p>Color Combination: u-text-white on u-bg-accent-primary </p>
+            <p>Contrast Ratio: 7.55:01</p>
         </div>
-        <div class="swatch-secondary">
-            <p class="swatch-class bg-secondary">bg-secondary</p>
-            <p class="swatch-hex">#62B04A</p>
-            <p class="swatch-uses">Primary Background</p>
+        <div class="c-swatch-sublist">
+            <div class="color-box u-bg-primary"> <span class="u-text-secondary">Preview of the combination </span></div>
+            <p>Class Name: u-text-secondary</p>
+            <p>Hex Code:Hex Code: #6E400C</p>
+            <p>Uses: For body text, lists, hover effect, active</p>
+            <p>Color Combination: u-text-secondary on u-bg-primary </p>
+            <p>Contrast Ratio: 7.4:1</p>
         </div>
-        <div class="swatch-accent">
-            <p class="swatch-class bg-accent">bg-accent</p>
-            <p class="swatch-hex">#FF7F50</p>
-            <p class="swatch-uses">Accent</p>
+        <div class="c-swatch-sublist">
+            <div class="color-box u-accent-secondary"> <span class="u-text-white">Preview of the combination </span></div>
+            <p>Class Name: u-accent-secondary</p>
+            <p>Hex Code: #794D01</p>
+            <p>Uses: CTAs, Buttons</p>
+            <p>Color Combination: u-text-white on u-accent-secondary </p>
+            <p>Contrast Ratio: 7.3:1</p>
         </div>
-        <div class="swatch-light">
-            <p class="swatch-class bg-light">bg-light</p>
-            <p class="swatch-hex">#F5F5F5</p>
-            <p class="swatch-uses">Secondary Background</p>
+        <div class="c-swatch-sublist">
+            <div class="color-box u-bg-primary"> <span class="u-text-primary">Preview of the combination </span></div>
+            <p>Class Name: u-bg-primary</p>
+            <p>Hex Code: #E7EEE8</p>
+            <p>Uses: For body text</p>
+            <p>Color Combination: u-text-white on u-accent-secondary </p>
+            <p>Contrast Ratio: 15.2:1</p>
         </div>
     </div>
     
-    <!-- Color Combinations -->
-    <h2>Colour combinations that can be used</h2>
-    <div class="colour-combinations">
-        <div class="combination">
-            <p class="text-color text-light">Text: #121212</p>
-            <p class="background-color bg-primary">Background: #FF7F50</p>
-            <p class="contrast-ratio">Contrast Ratio: Pass (7.49:1)</p>
-        </div>
-        <div class="combination">
-            <p class="text-color text-light">Text: #121212</p>
-            <p class="background-color bg-primary-light">Background: #F5F5F5</p>
-            <p class="contrast-ratio">Contrast Ratio: Pass (17.18:1)</p>
-        </div>
-        <div class="combination">
-            <p class="text-color text-white">Text: #0D0D0D</p>
-            <p class="background-color bg-secondary">Background: #62B04A</p>
-            <p class="contrast-ratio">Contrast Ratio: Pass (7.24:1)</p>
-        </div>
 
-        <h2>Colour combinations that cannot be used</h2>
-        <div class="combination">
-            <p class="text-color text-white">Text: #ffffff</p>
-            <p class="background-color bg-secondary-light">Background: #d5edcc</p>
-            <p class="contrast-ratio">Contrast Ratio: Fail (1.24:1)</p>
-        </div>
-        <div class="combination">
-            <p class="text-color text-white">Text: #ffffff</p>
-            <p class="background-color bg-accent">Background: #F5F5F5</p>
-            <p class="contrast-ratio">Contrast Ratio: Fail (1.09:1)</p>
-        </div>
-        <div class="combination">
-            <p class="text-color text-white">Text: #ffffff</p>
-            <p class="background-color bg-accent-light">Background: #ffad80</p>
-            <p class="contrast-ratio">Contrast Ratio: Fail (1.81:1)</p>
-        </div>
-        
-    </div>
 
 
 

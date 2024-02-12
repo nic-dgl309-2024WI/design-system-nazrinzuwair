@@ -10,9 +10,12 @@
   --clr-primary-accent:#1A6124; /*Very dark lime green*/
   
   /* Secondary Colors */
-  --clr-secondary-text: #FFFFFF; /*White*/
+  --clr-secondary-text: #6E400C; /*Very dark orange*/
   --clr-secondary-bg: #A8E1B1; /* Very soft lime green*/
-  --clr-secondary-accent:#7E4A01; /*Medium Brown*/
+  --clr-secondary-accent:#794D01; /* Very dark green*/
+
+  /* Additional colors */
+  --clr-white:#FFFFFF; /*White*/
 
  }
    
@@ -43,6 +46,10 @@
 
 .u-text-active{
   color: var(--clr-primary-accent); ;
+}
+
+.u-text-white{
+  color:var(--clr-white)
 }
 
 /* CSS Reset */

@@ -15,7 +15,7 @@ a {
 /* Adjust padding for the top navigation bar */
 .c-navbar{
     padding: 15px 0 0 10px;
-    color: var(--clr-primary); 
+    color: var(--clr-primary-text); 
 }
 
 /* Mobile Navbar */
@@ -48,7 +48,6 @@ a {
 /* Styling for the heading inside the c-side-navbar */
 .c-side-navbar__heading{
     font-size: 16px;
-    color: var(--clr-primary);
     font-weight: normal;
     padding: 12px 0;
 }  
@@ -56,13 +55,12 @@ a {
 /* Styling for the c-side-navbar list items */
 .c-side-navbar__sub-item a {
     text-decoration: none;   
-    color: var(--clr-primary); 
 }
 
 /* Styling for the anchor tags */
 a{
     text-decoration: none;   
-    color: var(--clr-primary); 
+    color: var(--clr-primary-text); 
 }
 
 /* Styling for the toggle icon on the right */
@@ -81,15 +79,40 @@ a{
 .c-mobile-navbar__link:hover,
 .c-mobile-navbar__mobilelink:hover,
 .c-side-navbar__sub-item a:hover {
-    color: var(--clr-secondary);
+    color: var(--clr-secondary-text);
 }
 
 /* Style for active state */
-.c-navbar__link:active,
-.c-mobile-navbar__mobilelink a:active {
+
+.c-side-navbar--active {
     font-weight: bold;
-    color: var(--clr-secondary);
+    color: var(--clr-secondary-text);
+  }
+
+
+/* ---------------- Colours.html Page Coding Begins Here -------------------- */
+
+
+
+.c-colour-swatch{
+    padding: 20px 20px;
 }
+.color-box {
+    width: 80%; 
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+
+.c-swatch-sublist{
+    margin: 20px 0;
+}
+
+.c-swatch-sublist p{
+    padding:2px 15px;
+} 
+
+
 
 /* Desktop view media query */
 @media screen and (min-width: 768px) {
@@ -111,6 +134,9 @@ a{
     justify-content: flex-end; 
     }
 
+    .color-box {
+        width: 30%;
+    }    
 
 
 
