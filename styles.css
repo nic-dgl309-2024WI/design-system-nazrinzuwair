@@ -9,14 +9,15 @@ html{
 :root {
 
   /* Primary Colors */
-  --clr-primary-text:#161718;  /*Dark Black*/
-  --clr-primary-bg: #E7EEE8; /*Light grayish lime green*/
-  --clr-primary-accent:#1A6124; /*Very dark lime green*/
+
+  --clr-primary-text:#000000;  /*Black*/
+  --clr-primary-bg: #F2F7F5; /*Light grayish cyan*/
+  --clr-primary-accent:#f1bc4b; /*Soft orange*/
   
   /* Secondary Colors */
-  --clr-secondary-text: #6E400C; /*Very dark orange*/
-  --clr-secondary-bg: #A8E1B1; /* Very soft lime green*/
-  --clr-secondary-accent:#794D01; /* Very dark green*/
+  --clr-secondary-text: #22522c; /*Very dark desaturated lime green*/
+  --clr-secondary-bg: #e1d8a8; /* Very soft yellow*/
+  --clr-secondary-accent:#145502; /* Very dark lime green*/
 
   /* Additional colors */
   --clr-white:#FFFFFF; /*White*/
@@ -83,7 +84,7 @@ html{
 }
 
 .u-text-active{
-  color: var(--clr-primary-accent); ;
+  color: var(--clr-secondary-accent); ;
 }
 
 .u-text-white{
@@ -235,21 +236,6 @@ html{
   line-height: 1.5;
   letter-spacing: 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
