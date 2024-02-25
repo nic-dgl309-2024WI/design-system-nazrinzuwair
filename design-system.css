@@ -22,7 +22,7 @@ a {
 /* Mobile Navbar */
 
 .c-mobile-navbar{
-    padding: 15px 0 10px 10px;
+    padding: 5px;
 }
 #nav-items{
     list-style-type: none;
@@ -70,7 +70,6 @@ a{
 /* Styling for the toggle icon on the right */
 .c-mobile-navbar__toggle {
     float: right;
-    padding-right: 20px;
 }
 
 /* Change color of "01 Colours" to --clr-secondary */
@@ -170,7 +169,6 @@ td{
 /* Desktop view media query */
 @media screen and (min-width: 768px) {
     body{
-        width: 1170px;
         margin: auto;
       }
 
