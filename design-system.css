@@ -82,7 +82,7 @@ a{
 .c-mobile-navbar__link:hover,
 .c-mobile-navbar__mobilelink:hover,
 .c-side-navbar__sub-item a:hover {
-    color: var(--clr-secondary-text);
+    color: var(--clr-hover-text);
 }
 
 /* Style for active state */
@@ -100,25 +100,42 @@ a{
 
 
 
-.c-colour-swatch{
-    padding: 20px 20px;
+.c-colour-swatch, .c-color-code{
+    padding: 20px 5px;
 }
-.color-box {
+.c-color-box {
     width: 80%; 
     padding: 20px;
     margin-bottom: 10px;
 }
 
+.c-swatch-circle{
+    width: 100px; 
+    height: 100px; 
+    border-radius: 50%;
+    text-align: center;
+    line-height: 100px;
+}
 
-.c-swatch-sublist{
+
+.c-combination-sublist{
     margin: 20px 0;
 }
 
-.c-swatch-sublist p{
+.c-combination-sublist p{
     padding:2px 15px;
 } 
 
+.c-swatches-sublist p{
+    margin-top: 10px;
+}
 
+.c-swatches-text-sublist{
+    margin-bottom: 25px;
+}
+.c-color-text{
+    padding-bottom: 20px;
+}
 
 /* -------------------- Tyography page codings begings here------------------------- */
 .table-container {
@@ -169,7 +186,7 @@ td{
 /* Desktop view media query */
 @media screen and (min-width: 768px) {
     body{
-        margin: auto;
+        margin: 5px;
       }
 
       .c-mobile-navbar__toggle {
@@ -191,6 +208,21 @@ td{
         margin-left: auto; 
       }
 
-    
+      .c-swatch-group{
+        display: flex;
+        /* text-align: center; */
+    }
 
+    .c-swatches-sublist{
+        margin: 0 25px;
+    }
+
+    .c-swatches-sublist .c-swatch-circle{
+        margin-left: 35px;
+    }
+
+    .c-swatch-text-group{
+        margin-left: 25px;
+    }
+    
 }   

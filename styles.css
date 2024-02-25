@@ -17,10 +17,11 @@ html{
   /* Secondary Colors */
   --clr-secondary-text: #22522c; /*Very dark desaturated lime green*/
   --clr-secondary-bg: #e1d8a8; /* Very soft yellow*/
-  --clr-secondary-accent:#145502; /* Very dark lime green*/
+  --clr-secondary-accent:#DB0F0F; /* Vivid red*/
 
   /* Additional colors */
   --clr-white:#FFFFFF; /*White*/
+  --clr-hover-text:#219d3D;
 
 
   /* Font families */
@@ -59,10 +60,7 @@ html{
 
 /* Color Combinations */
 
-.u-text-primary{ 
-  color: var(--clr-primary-text); 
-}
-
+/* background colors */
 .u-bg-primary { 
   background-color: var(--clr-primary-bg); 
 }
@@ -71,26 +69,34 @@ html{
   background-color: var(--clr-primary-accent); 
 }
 
-.u-text-secondary { 
-  color: var(--clr-secondary-text); 
-}
-
 .u-bg-secondary { 
   background-color: var(--clr-secondary-bg); 
 }
 
-.u-accent-secondary { 
-  background-color: var(--clr-secondary-accent); 
+.u-bg-text-secondary { 
+  background-color: var(--clr-secondary-text); 
 }
 
-.u-text-active{
-  color: var(--clr-secondary-accent); ;
+/* text colors */
+.u-text-primary{ 
+  color: var(--clr-primary-text); 
+}
+
+.u-text-secondary { 
+  color: var(--clr-secondary-text); 
 }
 
 .u-text-white{
   color:var(--clr-white)
 }
 
+.u-text-accent{
+  color:var(--clr-secondary-accent);
+}
+
+.u-text-hover{
+  color: var(--clr-hover-text);
+}
 
 /* Typography */
 
