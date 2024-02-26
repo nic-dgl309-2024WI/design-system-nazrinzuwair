@@ -103,12 +103,18 @@ a{
 .c-colour-swatch, .c-color-code{
     padding: 20px 5px;
 }
-.c-color-box {
+.c-color-box, .c-swatches-sublist, .c-swatches-text-sublist {
     width: 80%; 
     padding: 20px;
     margin-bottom: 10px;
 }
 
+.c-swatches-sublist{
+    width: auto;
+}
+.c-combination-sublist{
+    padding: 5px 20px;
+}
 .c-swatch-circle{
     width: 100px; 
     height: 100px; 
