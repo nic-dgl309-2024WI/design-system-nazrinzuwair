@@ -446,4 +446,14 @@ body{
 }
 
 
+/*---------- Flex---------- */
+.l-flex {
+  display: flex;
+}
+
+/* ----------Grid---------- */
+.l-grid {
+  display: grid;
+}
+
 
