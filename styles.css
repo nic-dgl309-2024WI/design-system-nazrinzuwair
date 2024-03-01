@@ -1,4 +1,19 @@
-/* Grayscale color variables */
+/* CSS Reset */
+* {
+  box-sizing: border-box;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, figure, picture {
+  margin: 0;
+}
+
+ul, ol {
+  padding: 0;
+}
+
+body{
+  line-height: 1.5rem;
+}
 
 /*-----------------------Color Varialbles------------------------------------*/
 
@@ -46,9 +61,9 @@
    --letter-spacing-2: 2px; 
    --letter-spacing-3: 3px; 
 
-   --line-height-body: 1.5;
-   --line-height-heading: 1.2;
-   --line-height-list:1.4;
+   --line-height-body: 1.5 rem;
+   --line-height-heading: 1.2 rem;
+   --line-height-list:1.4 rem;
 
  }
    
@@ -163,30 +178,17 @@
 
 /* Utility classes for line height */
 .u-line-height-body {
-  line-height: 1.5;
+  line-height: 1.5 rem;
 }
 
 .u-line-height-heading {
-  line-height: 1.2;
+  line-height: 1.2 rem;
 }
 
 .u-line-height-list {
-  line-height: 1.4;
+  line-height: 1.4 rem;
 }
 
 
 
 
-/* CSS Reset */
-* {
-    box-sizing: border-box;
-  }
-  
-  body, h1, h2, h3, h4, h5, h6, p, figure, picture {
-    margin: 0;
-  }
-  
-  ul, ol {
-    padding: 0;
-  }
-  
