@@ -19,6 +19,10 @@ body{
 
 :root {
 
+  /* To prevent the bounce of the page */
+  overscroll-behavior: none;
+
+
   /* Primary Colors */
 
   --clr-primary-text:#000000;  /*Black*/
