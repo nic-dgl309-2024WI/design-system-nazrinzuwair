@@ -201,42 +201,50 @@ td{
 
 /* Desktop view media query */
 @media screen and (min-width: 768px) {
+    /* Set margin for the body */
     body{
         margin: 5px;
       }
 
+      /* Hide toggle element in mobile navbar */
       .c-mobile-navbar__toggle {
         display: none;
     }
 
+    /* Display mobile navbar items as flex */
     .c-mobile-navbar__elements .c-mobile-navbar__items{
         display: flex;
     }
 
+    /* Align elements in mobile top nav */
     .c-mobilenavbar-topnav{
         display: flex;
         justify-content: space-between;
     }
       
+    /* Align items to the right in mobile navbar */
     .c-mobile-navbar-right{
         display: inline-flex;
         justify-content: flex-end;
         margin-left: auto; 
       }
 
+      /* Display swatch group as flex */
       .c-swatch-group{
         display: flex;
         /* text-align: center; */
     }
-
+/* Set margin for swatches sublist */
     .c-swatches-sublist{
         margin: 0 25px;
     }
 
+    /* Adjust margin for swatch circles */
     .c-swatches-sublist .c-swatch-circle{
         margin-left: 35px;
     }
 
+    /* Adjust margin for swatch text group */
     .c-swatch-text-group{
         margin-left: 25px;
     }
