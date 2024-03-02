@@ -506,3 +506,11 @@ body{
   padding: 8px;
   margin-top: auto;
 }
+
+
+/* Media Query for Desktop */
+@media screen and (min-width: 1200px) {
+  .l-max-width-desktop {
+    max-width: 1200px; 
+  }
+}
