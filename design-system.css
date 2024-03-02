@@ -1,3 +1,251 @@
+/* Header - desktop device */
+
+
+/* Set text alignment for all nav elements to left */
+nav {
+    text-align: left;
+    
+  }
+
+/* Remove default text decoration from anchor elements */
+a {
+    text-decoration: none;
+}
+
+/* Top Navbar */
+/* Adjust padding for the top navigation bar */
+.c-navbar{
+    padding: 15px 0 0 10px;
+    color: var(--clr-primary-text); 
+}
+
+/* desktop Navbar */
+
+.c-desktop-navbar{
+    background-color: rgb(255, 255, 255);
+    padding: 5px;
+    position: fixed;
+    width: 100%;
+    
+}
+
+
+#nav-items{
+    list-style-type: none;
+}
+
+/* Remove default list styling and spacing */
+.c-desktop-navbar .c-desktop-navbar__items, .c-desktop-sidenavbar__items {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+}
+
+
+
+.c-side-navbar__list, .c-side-navbar__sub-list, ol{
+    list-style-type: none;
+}
+
+    ol{
+        margin-top: -10px;
+    }
+
+    .main{
+        width: 100%;
+        right: 0;
+        left: 0;
+        width: fit-content;
+    }
+
+/* Style desktop navbar items as a vertical column */
+.c-desktop-navbar__items {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+/* Styling for the heading inside the c-side-navbar */
+.c-side-navbar__heading{
+    font-size: 16px;
+    font-weight: normal;
+    padding: 12px 0;
+}  
+
+.show-sidebar {
+    display: none;
+}
+/* Styling for the c-side-navbar list items */
+.c-side-navbar__sub-item a {
+    text-decoration: none;   
+}
+
+/* Styling for the anchor tags */
+a{
+    text-decoration: none;   
+    color: var(--clr-primary-text); 
+}
+
+/* Styling for the toggle icon on the right */
+.c-desktop-navbar__toggle {
+    float: right;
+}
+
+/* Change color of "01 Colours" to --clr-secondary */
+#coloursItem a {
+    color: var(--clr-secondary);
+}
+
+/* Style for hover state */
+.c-navbar__link:hover,
+.c-desktop-navbar__link:hover,
+.c-desktop-navbar__desktoplink:hover,
+.c-side-navbar__sub-item a:hover {
+    color: var(--clr-hover-text);
+}
+
+/* Style for active state */
+
+.c-side-navbar--active {
+    font-weight: bold;
+    color: var(--clr-secondary-text);
+  }
+
+
+.u-font-list-item {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0;
+  }
+  
+.c-desktop-navbar{
+    display: none;
+}  
+  
+/* Desktop view media query */
+@media screen and (min-width: 768px) {
+    body{
+        margin: 5px;
+      }
+
+      .c-desktop-navbar__toggle {
+        display: none;
+    }
+
+    .c-desktop-navbar__elements .c-desktop-navbar__items{
+        display: flex;
+    }
+
+    .c-desktopnavbar-topnav{
+        display: flex;
+        justify-content: space-between;
+    }
+      
+    .c-desktop-navbar-right{
+        display: inline-flex;
+        justify-content: flex-end;
+        margin-left: auto; 
+      }
+
+      .c-swatch-group{
+        display: flex;
+        /* text-align: center; */
+    }
+
+    .c-swatches-sublist{
+        margin: 0 25px;
+    }
+
+    .c-swatches-sublist .c-swatch-circle{
+        margin-left: 35px;
+    }
+
+    .c-swatch-text-group{
+        margin-left: 25px;
+    }
+    
+    .c-desktop-sidenavbar__items{
+        display: block;
+    }
+    
+    .grid {
+        display: grid;
+        grid-template-areas:
+          "header header"
+          "sidebar main"
+          "footer footer";
+        grid-template-columns: 14rem 1fr;
+        gap: 16px;
+        /* max-width: 1200px; */
+        margin: 0 auto;
+        isolation: isolate;
+      }
+      .aside {
+        grid-area: sidebar;
+        position: relative;
+        z-index: 1;
+      }
+
+      header {
+        grid-area: header;
+        position: sticky;
+        z-index: 2;
+        top: 0;
+        display: grid;
+        place-content: center;
+        height: var(--header-height);
+        border-bottom: 3px solid;
+        background-color: white;
+      }
+    
+      aside {
+        grid-area: sidebar;
+        position: relative;
+        z-index: 1;
+      }
+    
+      .sticky-sidebar {
+        position: fixed;
+        /* top: 9rem; */
+      }
+    
+      main {
+        grid-area: main;
+        min-height: 180vh;
+        /* border: 3px solid; */
+      }
+    
+     
+    
+      .grid > * {
+        padding: 8px;
+      }
+    
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      p {
+        /* column-count: 2; */
+        column-gap: 2em;
+      }
+      
+      .c-mobile-navbar{
+        display: none;
+      }
+    
+      .c-desktop-navbar{
+        display: block;
+    }  
+
+
+    
+   
+}   
+
 /* Header - Mobile device */
 
 
@@ -41,24 +289,6 @@ a {
 }
 
 
-/* 
-   Adjusts the margin of the <ol> element to offset a negative top spacing effect.
-*/
-ol {
-    margin-top: -10px;
-}
-
-/* 
-   Styles for the main container element.
-   Sets its width to 100% of its parent container, 
-   and limits its width to fit its content.
-*/
-.main {
-    width: 100%;
-    right: 0;
-    left: 0;
-    width: fit-content;
-}
 
 /* Style mobile navbar items as a vertical column */
 .c-mobile-navbar__items {
@@ -117,95 +347,111 @@ a{
 /* ---------------- Colours.html Page Coding Begins Here -------------------- */
 
 
-
-.c-colour-swatch, .c-color-code{
-    padding: 20px 5px;
+/* Padding for colour swatches and color codes */
+.c-colour-swatch, .c-color-code {
+    padding: 20px 5px; /* Padding for top/bottom and left/right */
 }
+
+/* Width, padding, and margins for color boxes, swatches, and text sublists */
 .c-color-box, .c-swatches-sublist, .c-swatches-text-sublist {
-    width: 80%; 
-    padding: 20px;
-    margin-bottom: 10px;
+    width: 80%; /* Set width */
+    padding: 20px; /* Padding inside elements */
+    margin-bottom: 10px; /* Margin at the bottom */
 }
 
-.c-swatches-sublist{
-    width: auto;
-}
-.c-combination-sublist{
-    padding: 5px 20px;
-}
-.c-swatch-circle{
-    width: 100px; 
-    height: 100px; 
-    border-radius: 50%;
-    text-align: center;
-    line-height: 100px;
+/* Adjust width for swatches sublist */
+.c-swatches-sublist {
+    width: auto; /* Set width to auto */
 }
 
-
-.c-combination-sublist{
-    margin: 20px 0;
+/* Padding for combination sublist */
+.c-combination-sublist {
+    padding: 5px 20px; /* Padding for top/bottom and left/right */
 }
 
-.c-combination-sublist p{
-    padding:2px 15px;
-} 
-
-.c-swatches-sublist p{
-    margin-top: 10px;
+/* Size and styling for swatch circles */
+.c-swatch-circle {
+    width: 100px; /* Set width */
+    height: 100px; /* Set height */
+    border-radius: 50%; /* Make it a circle */
+    text-align: center; /* Center text horizontally */
+    line-height: 100px; /* Center text vertically */
 }
 
-.c-swatches-text-sublist{
-    margin-bottom: 25px;
+/* Margin for combination sublist */
+.c-combination-sublist {
+    margin: 20px 0; /* Margin at the top and bottom */
 }
-.c-color-text{
-    padding-bottom: 20px;
+
+/* Padding for paragraphs inside combination sublist */
+.c-combination-sublist p {
+    padding: 2px 15px; /* Padding for top/bottom and left/right */
+}
+
+/* Margin for paragraphs inside swatches sublist */
+.c-swatches-sublist p {
+    margin-top: 10px; /* Margin at the top */
+}
+
+/* Margin for swatches text sublist */
+.c-swatches-text-sublist {
+    margin-bottom: 25px; /* Margin at the bottom */
+}
+
+/* Padding for color text */
+.c-color-text {
+    padding-bottom: 20px; /* Padding at the bottom */
 }
 
 /* -------------------- Tyography page codings begings here------------------------- */
+/* Set overflow property for table container */
 .table-container {
-    overflow-x: auto;
-    max-width: 100%;
-    
+    overflow-x: auto; /* Enable horizontal scrolling */
+    max-width: 100%; /* Ensure it doesn't exceed parent's width */
 }
 
+/* Style for tables */
 table {
-    width: 80%;
-    border-collapse: collapse;
-    
+    width: 80%; /* Set table width */
+    border-collapse: collapse; /* Collapse borders */
 }
 
+/* Style for table headers and cells */
 th, td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: left;
+    border: 1px solid #ddd; /* Border style */
+    padding: 8px; /* Padding inside cells */
+    text-align: left; /* Align text to left */
 }
 
+/* Style for table headers */
 th {
-    background-color: #f2f2f2;
+    background-color: #f2f2f2; /* Background color for headers */
 }
 
-td{
+/* Additional padding for table cells */
+td {
     padding: 20px;
 }
 
-.c-typography-list, .c-font-uses{
-    margin:10px;
+/* Margins for typography list and font uses */
+.c-typography-list, .c-font-uses {
+    margin: 10px;
 }
 
-.c-typography-sublist{
+/* Margin for typography sublist */
+.c-typography-sublist {
     margin-top: 20px;
-    
 }
 
-.char-set-header{
-    padding: 30px 20px;
+/* Padding for character set header */
+.char-set-header {
+    padding: 30px 20px; /* Top and bottom padding, left and right padding */
 }
 
-.u-font-subheading{
-    padding: 10px 2px 20px 2px;
-
+/* Padding for font subheading */
+.u-font-subheading {
+    padding: 10px 2px 20px 2px; /* Top, right, bottom, left padding */
 }
-
 
 /* Font properties for font list items */
 .u-font-list-item {
@@ -216,7 +462,6 @@ td{
     letter-spacing: 0; /* Letter spacing */
 }
 
-
 /* Display property for mobile navigation items */
 .mobile-navig-items {
     display: block; /* Display as block */
@@ -226,54 +471,52 @@ td{
 /* Desktop view media query */
 @media screen and (min-width: 768px) {
     /* Set margin for the body */
-    body{
-        margin: 5px;
-      }
+body {
+    margin: 5px;
+}
 
-      /* Hide toggle element in mobile navbar */
-      .c-mobile-navbar__toggle {
-        display: none;
-    }
+/* Hide toggle element in mobile navbar */
+.c-mobile-navbar__toggle {
+    display: none;
+}
 
-    /* Display mobile navbar items as flex */
-    .c-mobile-navbar__elements .c-mobile-navbar__items{
-        display: flex;
-    }
+/* Display mobile navbar items as flex */
+.c-mobile-navbar__elements .c-mobile-navbar__items {
+    display: flex;
+}
 
-    /* Align elements in mobile top nav */
-    .c-mobilenavbar-topnav{
-        display: flex;
-        justify-content: space-between;
-    }
-      
-    /* Align items to the right in mobile navbar */
-    .c-mobile-navbar-right{
-        display: inline-flex;
-        justify-content: flex-end;
-        margin-left: auto; 
-      }
+/* Align elements in mobile top nav */
+.c-mobilenavbar-topnav {
+    display: flex;
+    justify-content: space-between;
+}
 
-      /* Display swatch group as flex */
-      .c-swatch-group{
-        display: flex;
-        /* text-align: center; */
-    }
+/* Align items to the right in mobile navbar */
+.c-mobile-navbar-right {
+    display: inline-flex;
+    justify-content: flex-end;
+    margin-left: auto; /* Adjust margin */
+}
+
+/* Display swatch group as flex */
+.c-swatch-group {
+    display: flex;
+}
+
 /* Set margin for swatches sublist */
-    .c-swatches-sublist{
-        margin: 0 25px;
-    }
+.c-swatches-sublist {
+    margin: 0 25px;
+}
 
-    /* Adjust margin for swatch circles */
-    .c-swatches-sublist .c-swatch-circle{
-        margin-left: 35px;
-    }
+/* Adjust margin for swatch circles */
+.c-swatches-sublist .c-swatch-circle {
+    margin-left: 35px;
+}
 
-    /* Adjust margin for swatch text group */
-    .c-swatch-text-group{
-        margin-left: 25px;
-    }
+/* Adjust margin for swatch text group */
+.c-swatch-text-group {
+    margin-left: 25px;
+}
 
-
-    
     
 }   
