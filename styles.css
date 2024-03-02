@@ -512,56 +512,10 @@ body{
 }
 
 
-/* Defines the layout grid container with specified areas and columns.
-Centers the container horizontally, sets gap between grid items, 
-and isolates the container from its surroundings. */
-.l-layout-container {
-  display: grid;
-    grid-template-areas:
-      "header header"
-      "sidebar main"
-      "footer footer";
-    grid-template-columns: 14rem 1fr;
-    gap: 16px;
-    /* max-width: 1200px; */
-    margin: 0 auto;
-    isolation: isolate;
-}
-
-/* Styles for the sidebar element within the layout grid.
-Sets its position as relative and assigns a higher z-index. */
-.l-aside {
-  grid-area: sidebar;
-  position: relative;
-  z-index: 1;
-}
-
-/* Styles for the header element within the layout grid.
-Sets its position as sticky at the top, and centers its content.
-Applies border and background color. */
-header {
-  grid-area: header;
-  position: sticky;
-  z-index: 2;
-  top: 0;
-  display: grid;
-  place-content: center;
-  height: var(--header-height);
-  border-bottom: 3px solid;
-  background-color: white;
-}
-
-
-/* Styles for the main content area within the layout grid.
-Sets a minimum height to simulate content scrolling. */
-main {
-  grid-area: main;
-  min-height: 180vh;
-}
-
 /* Media Query for Desktop */
 @media screen and (min-width: 1200px) {
   .l-max-width-desktop {
     max-width: 1200px; 
   }
+
 }

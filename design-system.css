@@ -1,4 +1,4 @@
-
+/* Making the content centered into the page */
 /* Set the height of the HTML and body elements to 100% 
    and remove any default margin */
    html,
@@ -140,8 +140,7 @@ a{
 .c-desktop-navbar{
     display: none;
 }  
-
-
+  
 /* Header - Mobile device */
 
 
@@ -366,7 +365,6 @@ td {
 
 
 
-
 /* Desktop view media query */
 @media screen and (min-width: 768px) {
     /* Set margin for the body */
@@ -374,7 +372,54 @@ body {
     margin: 5px;
 }
 
-.c-desktop-navbar__toggle {
+/* Hide toggle element in mobile navbar */
+.c-mobile-navbar__toggle {
+    display: none;
+}
+
+/* Display mobile navbar items as flex */
+.c-mobile-navbar__elements .c-mobile-navbar__items {
+    display: flex;
+}
+
+/* Align elements in mobile top nav */
+.c-mobilenavbar-topnav {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Align items to the right in mobile navbar */
+.c-mobile-navbar-right {
+    display: inline-flex;
+    justify-content: flex-end;
+    margin-left: auto; /* Adjust margin */
+}
+
+/* Display swatch group as flex */
+.c-swatch-group {
+    display: flex;
+}
+
+/* Set margin for swatches sublist */
+.c-swatches-sublist {
+    margin: 0 25px;
+}
+
+/* Adjust margin for swatch circles */
+.c-swatches-sublist .c-swatch-circle {
+    margin-left: 35px;
+}
+
+/* Adjust margin for swatch text group */
+.c-swatch-text-group {
+    margin-left: 25px;
+}
+
+body{
+    margin: 5px;
+  }
+
+  .c-desktop-navbar__toggle {
     display: none;
 }
 
@@ -414,12 +459,46 @@ body {
     display: block;
 }
 
-  .sticky-sidebar {
-    position: fixed;
-    /* top: 9rem; */
+.l-layout-container {
+    display: grid;
+    grid-template-areas:
+      "header header"
+      "sidebar main"
+      "footer footer";
+    grid-template-columns: 14rem 1fr;
+    gap: 16px;
+    /* max-width: 1200px; */
+    margin: 0 auto;
+    isolation: isolate;
+  }
+  .aside {
+    grid-area: sidebar;
+    position: relative;
+    z-index: 1;
   }
 
- 
+  header {
+    grid-area: header;
+    position: sticky;
+    z-index: 2;
+    top: 0;
+    display: grid;
+    place-content: center;
+    height: var(--header-height);
+    border-bottom: 3px solid;
+    background-color: white;
+  }
+
+
+  .sticky-sidebar {
+    position: fixed;
+  }
+
+  main {
+    grid-area: main;
+    min-height: 180vh;
+  }
+
  
 
   .l-layout-container > * {
@@ -431,7 +510,6 @@ body {
     padding: 0;
   }
   p {
-    /* column-count: 2; */
     column-gap: 2em;
   }
   
@@ -444,4 +522,7 @@ body {
 }  
 
 
+
+
+    
 }   
