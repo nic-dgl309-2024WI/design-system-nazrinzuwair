@@ -41,6 +41,24 @@ a {
 }
 
 
+/* 
+   Adjusts the margin of the <ol> element to offset a negative top spacing effect.
+*/
+ol {
+    margin-top: -10px;
+}
+
+/* 
+   Styles for the main container element.
+   Sets its width to 100% of its parent container, 
+   and limits its width to fit its content.
+*/
+.main {
+    width: 100%;
+    right: 0;
+    left: 0;
+    width: fit-content;
+}
 
 /* Style mobile navbar items as a vertical column */
 .c-mobile-navbar__items {
@@ -189,15 +207,21 @@ td{
 }
 
 
+/* Font properties for font list items */
 .u-font-list-item {
-    font-family: "Roboto", sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1.5;
-    letter-spacing: 0;
-  }
-  
-  
+    font-family: "Roboto", sans-serif; /* Font family */
+    font-size: 14px; /* Font size */
+    font-weight: 400; /* Font weight */
+    line-height: 1.5; /* Line height */
+    letter-spacing: 0; /* Letter spacing */
+}
+
+
+/* Display property for mobile navigation items */
+.mobile-navig-items {
+    display: block; /* Display as block */
+}
+
 
 /* Desktop view media query */
 @media screen and (min-width: 768px) {
@@ -248,5 +272,8 @@ td{
     .c-swatch-text-group{
         margin-left: 25px;
     }
+
+
+    
     
 }   
