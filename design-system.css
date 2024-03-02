@@ -1,3 +1,19 @@
+
+/* Set the height of the HTML and body elements to 100% 
+   and remove any default margin */
+   html,
+   body {
+     height: 100%;
+     margin: 0;
+   }
+   
+   /* Ensure the wrapper div has a minimum height of 100% 
+      and horizontally centers its content */
+   .wrapper {
+     min-height: 100%;
+     justify-content: center; /* Horizontally center the content */
+   }
+
 /* Header - desktop device */
 
 
@@ -124,127 +140,7 @@ a{
 .c-desktop-navbar{
     display: none;
 }  
-  
-/* Desktop view media query */
-@media screen and (min-width: 768px) {
-    body{
-        margin: 5px;
-      }
 
-      .c-desktop-navbar__toggle {
-        display: none;
-    }
-
-    .c-desktop-navbar__elements .c-desktop-navbar__items{
-        display: flex;
-    }
-
-    .c-desktopnavbar-topnav{
-        display: flex;
-        justify-content: space-between;
-    }
-      
-    .c-desktop-navbar-right{
-        display: inline-flex;
-        justify-content: flex-end;
-        margin-left: auto; 
-      }
-
-      .c-swatch-group{
-        display: flex;
-        /* text-align: center; */
-    }
-
-    .c-swatches-sublist{
-        margin: 0 25px;
-    }
-
-    .c-swatches-sublist .c-swatch-circle{
-        margin-left: 35px;
-    }
-
-    .c-swatch-text-group{
-        margin-left: 25px;
-    }
-    
-    .c-desktop-sidenavbar__items{
-        display: block;
-    }
-    
-    .grid {
-        display: grid;
-        grid-template-areas:
-          "header header"
-          "sidebar main"
-          "footer footer";
-        grid-template-columns: 14rem 1fr;
-        gap: 16px;
-        /* max-width: 1200px; */
-        margin: 0 auto;
-        isolation: isolate;
-      }
-      .aside {
-        grid-area: sidebar;
-        position: relative;
-        z-index: 1;
-      }
-
-      header {
-        grid-area: header;
-        position: sticky;
-        z-index: 2;
-        top: 0;
-        display: grid;
-        place-content: center;
-        height: var(--header-height);
-        border-bottom: 3px solid;
-        background-color: white;
-      }
-    
-      aside {
-        grid-area: sidebar;
-        position: relative;
-        z-index: 1;
-      }
-    
-      .sticky-sidebar {
-        position: fixed;
-        /* top: 9rem; */
-      }
-    
-      main {
-        grid-area: main;
-        min-height: 180vh;
-        /* border: 3px solid; */
-      }
-    
-     
-    
-      .grid > * {
-        padding: 8px;
-      }
-    
-      body {
-        margin: 0;
-        padding: 0;
-      }
-      p {
-        /* column-count: 2; */
-        column-gap: 2em;
-      }
-      
-      .c-mobile-navbar{
-        display: none;
-      }
-    
-      .c-desktop-navbar{
-        display: block;
-    }  
-
-
-    
-   
-}   
 
 /* Header - Mobile device */
 
@@ -468,6 +364,9 @@ td {
 }
 
 
+
+
+
 /* Desktop view media query */
 @media screen and (min-width: 768px) {
     /* Set margin for the body */
@@ -475,48 +374,74 @@ body {
     margin: 5px;
 }
 
-/* Hide toggle element in mobile navbar */
-.c-mobile-navbar__toggle {
+.c-desktop-navbar__toggle {
     display: none;
 }
 
-/* Display mobile navbar items as flex */
-.c-mobile-navbar__elements .c-mobile-navbar__items {
+.c-desktop-navbar__elements .c-desktop-navbar__items{
     display: flex;
 }
 
-/* Align elements in mobile top nav */
-.c-mobilenavbar-topnav {
+.c-desktopnavbar-topnav{
     display: flex;
     justify-content: space-between;
 }
-
-/* Align items to the right in mobile navbar */
-.c-mobile-navbar-right {
+  
+.c-desktop-navbar-right{
     display: inline-flex;
     justify-content: flex-end;
-    margin-left: auto; /* Adjust margin */
-}
+    margin-left: auto; 
+  }
 
-/* Display swatch group as flex */
-.c-swatch-group {
+  .c-swatch-group{
     display: flex;
+    /* text-align: center; */
 }
 
-/* Set margin for swatches sublist */
-.c-swatches-sublist {
+.c-swatches-sublist{
     margin: 0 25px;
 }
 
-/* Adjust margin for swatch circles */
-.c-swatches-sublist .c-swatch-circle {
+.c-swatches-sublist .c-swatch-circle{
     margin-left: 35px;
 }
 
-/* Adjust margin for swatch text group */
-.c-swatch-text-group {
+.c-swatch-text-group{
     margin-left: 25px;
 }
 
-    
+.c-desktop-sidenavbar__items{
+    display: block;
+}
+
+  .sticky-sidebar {
+    position: fixed;
+    /* top: 9rem; */
+  }
+
+ 
+ 
+
+  .l-layout-container > * {
+    padding: 8px;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  p {
+    /* column-count: 2; */
+    column-gap: 2em;
+  }
+  
+  .c-mobile-navbar{
+    display: none;
+  }
+
+  .c-desktop-navbar{
+    display: block;
+}  
+
+
 }   

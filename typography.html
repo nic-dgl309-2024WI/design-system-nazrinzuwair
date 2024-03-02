@@ -6,201 +6,237 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="design-system.css">
-     <!-- Linking the google fonts -->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Lato&family=Lato&display=swap" rel="stylesheet">
     <script src="design-system.js"></script>
     <title>Document</title>
 </head>
 <body>
-    <header class="l-header">
-        <nav class="c-mobile-navbar u-font-list-item">
-            <a class="c-mobile-navbar__toggle" onclick="showNav()"><i id="toggle-icon" class="fa fa-bars" aria-hidden="true"></i></a>
-            <div class="c-mobile-navbar__elements"> 
+
+      <!-- Mobile Navbar -->
+      <nav class="c-mobile-navbar u-font-list-item">
+        <a class="c-mobile-navbar__toggle" onclick="showMobileNav()"><i id="toggle-icon" class="fa fa-bars" aria-hidden="true"></i></a>
+        <div class="c-mobile-navbar__elements"> 
+        
+            <div class="c-mobile-navbar__links-container">
+                <div class="c-mobilenavbar-topnav">
+                <a href="index.html" class="c-mobile-navbar__link c-side-navbar--active">Design System</a>
+                <ul id="mobile-nav-items" class="c-mobile-navbar__items">
+                <div class="c-mobile-navbar-right">
+                    <li class="c-mobile-navbar__mobilelink"><a href="about-me.html">About Me</a></li>
+                    <li class="c-mobile-navbar__mobilelink"><a href="#">Demo Site</a></li> 
+                </div>
+                </ul>
+                </div>
+              <ul id="mobile-navig-items" class="c-mobile-navbar__items"> </ul>
+          </div> 
+        </div> 
+      </nav>    
+
+      <div class="l-layout-container">
+         <!-- Top Navbar Desktop View -->
+        <header>
+          <nav class="c-desktop-navbar u-font-list-item">
+            <a class="c-desktop-navbar__toggle" onclick="showNav()"><i id="toggle-icon" class="fa fa-bars" aria-hidden="true"></i></a>
+            <div class="c-desktop-navbar__elements"> 
             
-                <div class="c-mobile-navbar__links-container">
-                    <div class="c-mobilenavbar-topnav">
-                    <a href="index.html" class="c-mobile-navbar__link">Design System</a>
-                    <ul id="nav-items" class="c-mobile-navbar__items">
-                    <div class="c-mobile-navbar-right">
-                        <li class="c-mobile-navbar__mobilelink"><a href="about-me.html">About Me</a></li>
-                        <li class="c-mobile-navbar__mobilelink"><a href="#">Demo Site</a></li> 
+                <div class="c-desktop-navbar__links-container">
+                    <div class="c-desktopnavbar-topnav">
+                    <a href="index.html" class="c-desktop-navbar__link c-side-navbar--active">Design System</a>
+                    <ul id="nav-items" class="c-desktop-navbar__items">
+                    <div class="c-desktop-navbar-right">
+                        <li class="c-desktop-navbar__desktoplink"><a href="about-me.html">About Me</a></li>
+                        <li class="c-desktop-navbar__desktoplink"><a href="#">Demo Site</a></li> 
                     </div>
                     </ul>
                     </div>
-                    
-                    
-        <!-- side Navbar -->
-        <ul id="navi-items" class="c-mobile-navbar__items">
-            <nav class="c-side-navbar">
-                <ul class="c-side-navbar__list">   
-                <li class="c-side-navbar__item">
-                    <h2 class="c-side-navbar__heading u-font-heading">Branding</h2>
-                    <ul class="c-side-navbar__sub-list u-font-list-item">
-                        <li class="c-side-navbar__sub-item "><a href="colours.html">01 Colours</a></li>
-                        <li class="c-side-navbar__sub-item c-side-navbar--active"><a href="typography.html">02 Typography</a></li>
-                        <li class="c-side-navbar__sub-item"><a href="#">03 Logo</a></li>
-                    </ul>
-                </li>
-                <li class="c-side-navbar__item">
-                    <h2 class="c-side-navbar__heading u-font-heading">Utilities</h2>
-                    <ul class="c-side-navbar__sub-list u-font-list-item">
-                        <li class="c-side-navbar__sub-item"><a href="#">04 Spacing</a></li>
-                        <li class="c-side-navbar__sub-item"><a href="#">05 Containers</a></li>
-                        <li class="c-side-navbar__sub-item"><a href="#">06 Images</a></li>
-                        <li class="c-side-navbar__sub-item"><a href="#">07 Interactive</a></li>
-                        <li class="c-side-navbar__sub-item"><a href="#">08 Feedback</a></li>
-                    </ul>
-                </li>
-                <li class="c-side-navbar__item">
-                    <h2 class="c-side-navbar__heading u-font-heading">Navigation</h2>
-                    <ul class="c-side-navbar__sub-list u-font-list-item">
-                        <li class="c-side-navbar__sub-item"><a href="#">09 Navbars</a></li>
-                        <li class="c-side-navbar__sub-item"><a href="#">10 Breadcrumbs</a></li>
-                        <li class="c-side-navbar__sub-item"><a href="#">11 Pagination</a></li>
-                    </ul> 
-                </li>
-                <li class="c-side-navbar__item">
-                    <h2 class="c-side-navbar__heading u-font-heading">Blocks</h2>
-                    <ul class="c-side-navbar__sub-list u-font-list-item">
-                        <li class="c-side-navbar__sub-item"><a href="#">12 Hero</a></li>
-                        <li class="c-side-navbar__sub-item"><a href="#">13 Carousel</a></li>
-                        <li class="c-side-navbar__sub-item"><a href="#">14 Slats</a></li>
-                        <li class="c-side-navbar__sub-item"><a href="#">15 Footer</a></li>
-                    </ul>
-                </li>
-                <li class="c-side-navbar__item">
-                    <h2 class="c-side-navbar__heading u-font-heading">Components</h2>
-                    <ul class="c-side-navbar__sub-list u-font-list-item">
-                        <li class="c-side-navbar__sub-item"><a href="#">16 Cards</a></li>
-                        <li class="c-side-navbar__sub-item"><a href="#">17 Forms</a></li>
-                        <li class="c-side-navbar__sub-item"><a href="#">18 Accordion</a></li>
-                        <li class="c-side-navbar__sub-item"><a href="#">19 Lists</a></li>
-                    </ul>
-                </li>
-            </ul> 
-            </nav>    
-           
-        </ul>
+                 </div>
+            </div>
+        </nav>  
+        </header>
+
+        <!-- Side Navbar Desktop View -->
+        <aside>
+          <div >
+            <nav class="sticky-sidebar">
+                <ul id="navi-items" class="c-desktop-sidenavbar__items">
+              </ul>
+            </nav>
+          </div>
+        </aside>
+        <main class="wrapper">
+          
+          <div class="c-typography-list">
+            <h2 class="u-font-subheading u-ff-lato u-font-size-h2 u-font-weight-bold">Font Families</h2>
+            <div style="overflow-x:auto;">
+            <table>
+                <tr class="u-font-body-text u-ff-roboto u-font-size-h3 u-font-weight-regular u-line-height-body">
+                    <th>Utility Class Name</th>
+                    <th>Character Set</th>
+                    <th>Letters and Numbers</th>
+                </tr>
+                <tr class="c-typography-sublist u-ff-lato u-font-size-p u-font-weight-regular u-line-height-body">
+                    <th>u-ff-lato</th>
+                    <td>Aa</td>
+                    <td>ABCDEFGHIJKLMNOPQRSTUVWXYZ <br>abcdefghijklmnopqrstuvwxyz <br> 0123456789</td>
+                </tr>
+                <tr class="c-typography-sublist u-ff-roboto u-font-size-p u-font-weight-regular u-line-height-body">
+                    <th>u-ff-roboto</th>
+                    <td>Aa</td>
+                    <td>ABCDEFGHIJKLMNOPQRSTUVWXYZ <br>abcdefghijklmnopqrstuvwxyz <br> 0123456789</td>
+                </tr>
+                <tr class="c-typography-sublist u-ff-montserrat u-font-size-p u-font-weight-regular u-line-height-body">
+                    <th>u-ff-montserrat</th>
+                    <td>Aa</td>
+                    <td>ABCDEFGHIJKLMNOPQRSTUVWXYZ <br>abcdefghijklmnopqrstuvwxyz <br> 0123456789</td>
+                </tr>
+            </table>
         </div>
-    </div>
-        </nav>   
+        </div>
+        
+        <div class="c-font-uses">
+            <h2 class="u-font-subheading">Font Uses</h2>
+            <div style="overflow-x:auto;">
+            <table>
+                <tr>
+                    <td colspan="5" class="char-set-header u-ff-lato u-font-weight-bold u-font-size-h1 u-letter-spacing-2 u-line-height-heading">Headline 1</td>
+                </tr>
+                <tr class="u-font-size-list">
+                    <td>Font: <br> "Lato", sans-serif</td>
+                    <td>Weight <br> 700</td>
+                    <td>Font-size: <br>28px</td>
+                    <td>Letter Spacing: <br>1px</td>
+                    <td>Line Height <br>1.2</td>
+                </tr>
+                <tr>
+                    <td colspan="5" class="char-set-header u-ff-lato u-font-weight-bold u-font-size-h2 u-letter-spacing-1 u-line-height-heading">Headline 2</td>
+                </tr>
+                <tr class="u-font-size-list">
+                    <td>Font Family: <br> "Lato", sans-serif</td>
+                    <td>Weight <br> 700</td>
+                    <td>Font-size: <br>28px</td>
+                    <td>Letter Spacing: <br>1px</td>
+                    <td>Line Height <br>1.2</td>
+                </tr>
+                <tr>
+                    <td colspan="5" class="char-set-header u-ff-lato u-font-weight-bold u-font-size-h3 u-letter-spacing-1 u-line-height-body">Headline 3</td>
+                </tr>
+                <tr class="u-font-size-list">
+                    <td>Font Family: <br> "Lato", sans-serif</td>
+                    <td>Weight <br> 700</td>
+                    <td>Font-size: <br>20px</td>
+                    <td>Letter Spacing: <br>1px</td>
+                    <td>Line Height <br>1.2</td>
+                </tr>
+                <tr>
+                    <td colspan="5" class="char-set-header u-ff-roboto  u-font-weight-regular u-font-size-p u-letter-spacing-1 .u-line-height-body">Paragraph</td>
+                </tr>
+                <tr class="u-font-size-list">
+                    <td>Font Family: <br> "Roboto", sans-serif</td>
+                    <td>Weight <br> 400</td>
+                    <td>Font-size: <br>18px</td>
+                    <td>Letter Spacing: <br>1px</td>
+                    <td>Line Height <br>1.5</td>
+                </tr>
+                <tr>
+                    <td colspan="5" class="char-set-header u-ff-roboto u-font-weight-regular u-font-size-list u-letter-spacing-1 u-line-height-list">List Items</td>
+                </tr>
+                <tr class="u-font-size-list">
+                    <td>Font Family: <br> "Roboto", sans-serif</td>
+                    <td>Weight <br> 400</td>
+                    <td>Font-size: <br>16px</td>
+                    <td>Letter Spacing: <br>1px</td>
+                    <td>Line Height <br>1.4</td>
+                </tr>
+                <tr>
+                    <td colspan="5" class="char-set-header u-ff-roboto u-font-weight-regular u-font-size-forms u-letter-spacing-1 u-line-height-list">Forms</td>
+                </tr>
+                <tr class="u-font-size-list">
+                    <td>Font Family: <br> "Roboto", sans-serif</td>
+                    <td>Weight <br> 400</td>
+                    <td>Font-size: <br>16px</td>
+                    <td>Letter Spacing: <br>1px</td>
+                    <td>Line Height <br>1.4</td>
+                </tr>
+                <tr>
+                    <td colspan="5" class="char-set-header u-ff-montserrat u-font-weight-bold u-font-size-buttons u-letter-spacing-1 u-line-height-list">Buttons</td>
+                </tr>
+                <tr class="u-font-size-list">
+                    <td>Font Family: <br> "Montserrat", sans-serif</td>
+                    <td>Weight <br> 700</td>
+                    <td>Font-size: <br>20px</td>
+                    <td>Letter Spacing: <br>1px</td>
+                    <td>Line Height <br>1.4</td>
+                </tr>
     
-</header>
-
-<main>
-    <div class="c-typography-list">
-        <h2 class="u-font-subheading u-ff-lato u-font-size-h2 u-font-weight-bold">Font Families</h2>
-        <div style="overflow-x:auto;">
-        <table>
-            <tr class="u-font-body-text u-ff-roboto u-font-size-h3 u-font-weight-regular u-line-height-body">
-                <th>Utility Class Name</th>
-                <th>Character Set</th>
-                <th>Letters and Numbers</th>
-            </tr>
-            <tr class="c-typography-sublist u-ff-lato u-font-size-p u-font-weight-regular u-line-height-body">
-                <th>u-ff-lato</th>
-                <td>Aa</td>
-                <td>ABCDEFGHIJKLMNOPQRSTUVWXYZ <br>abcdefghijklmnopqrstuvwxyz <br> 0123456789</td>
-            </tr>
-            <tr class="c-typography-sublist u-ff-roboto u-font-size-p u-font-weight-regular u-line-height-body">
-                <th>u-ff-roboto</th>
-                <td>Aa</td>
-                <td>ABCDEFGHIJKLMNOPQRSTUVWXYZ <br>abcdefghijklmnopqrstuvwxyz <br> 0123456789</td>
-            </tr>
-            <tr class="c-typography-sublist u-ff-montserrat u-font-size-p u-font-weight-regular u-line-height-body">
-                <th>u-ff-montserrat</th>
-                <td>Aa</td>
-                <td>ABCDEFGHIJKLMNOPQRSTUVWXYZ <br>abcdefghijklmnopqrstuvwxyz <br> 0123456789</td>
-            </tr>
-        </table>
-    </div>
-    </div>
     
-    <div class="c-font-uses">
-        <h2 class="u-font-subheading">Font Uses</h2>
-        <div style="overflow-x:auto;">
-        <table>
-            <tr>
-                <td colspan="5" class="char-set-header u-ff-lato u-font-weight-bold u-font-size-h1 u-letter-spacing-2 u-line-height-heading">Headline 1</td>
-            </tr>
-            <tr class="u-font-size-list">
-                <td>Font: <br> "Lato", sans-serif</td>
-                <td>Weight <br> 700</td>
-                <td>Font-size: <br>28px</td>
-                <td>Letter Spacing: <br>1px</td>
-                <td>Line Height <br>1.2</td>
-            </tr>
-            <tr>
-                <td colspan="5" class="char-set-header u-ff-lato u-font-weight-bold u-font-size-h2 u-letter-spacing-1 u-line-height-heading">Headline 2</td>
-            </tr>
-            <tr class="u-font-size-list">
-                <td>Font Family: <br> "Lato", sans-serif</td>
-                <td>Weight <br> 700</td>
-                <td>Font-size: <br>28px</td>
-                <td>Letter Spacing: <br>1px</td>
-                <td>Line Height <br>1.2</td>
-            </tr>
-            <tr>
-                <td colspan="5" class="char-set-header u-ff-lato u-font-weight-bold u-font-size-h3 u-letter-spacing-1 u-line-height-body">Headline 3</td>
-            </tr>
-            <tr class="u-font-size-list">
-                <td>Font Family: <br> "Lato", sans-serif</td>
-                <td>Weight <br> 700</td>
-                <td>Font-size: <br>20px</td>
-                <td>Letter Spacing: <br>1px</td>
-                <td>Line Height <br>1.2</td>
-            </tr>
-            <tr>
-                <td colspan="5" class="char-set-header u-ff-roboto  u-font-weight-regular u-font-size-p u-letter-spacing-1 .u-line-height-body">Paragraph</td>
-            </tr>
-            <tr class="u-font-size-list">
-                <td>Font Family: <br> "Roboto", sans-serif</td>
-                <td>Weight <br> 400</td>
-                <td>Font-size: <br>18px</td>
-                <td>Letter Spacing: <br>1px</td>
-                <td>Line Height <br>1.5</td>
-            </tr>
-            <tr>
-                <td colspan="5" class="char-set-header u-ff-roboto u-font-weight-regular u-font-size-list u-letter-spacing-1 u-line-height-list">List Items</td>
-            </tr>
-            <tr class="u-font-size-list">
-                <td>Font Family: <br> "Roboto", sans-serif</td>
-                <td>Weight <br> 400</td>
-                <td>Font-size: <br>16px</td>
-                <td>Letter Spacing: <br>1px</td>
-                <td>Line Height <br>1.4</td>
-            </tr>
-            <tr>
-                <td colspan="5" class="char-set-header u-ff-roboto u-font-weight-regular u-font-size-forms u-letter-spacing-1 u-line-height-list">Forms</td>
-            </tr>
-            <tr class="u-font-size-list">
-                <td>Font Family: <br> "Roboto", sans-serif</td>
-                <td>Weight <br> 400</td>
-                <td>Font-size: <br>16px</td>
-                <td>Letter Spacing: <br>1px</td>
-                <td>Line Height <br>1.4</td>
-            </tr>
-            <tr>
-                <td colspan="5" class="char-set-header u-ff-montserrat u-font-weight-bold u-font-size-buttons u-letter-spacing-1 u-line-height-list">Buttons</td>
-            </tr>
-            <tr class="u-font-size-list">
-                <td>Font Family: <br> "Montserrat", sans-serif</td>
-                <td>Weight <br> 700</td>
-                <td>Font-size: <br>20px</td>
-                <td>Letter Spacing: <br>1px</td>
-                <td>Line Height <br>1.4</td>
-            </tr>
+    
+            </table>
+        </div>
+    
+        </div>
+    
+        </main>
+      </div>
 
+      <!-- Script for including the template -->
+      <script id="utilities-template" type="text/html">    
+        <ol>
+          <li class="c-side-navbar__item">
+            <h2 class="c-side-navbar__heading u-font-heading">Branding</h2>
+            <ul class="c-side-navbar__sub-list u-font-list-item">
+                <li class="c-side-navbar__sub-item "><a href="colours.html">01 Colours</a></li>
+                <li class="c-side-navbar__sub-item"><a href="typography.html">02 Typography</a></li>
+                <li class="c-side-navbar__sub-item"><a href="#">03 Logo</a></li>
+            </ul>
+          </li>
+          <li class="c-side-navbar__item">
+            <h2 class="c-side-navbar__heading u-font-heading">Utilities</h2>
+            <ul class="c-side-navbar__sub-list u-font-list-item">
+                <li class="c-side-navbar__sub-item"><a href="#">04 Spacing</a></li>
+                <li class="c-side-navbar__sub-item"><a href="#">05 Containers</a></li>
+                <li class="c-side-navbar__sub-item"><a href="#">06 Images</a></li>
+                <li class="c-side-navbar__sub-item"><a href="#">07 Interactive</a></li>
+                <li class="c-side-navbar__sub-item"><a href="#">08 Feedback</a></li>
+            </ul>
+          </li>
+          <li class="c-side-navbar__item">
+            <h2 class="c-side-navbar__heading u-font-heading">Navigation</h2>
+            <ul class="c-side-navbar__sub-list u-font-list-item">
+                <li class="c-side-navbar__sub-item"><a href="#">09 Navbars</a></li>
+                <li class="c-side-navbar__sub-item"><a href="#">10 Breadcrumbs</a></li>
+                <li class="c-side-navbar__sub-item"><a href="#">11 Pagination</a></li>
+            </ul> 
+          </li>
+          <li class="c-side-navbar__item">
+            <h2 class="c-side-navbar__heading u-font-heading">Blocks</h2>
+            <ul class="c-side-navbar__sub-list u-font-list-item">
+                <li class="c-side-navbar__sub-item"><a href="#">12 Hero</a></li>
+                <li class="c-side-navbar__sub-item"><a href="#">13 Carousel</a></li>
+                <li class="c-side-navbar__sub-item"><a href="#">14 Slats</a></li>
+                <li class="c-side-navbar__sub-item"><a href="#">15 Footer</a></li>
+            </ul>
+          </li>
+          <li class="c-side-navbar__item">
+            <h2 class="c-side-navbar__heading u-font-heading">Components</h2>
+            <ul class="c-side-navbar__sub-list u-font-list-item">
+                <li class="c-side-navbar__sub-item"><a href="#">16 Cards</a></li>
+                <li class="c-side-navbar__sub-item"><a href="#">17 Forms</a></li>
+                <li class="c-side-navbar__sub-item"><a href="#">18 Accordion</a></li>
+                <li class="c-side-navbar__sub-item"><a href="#">19 Lists</a></li>
+            </ul>
+          </li>
+        </ol>
+      </script>
+      
+      <!-- Call the function to append the template -->
+      <script>
+        function appendUtilitiesTemplate() {
+            var template = document.getElementById('utilities-template').innerHTML;
+            document.getElementById('navi-items').innerHTML = template;
+            document.getElementById('mobile-navig-items').innerHTML = template;
+        }
+        appendUtilitiesTemplate();
+      </script>
 
-
-        </table>
-    </div>
-
-    </div>
-       
-</main>
 
 
 </body>
