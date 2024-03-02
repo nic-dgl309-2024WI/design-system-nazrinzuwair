@@ -189,6 +189,7 @@ body{
   line-height: var(--line-height-list);
 }
 
+/*------------------------------- Spacing classes-------------------------------  */
 
 /* ------------------------------- Margins ------------------------------- */
    
@@ -456,4 +457,52 @@ body{
   display: grid;
 }
 
+/*------------------------------- Container classes-------------------------------  */
 
+/* Full-width by default */
+.l-full-width {
+  width: 100%;
+}
+
+/* Max-width on mobile */
+.l-max-width-mobile {
+  max-width: 100%; 
+}
+
+/* Apply width constraints and center horizontally */
+.l-box {
+  width: 80%;
+  min-width: 100px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Apply Width to fit the content size */
+.l-fit-content {
+  width: fit-content;
+}
+
+/* Set minimum height to occupy full viewport height */
+.l-min-height-full {
+  min-height: 100%;
+}
+
+/*-------------- Footer always placed on the bottom --------------*/
+
+/* Utility class: Set height to occupy full viewport height */
+.l-height-full {
+  height: 100%;
+}
+
+/* Utility class: Flexbox wrapper to fill remaining height */
+.l-flex-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+/* Utility class: Footer positioned at the bottom of the wrapper */
+.l-footer-bottom {
+  padding: 8px;
+  margin-top: auto;
+}
