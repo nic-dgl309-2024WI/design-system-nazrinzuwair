@@ -69,6 +69,13 @@ body{
    --line-height-heading: 1.2 rem;
    --line-height-list:1.4 rem;
 
+
+   /* margin value */
+   --margin-1: 1rem; /* 16px */
+   --margin-1-25: 1.25rem; /* 20px */
+   --margin-1-5: 1.5rem; /* 24px */
+   --margin-2: 2rem; /* 32px */
+  
  }
    
 /*------------------------------------Utility Classes------------------------------------*/
@@ -233,7 +240,7 @@ body{
   margin: 1.25rem; /* 20px */
 }
 
-.l-mt-1-25 {
+.l-mt-125 {
   margin-top: 1.25rem; /* 20px */
 }
 
@@ -304,7 +311,7 @@ body{
 }
 
 .l-ml-2 {
-  margin-left: 2rem; /* 32px */
+  margin-left: var(--ml-2-value);
 }
 
 .l-mr-2 {
