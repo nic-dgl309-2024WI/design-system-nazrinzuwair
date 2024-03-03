@@ -329,16 +329,16 @@ td {
 }
 
 /* Margins for typography list and font uses */
-.c-typography-list, .c-margin-list , .c-padding-list, .c-font-uses {
+.c-typography-list, .c-margin-list , .c-padding-list, .c-grid-list , .c-flex-list , .c-font-uses {
     margin: 10px;
 }
 
 /* Margin for typography sublist */
-.c-typography-sublist, .c-margin-sublist, .c-padding-sublist {
+.c-typography-sublist, .c-margin-sublist, .c-padding-sublist, .c-flex-list , .c-grid-sublist {
     margin-top: 20px;
 }
 
-.c-margin-list table, .c-padding-list table{
+.c-margin-list table, .c-padding-list table, .c-grid-list table, .c-flex-list table{
     margin-left: var(--margin-2);
 
 }
