@@ -329,13 +329,18 @@ td {
 }
 
 /* Margins for typography list and font uses */
-.c-typography-list, .c-font-uses {
+.c-typography-list, .c-margin-list , .c-padding-list, .c-font-uses {
     margin: 10px;
 }
 
 /* Margin for typography sublist */
-.c-typography-sublist {
+.c-typography-sublist, .c-margin-sublist, .c-padding-sublist {
     margin-top: 20px;
+}
+
+.c-margin-list table, .c-padding-list table{
+    margin-left: var(--margin-2);
+
 }
 
 /* Padding for character set header */
