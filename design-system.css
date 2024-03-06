@@ -367,7 +367,11 @@ td {
     display: block; /* Display as block */
 }
 
+/* --------------------About Me Page Coding Begins here---------------------- */
+.c-about{
+    text-align: center;
 
+}
 
 
 /* Desktop view media query */
