@@ -392,6 +392,26 @@ td {
     padding: 20px;
     margin: 1rem;
 } */
+
+/* --------------------------Containers page coding begins here--------------------------- */
+.c-content-container{
+    margin: 0 auto; 
+    text-align: center;
+}
+
+.c-font-container__image{
+    width: 320px;
+    height: 320px;
+}
+.u-font-subheading{
+    text-align: initial;
+}
+.c-font-container__value {
+    text-align: left;
+}
+
+
+
 /* --------------------About Me Page Coding Begins here---------------------- */
 .c-about{
     text-align: center;
@@ -582,6 +602,26 @@ body{
 
     .c-margin-list__container{
         display: flex;
+    }
+
+
+    .c-font-container__image{
+        
+        height: 300px;
+    }
+    
+
+    .c-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-right: 100px;
+    }
+
+    .c-content-container {
+        flex-basis: calc(50% - 20px); 
+        margin: 10px; 
+        text-align: initial;
     }
 
     
