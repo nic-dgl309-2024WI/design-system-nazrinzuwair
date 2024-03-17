@@ -31,7 +31,7 @@
         </div> 
       </nav>    
 
-      <div class="l-layout-container">
+      <div>
          <!-- Top Navbar Desktop View -->
         <header>
           <nav class="c-desktop-navbar u-font-list-item">
@@ -53,17 +53,9 @@
         </nav>  
         </header>
 
-        <!-- Side Navbar Desktop View -->
-        <aside>
-          <div>
-            <nav class="sticky-sidebar">
-                <ul id="navi-items" class="c-desktop-sidenavbar__items">
-              </ul>
-            </nav>
-          </div>
-        </aside>
         
-        <main>
+        
+        <main class="c-wrapper">
           <div class="c-about l-max-width-mobile">
             <h1 class="c-about__title l-py-1-25">
               Hi! My name is Fathima Nazrin Mohamed Zuwair.
@@ -74,7 +66,7 @@
               class="c-about__image l-pb-1"
               src="images/nazrin_image.jpg"
               alt="Portrait of Fathima Nazrin Mohamed Zuwair"
-              style="width: 350px; height: auto" 
+              
             />
             <!-- add a short biography. Include where you are from, your education background, your current program, and something interesting about yourself. -->
             <p class="c-about__bio l-pb-2 l-px-2">
@@ -84,9 +76,9 @@
               interesting about me is I'm an enthusiastic traveler and baker.
             </p>
             <!-- add a list of your favourite web development tools. -->
-            <div class="c-about__section l-flex " style="justify-content: center;">
+            <div class="c-about__section l-flex">
               <div class="c-about__section-one l-px-1-5">  
-                <p class="c-about__tools l-pb-1">My favourite tools are</p>
+                <p class="c-about__tools l-pb-1 u-font-weight-bold">My favourite tools are</p>
                 <ul class="c-about__tool-list">
                   <li class="c-about__tool l-pb-1">Visual Studio Code</li>
                   <li class="c-about__tool l-pb-1">Adobe Photoshop</li>
@@ -99,7 +91,7 @@
             <!-- add a list of your strongest web development skills. -->
               <div>
                 <div class="c-about__section-two l-px-1-5">
-                  <p class="c-about__skills l-pb-1">My skills include</p>
+                  <p class="c-about__skills l-pb-1 u-font-weight-bold">My skills include</p>
                   <ul class="c-about__skill-list">
                     <li class="c-about__skill l-pb-1">HTML5</li>
                     <li class="c-about__skill l-pb-1">CSS3</li>
@@ -114,68 +106,5 @@
           </div>
         </main>
       </div>
-
-      <!-- Script for including the template -->
-      <script id="utilities-template" type="text/html">    
-        <ol>
-          <li class="c-side-navbar__item">
-            <h2 class="c-side-navbar__heading u-font-heading">Branding</h2>
-            <ul class="c-side-navbar__sub-list u-font-list-item">
-                <li class="c-side-navbar__sub-item "><a href="colours.html">01 Colours</a></li>
-                <li class="c-side-navbar__sub-item"><a href="typography.html">02 Typography</a></li>
-                <li class="c-side-navbar__sub-item"><a href="#">03 Logo</a></li>
-            </ul>
-          </li>
-          <li class="c-side-navbar__item">
-            <h2 class="c-side-navbar__heading u-font-heading">Utilities</h2>
-            <ul class="c-side-navbar__sub-list u-font-list-item">
-                <li class="c-side-navbar__sub-item"><a href="spacing.html">04 Spacing</a></li>
-                <li class="c-side-navbar__sub-item"><a href="#">05 Containers</a></li>
-                <li class="c-side-navbar__sub-item"><a href="#">06 Images</a></li>
-                <li class="c-side-navbar__sub-item"><a href="#">07 Interactive</a></li>
-                <li class="c-side-navbar__sub-item"><a href="#">08 Feedback</a></li>
-            </ul>
-          </li>
-          <li class="c-side-navbar__item">
-            <h2 class="c-side-navbar__heading u-font-heading">Navigation</h2>
-            <ul class="c-side-navbar__sub-list u-font-list-item">
-                <li class="c-side-navbar__sub-item"><a href="#">09 Navbars</a></li>
-                <li class="c-side-navbar__sub-item"><a href="#">10 Breadcrumbs</a></li>
-                <li class="c-side-navbar__sub-item"><a href="#">11 Pagination</a></li>
-            </ul> 
-          </li>
-          <li class="c-side-navbar__item">
-            <h2 class="c-side-navbar__heading u-font-heading">Blocks</h2>
-            <ul class="c-side-navbar__sub-list u-font-list-item">
-                <li class="c-side-navbar__sub-item"><a href="#">12 Hero</a></li>
-                <li class="c-side-navbar__sub-item"><a href="#">13 Carousel</a></li>
-                <li class="c-side-navbar__sub-item"><a href="#">14 Slats</a></li>
-                <li class="c-side-navbar__sub-item"><a href="#">15 Footer</a></li>
-            </ul>
-          </li>
-          <li class="c-side-navbar__item">
-            <h2 class="c-side-navbar__heading u-font-heading">Components</h2>
-            <ul class="c-side-navbar__sub-list u-font-list-item">
-                <li class="c-side-navbar__sub-item"><a href="#">16 Cards</a></li>
-                <li class="c-side-navbar__sub-item"><a href="#">17 Forms</a></li>
-                <li class="c-side-navbar__sub-item"><a href="#">18 Accordion</a></li>
-                <li class="c-side-navbar__sub-item"><a href="#">19 Lists</a></li>
-            </ul>
-          </li>
-        </ol>
-      </script>
-      
-      <!-- Call the function to append the template -->
-      <script>
-        function appendUtilitiesTemplate() {
-            var template = document.getElementById('utilities-template').innerHTML;
-            document.getElementById('navi-items').innerHTML = template;
-            document.getElementById('mobile-navig-items').innerHTML = template;
-        }
-        appendUtilitiesTemplate();
-      </script>
-
-
-
 </body>
 </html>
