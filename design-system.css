@@ -367,6 +367,31 @@ td {
     display: block; /* Display as block */
 }
 
+
+
+/* ------------------------------------Spacing page coding begins here------------------------------------------- */
+
+.c-margin-box{
+    width:fit-content; /* Set width */
+}
+
+.c-margin-outer-box{
+}
+
+/* 
+.margin-container {
+    display: flex;
+    justify-content: center;
+    background-color: #f0f0f0; 
+    padding: 20px;
+}
+
+.margin-box {
+    background-color: #ffffff; 
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 1rem;
+} */
 /* --------------------About Me Page Coding Begins here---------------------- */
 .c-about{
     text-align: center;
@@ -555,6 +580,9 @@ body{
     height: auto;
 }
 
+    .c-margin-list__container{
+        display: flex;
+    }
 
     
 }   
