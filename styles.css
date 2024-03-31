@@ -563,6 +563,7 @@ header .header__wrapper-width {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 var(--padding-1);
  }
 
  .header__logo{
@@ -586,7 +587,7 @@ header .header__wrapper-width {
 }
 
 .header__c-navbar ul li {
-  padding: 10px 0;
+  padding: 0 0 15px 15px;
 }
 
 .header__c-navbar ul li a{
@@ -606,15 +607,17 @@ header .header__wrapper-width {
   .c-hero{
     background: var(--clr-primary-bg) 0% 0% no-repeat padding-box;
     text-align: center;
+    margin-top: -35px;
   }    
 
   .c-hero__content{
     padding-bottom: var(--padding-2);
   }
   
-  .c-hero__content h1{
-    text-align: center;
- }
+  .c-hero__title{
+    padding-top: var(--padding-2);
+  }
+
 
  .c-hero__content p{
     text-align: center;
@@ -646,6 +649,9 @@ header .header__wrapper-width {
     object-fit: cover;
   }
 
+  .c-hero__content h1{
+   display: none;
+  }
 
 /* Media Query for Desktop */
 @media screen and (min-width: 1200px) {
@@ -657,13 +663,6 @@ header .header__wrapper-width {
 
   
   /* MEDIA QUERIES FOR NAVIGATION */
-
-/*   
-  .header__wrapper-width {
-    max-width: 1200px; 
-    margin: auto;
-  } */
-
 
   .header__c-navbar-toggle {
     display: none;
@@ -686,6 +685,49 @@ header .header__wrapper-width {
   }
 
 
+  /* MEDIA QUERIES FOR HERO SECTION OF HOME PAGE */
+
+  .c-hero__wrapper {
+    height: 450px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    padding: 0 14px 14px 14px;
+  }
+
+  .c-hero__title{
+    display: none;
+  }
+
+  .c-hero__content h1{
+    display: block;
+    font-size: var(--font-size-h1);
+   }
+ 
+  .c-hero__image img{
+    margin-right: var(--margin-2);
+    width: 400px;
+    height: 360px;
+    object-fit: cover;
+  }
+
+  .c-hero__content{
+    text-align: left;
+    margin-top: 110px;
+    margin-left: var(--margin-0);
+    padding-left: var(--padding-0);
+  }
+
+  .c-hero__content p{
+    text-align: justify;
+    padding: var(--padding-2)  0;
+    margin: var(--margin-0);
+    width: 80%;
+    font-size: var(--font-size-p);
+  } 
+  
+
+  
 
 
 }
