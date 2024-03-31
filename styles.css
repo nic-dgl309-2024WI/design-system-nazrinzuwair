@@ -37,6 +37,7 @@ body{
   /* Additional colors */
   --clr-white:#FFFFFF; /*White*/
   --clr-hover-text:#219d3D;
+  --clr-additional-bg:#784a21;
 
 
   /* Font families */
@@ -71,12 +72,15 @@ body{
 
 
    /* margin value */
+   --margin-0:0; /*0*/
    --margin-1: 1rem; /* 16px */
    --margin-1-25: 1.25rem; /* 20px */
    --margin-1-5: 1.5rem; /* 24px */
    --margin-2: 2rem; /* 32px */
+   --margin-2-5: 2.4rem;/* 40px */
 
    /* Padding Value */
+   --padding-0:0; /*0*/
    --padding-1: 1rem; /* 16px */
    --padding-1-25: 1.25rem; /* 20px */
    --padding-1-5: 1.5rem; /* 24px */
@@ -534,6 +538,73 @@ body{
 
 /* ----------------------------------------- INDEX.HTML PAGE CODING BEGINS HERE ----------------------------------------- */
 
+
+
+/*----------- HEADER CODING BEGINS HERE----------- */  
+
+.header {
+  background-color: var(--clr-additional-bg);
+  margin-bottom: var(--margin-2-5);
+  
+}
+
+header .header__wrapper-width {
+    padding: 14px;
+    justify-content: space-between;
+}
+
+
+  
+.header__c-navbar-toggle i {
+    color: var(--clr-white);
+    font-size:var(--font-size-p);
+
+}
+
+.heade__c-navbar-top{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+
+.header__logo{
+    width: 180px;
+    height: 55px;
+    object-fit: cover;
+
+}
+
+.header__c-navbar {
+  text-align: right;
+}
+  
+.header__c-navbar-items {
+    list-style-type: none;
+    margin: var(--margin-0);
+    padding: var(--padding-0);
+    display: none;
+    margin-top: var(--margin-1);
+    text-align: left;
+  }
+  
+  nav ul li {
+    padding: 10px 0;
+  }
+
+
+  nav ul li a{
+    text-decoration: none;
+    color: var(--clr-white);
+    font-size:var(--font-size-p);
+    text-align: center;
+  }
+
+
+  .show-items {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+}
 
 
 
