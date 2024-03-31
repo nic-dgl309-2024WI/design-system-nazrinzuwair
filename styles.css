@@ -612,6 +612,41 @@ header .header__wrapper-width {
 @media screen and (min-width: 1200px) {
   .l-max-width-desktop {
     max-width: 1200px; 
+    margin: auto;
   }
+
+
+  
+  /* MEDIA QUERIES FOR NAVIGATION */
+
+/*   
+  .header__wrapper-width {
+    max-width: 1200px; 
+    margin: auto;
+  } */
+
+
+  .header__c-navbar-toggle {
+    display: none;
+  }
+
+  .header__c-navbar-elements ul{
+    display: flex;
+    flex-direction: row;
+    margin-top: 0;
+  }
+
+  .header__c-navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .header__c-navbar-items li{
+    margin: 10px 30px 0 0; 
+  }
+
+
+
 
 }
