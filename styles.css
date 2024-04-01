@@ -52,7 +52,7 @@ body{
   --font-size-h3: 20px;
   --font-size-p: 18px;
   --font-size-list: 16px;
-  --font-size-buttons: 20px;
+  --font-size-buttons: 16px;
   --font-size-forms: 16px;
 
   /* Font Weight */
@@ -69,6 +69,7 @@ body{
    --line-height-body: 24px;
    --line-height-heading: 30px;
    --line-height-list:20px;
+   --line-height-button: 26px;
 
 
    /* margin value */
@@ -210,6 +211,9 @@ body{
   line-height: var(--line-height-list);
 }
 
+.u-line-height-button{
+  line-height: var(--line-height-button);
+}
 /*------------------------------- Spacing classes-------------------------------  */
 
 /* ------------------------------- Margins ------------------------------- */
@@ -624,7 +628,7 @@ header .header__wrapper-width {
     font-size:var(--font-size-p);
   }
 
-  .c-hero__content a{
+  .c-hero__content a,.c-category a{
     color: var(--clr-white);
     text-transform: uppercase;
     background-color: var(--clr-secondary-text);
@@ -686,41 +690,40 @@ header .header__wrapper-width {
 /* --------------Benefits section coding begins here-------------- */
 
 
-.c-category{
-  margin-top: 40px;
+.c-category, .c-category__description{
   text-align: center;
-}
-
-.c-category__description p{
-  padding: 20px 38px 0 38px;
+  
 }
 
 .c-category__cards{
   margin: 35px 20px 50px 20px;
-  
-  
 }
+
 .c-category__card{
-  background-color: antiquewhite;
-  padding: 5px 5px;
-  margin: 20px 50px 20px 50px;
+  background-color: rgb(248, 239, 228);
+  padding: 5px;
+  margin: 20px 50px 40px 50px;
   transition: border-color 0.3s ease-in-out; 
   border: 2px solid transparent; 
 }
 
 .c-category__card:hover {
-border-color: #283618; 
+border-color: var(--clr-secondary-text);
 }
 
 .c-category__card img{
-  width: 100px;
-  height: 100px;
-  margin-top: 40px;
-  padding: 8px 8px;
+  width: 180px;
+  height: 180px;
+  margin-top: var(--margin-1-25);
+  padding: 8px;
   border: 2px solid #283618;
   object-fit: cover;
 }
 
+.c-category__title{
+  font-size: var(--font-size-h1);
+ 
+}
 
 
 /* Media Query for Desktop */
