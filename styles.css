@@ -893,4 +893,45 @@ border-color: var(--clr-secondary-text);
     margin-bottom: var(--margin-3);
   }
 
+  /* MEDIA QUERIES FOR SERVICES SECTION*/
+
+
+  .c-services__image{
+    display: block;
+  }
+
+  .c-services__content{
+    margin:var(--margin-3) 0;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .c-services__image img{
+    width: 500px;
+    height: 400px;
+  }
+ 
+  .c-services__text{
+    text-align: justify;
+  }
+
+  .c-services__description{
+    margin: var(--margin-2-5) var(--margin-3) var(--margin-2) var(--margin-2);
+  }
+
+  .c-services__sub-container {
+    display: flex;
+    margin-left: var(--margin-3);
+}
+
+  .c-services__sub {
+      flex: 1;
+      padding: 0;
+      margin: 10px 10px 10px 0;
+      background-color: inherit;
+  }
+
+  .c-services__link{
+    margin-bottom: var(--margin-3);
+  }
 }
