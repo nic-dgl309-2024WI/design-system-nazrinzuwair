@@ -631,7 +631,7 @@ header .header__wrapper-width {
     font-family: var(--ff-roboto);
   }
 
-  .c-hero__content a,.c-category a, .c-services a{
+  .c-hero__content a,.c-category a, .c-services a, .c-gitcertificate a{
     color: var(--clr-white);
     text-transform: uppercase;
     background-color: var(--clr-secondary-text);
@@ -741,7 +741,9 @@ border-color: var(--clr-secondary-text);
  
 }
 
-/* --------------Services section coding begins here-------------- */.c-services{
+/* --------------Services section coding begins here-------------- */
+
+.c-services{
   text-align: center;
 }
 
@@ -799,6 +801,48 @@ border-color: var(--clr-secondary-text);
 .c-services__container{
   margin-bottom: var(--margin-3);
 }
+
+/* --------------Gift Certificate section coding begins here-------------- */
+.c-gitcertificate{
+  text-align: center;
+}
+
+.c-gitcertificate__title{
+  font-size: var(--font-size-h2);
+  font-family: var(--ff-lato);
+  margin: 0 var(--margin-1-5);
+  line-height: var(--line-height-heading);
+}
+
+.c-gitcertificate__description{
+  margin:var(--margin-1) var(--margin-2) var(--margin-1) var(--margin-2);
+  font-size: var(--font-size-p);
+  font-family: var(--ff-roboto);
+  
+}
+
+.c-gitcertificate__sub-text{
+  margin-left: var(--margin-1-25);
+  font-size: var(--font-size-list);
+  font-family: var(--ff-roboto);
+}
+
+.c-gitcertificate__content{
+  text-align: left;
+  margin: var(--margin-2) var(--margin-3);
+  font-size: var(--font-size-list);
+  font-family: var(--ff-roboto);
+}
+
+.c-gitcertificate__sub h3{
+  margin-bottom: var(--margin-1-25);
+}
+
+.c-gitcertificate__sub-title{
+  font-size: var(--font-size-p);
+  font-family: var(--ff-lato);
+}
+
 /* Media Query for Desktop */
 @media screen and (min-width: 1200px) {
   .l-max-width-desktop {
