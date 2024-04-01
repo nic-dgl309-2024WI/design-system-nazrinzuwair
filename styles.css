@@ -78,7 +78,8 @@ body{
    --margin-1-25: 1.25rem; /* 20px */
    --margin-1-5: 1.5rem; /* 24px */
    --margin-2: 2rem; /* 32px */
-   --margin-2-5: 2.4rem;/* 40px */
+   --margin-2-5: 2.5rem;/* 40px */
+   --margin-3: 3rem; /*48*/
 
    /* Padding Value */
    --padding-0:0; /*0*/
@@ -799,5 +800,25 @@ border-color: var(--clr-secondary-text);
     font-size: var(--font-size-p);
   } 
   
+   /* MEDIA QUERIES FOR CATEGORY SECTION*/
+
+  .c-category__title{
+    margin-top: var(--margin-3);
+  }
+
+  .c-category__cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .c-category__card{
+    padding: 10px 30px;
+    margin: 10px;
+  }
+
+  .c-category{
+    margin-bottom: var(--margin-3);
+  }
 
 }
