@@ -631,7 +631,7 @@ header .header__wrapper-width {
     font-family: var(--ff-roboto);
   }
 
-  .c-hero__content a,.c-category a, .c-services a, .c-gitcertificate a{
+  .c-hero__content a,.c-category a, .c-services a, .c-giftcertificate a{
     color: var(--clr-white);
     text-transform: uppercase;
     background-color: var(--clr-secondary-text);
@@ -803,42 +803,46 @@ border-color: var(--clr-secondary-text);
 }
 
 /* --------------Gift Certificate section coding begins here-------------- */
-.c-gitcertificate{
+.c-giftcertificate{
   text-align: center;
 }
 
-.c-gitcertificate__title{
+.c-giftcertificate__title{
   font-size: var(--font-size-h2);
   font-family: var(--ff-lato);
   margin: 0 var(--margin-1-5);
   line-height: var(--line-height-heading);
 }
 
-.c-gitcertificate__description{
+.c-giftcertificate__description{
   margin:var(--margin-1) var(--margin-2) var(--margin-1) var(--margin-2);
   font-size: var(--font-size-p);
   font-family: var(--ff-roboto);
   
 }
 
-.c-gitcertificate__sub-text{
+.c-giftcertificate__sub{
+  margin-bottom: var(--margin-1-5);
+}
+
+.c-giftcertificate__sub-text{
   margin-left: var(--margin-1-25);
   font-size: var(--font-size-list);
   font-family: var(--ff-roboto);
 }
 
-.c-gitcertificate__content{
+.c-giftcertificate__content{
   text-align: left;
   margin: var(--margin-2) var(--margin-3);
   font-size: var(--font-size-list);
   font-family: var(--ff-roboto);
 }
 
-.c-gitcertificate__sub h3{
+.c-giftcertificate__sub h3{
   margin-bottom: var(--margin-1-25);
 }
 
-.c-gitcertificate__sub-title{
+.c-giftcertificate__sub-title{
   font-size: var(--font-size-p);
   font-family: var(--ff-lato);
 }
@@ -978,4 +982,13 @@ border-color: var(--clr-secondary-text);
   .c-services__link{
     margin-bottom: var(--margin-3);
   }
+
+
+  /* MEDIA QUERIES FOR GIFT CERTIFICATE SECTION*/
+
+  .c-giftcertifcate__main{
+    display: flex;
+    flex-direction: row;
+  }
+
 }
