@@ -543,7 +543,7 @@ body{
 /*----------- HEADER CODING BEGINS HERE----------- */  
 
 .header {
-  background-color: var(--clr-additional-bg);
+  background-color: var(--clr-secondary-text);
   margin-bottom: var(--margin-2-5);
   
 }
@@ -627,7 +627,7 @@ header .header__wrapper-width {
   .c-hero__content a{
     color: var(--clr-white);
     text-transform: uppercase;
-    background-color: var(--clr-additional-bg);
+    background-color: var(--clr-secondary-text);
     padding: 13.5px 20px;
     border-radius: 5px;
     text-decoration: none;
@@ -652,6 +652,35 @@ header .header__wrapper-width {
   .c-hero__content h1{
    display: none;
   }
+
+
+/* --------------Annoucement Section Coding Begins Here---------- */
+
+.c-announcement{
+  background: var(--clr-additional-bg) 0% 0% no-repeat padding-box;
+  text-align: center;
+}    
+
+.c-announcement__content{
+  
+  padding: 10px;
+  color: var(--clr-white);
+  font-size: var(--font-size-p);
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; 
+  }
+  to {
+    opacity: 1; 
+  }
+}
+
+.c-announcement__title {
+  animation: fadeIn 3s ease-in-out infinite;
+}
 
 /* Media Query for Desktop */
 @media screen and (min-width: 1200px) {
