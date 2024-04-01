@@ -682,6 +682,47 @@ header .header__wrapper-width {
   animation: fadeIn 3s ease-in-out infinite;
 }
 
+
+/* --------------Benefits section coding begins here-------------- */
+
+
+.c-category{
+  margin-top: 40px;
+  text-align: center;
+}
+
+.c-category__description p{
+  padding: 20px 38px 0 38px;
+}
+
+.c-category__cards{
+  margin: 35px 20px 50px 20px;
+  
+  
+}
+.c-category__card{
+  background-color: antiquewhite;
+  padding: 5px 5px;
+  margin: 20px 50px 20px 50px;
+  transition: border-color 0.3s ease-in-out; 
+  border: 2px solid transparent; 
+}
+
+.c-category__card:hover {
+border-color: #283618; 
+}
+
+.c-category__card img{
+  width: 100px;
+  height: 100px;
+  margin-top: 40px;
+  padding: 8px 8px;
+  border: 2px solid #283618;
+  object-fit: cover;
+}
+
+
+
 /* Media Query for Desktop */
 @media screen and (min-width: 1200px) {
   .l-max-width-desktop {
@@ -714,7 +755,7 @@ header .header__wrapper-width {
   }
 
 
-  /* MEDIA QUERIES FOR HERO SECTION OF HOME PAGE */
+  /* MEDIA QUERIES FOR HERO SECTION*/
 
   .c-hero__wrapper {
     height: 450px;
@@ -755,8 +796,5 @@ header .header__wrapper-width {
     font-size: var(--font-size-p);
   } 
   
-
-  
-
 
 }
