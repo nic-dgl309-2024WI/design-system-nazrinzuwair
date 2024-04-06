@@ -61,6 +61,7 @@ body{
   --font-weight-heading: 700; /* Bold */
   --font-weight-body: 400; /* Regular */
   --font-weight-buttons: 500; /* Medium */
+  --font-weight-button-extrabold: 700;
 
    /* Letter spacing */
  
@@ -82,6 +83,8 @@ body{
    --margin-2: 2rem; /* 32px */
    --margin-2-5: 2.5rem;/* 40px */
    --margin-3: 3rem; /*48*/
+   --margin-4: 4rem; /*64px*/
+   --margin-5: 5rem; /*80px*/
 
    /* Padding Value */
    --padding-0:0; /*0*/
@@ -924,8 +927,6 @@ border-color: var(--clr-secondary-text);
 
 /*  --------------Journey section coding begins her  -------------- */
 
-/*  --------------Journey section coding begins her  -------------- */
-
 .c-testimonial__title{
   text-align: center;
   font-size: var(--font-size-h2);
@@ -1002,6 +1003,87 @@ border-color: var(--clr-secondary-text);
 }
 
 
+/*  --------------Newsletter section coding begins her  -------------- */
+
+.c-newsletter{
+  background-color: var(--clr-secondary-text);
+  padding: var(--padding-2);
+  margin-top: var(--margin-3);
+}
+
+
+.c-newsletter__title{
+  text-align: center;
+  color: var(--clr-white);
+  font-size: var(--font-size-h2);
+  font-family: var(--ff-lato);
+  line-height: var(--line-height-heading);
+  margin-top: var(--margin-1-5);
+}
+
+.c-newsletter__description{
+  font-family: var(--ff-roboto);
+  font-size: var(--font-size-p);
+  margin: var(--margin-2-5) var(--margin-1);
+  text-align: justify;
+  color: var(--clr-white);
+}
+
+.c-newsletter-form input {
+  width: 100%;
+  height: 40px;
+  border-radius: 3px;
+  border: 1px solid var(--clr-white);
+  margin-bottom: 10px; /* Add some spacing between input fields */
+  text-align: center;
+  font-family: var(--ff-roboto);
+  font-size: var(--font-size-p);
+}
+
+.c-newsletter-form__submit {
+  margin-top: var(--margin-1-5);
+  font-family: var(--ff-montserrat);
+  font-weight: var(--font-weight-button-extrabold);
+  background-color: var(--clr-additional-bg);
+  color: var(--clr-white);
+  width: 100%;
+  
+}
+
+
+
+/*  --------------Footer section coding begins her  -------------- */
+
+.c-footer{
+  background-color: var(--clr-primary-bg);
+  text-align: center;
+  padding: var(--padding-1) var(--padding-0);
+  font-family: var(--ff-roboto);
+  font-size: var(--font-size-p);
+}
+
+.c-footer__title{
+  margin-top: var(--margin-1-25);
+}
+
+.c-footer__title, .c-footer__social-media{
+  margin-bottom: var(--margin-1);
+}
+
+.c-footer__copyright{
+  padding-top: var(--padding-1);
+  border-top: 2px solid var(--clr-primary-text);
+  font-size: var(--font-size-list);
+}
+
+.c-footer__icon{
+  margin:0 4px;
+
+}
+
+.c-footer__social-media{
+  font-size: var(--font-size-h3);
+}
 
 /* Media Query for Desktop */
 @media screen and (min-width: 1200px) {
@@ -1197,7 +1279,7 @@ border-color: var(--clr-secondary-text);
     margin-top: var(--margin-2);
   }
 
-   /* MEDIA QUERIES FOR TESTOMONIAL SECTION*/
+/* MEDIA QUERIES FOR TESTOMONIAL SECTION*/
 
    .c-testimonial-slide {
     flex: 0 0 calc(90% / 3); /* Display three cards per row on desktop */
@@ -1226,5 +1308,38 @@ border-color: var(--clr-secondary-text);
 .c-testimonial-card{
   margin: var(--margin-1);
 }
+
+
+/* MEDIA QUERIES FOR NEWSLETTER SECTION*/
+
+.c-newsletter__container{
+  display: flex;
+  flex-direction: row;
+  margin-top: var(--margin-1-5);
+  margin-bottom: var(--margin-1-5);
+}
+
+.c-newsletter__title{
+  text-align: left;
+  margin: var(--margin-0) var(--margin-5) var(--margin-2) var(--margin-5);
+  
+}
+
+.c-newsletter__description{
+  text-align: justify;
+  margin-left: var(--margin-5);
+  line-height: var(--line-height-heading);
+  width: 75%;
+}
+
+.c-newsletter__form{
+  margin-right: var(--margin-5);
+}
+
+/* MEDIA QUERIES FOR FOOTER */
+.c-footer__copyright{
+  border-top: none;
+  padding-top: var(--padding-0);
+} 
 
 }
