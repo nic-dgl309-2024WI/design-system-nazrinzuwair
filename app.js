@@ -1,13 +1,20 @@
 'use strict';
 
-// Toggles the visibility of navigation items.
+// Function to toggle the visibility of navigation items
 function showNav() {
-    // Get the navigation items container element by its ID
     var element = document.getElementById("c-navbar-items");
-    // Toggle the "show-items" class to control visibility
     element.classList.toggle("show-items");
 }
 
+// Function to handle scrolling and fix the navigation bar
+function handleScroll() {
+    var header = document.querySelector('.header');
+    if (window.scrollY > 0) {
+        header.classList.add('fixed-nav');
+    } else {
+        header.classList.remove('fixed-nav');
+    }
+}
 
 // Wait for the DOM content to be fully loaded before executing the JavaScript
 document.addEventListener("DOMContentLoaded", function() {
@@ -20,38 +27,65 @@ document.addEventListener("DOMContentLoaded", function() {
   
     // Iterate over each image in the carousel
     images.forEach((img, index) => {
-      // Create a button element for pagination
-      const button = document.createElement('button');
-      // Add a click event listener to the button
-      button.addEventListener('click', () => {
-        // Call the setActive function with the current index
-        setActive(index);
-      });
-      // Append the button to the pagination container
-      pagination.appendChild(button);
+        const button = document.createElement('button');
+        button.addEventListener('click', () => {
+            setActive(index);
+        });
+        pagination.appendChild(button);
     });
   
-    // Set the first image and button as active initially
     setActive(0);
+
+    // Set event listener for scrolling
+    window.addEventListener('scroll', handleScroll);
   
-    // Function to set the active image and button
     function setActive(index) {
-      // Loop through all images
-      images.forEach((img, i) => {
-        // If the current index matches the provided index
-        if (i === index) {
-          // Display the image
-          img.style.display = 'block';
-          // Add 'active' class to the corresponding pagination button
-          pagination.children[i].classList.add('active');
-        } else {
-          // Hide the image
-          img.style.display = 'none';
-          // Remove 'active' class from other pagination buttons
-          pagination.children[i].classList.remove('active');
-        }
-      });
+        images.forEach((img, i) => {
+            if (i === index) {
+                img.style.display = 'block';
+                pagination.children[i].classList.add('active');
+            } else {
+                img.style.display = 'none';
+                pagination.children[i].classList.remove('active');
+            }
+        });
     }
+});
+
+
+// Add testimonial slider functionality
+
+document.addEventListener("DOMContentLoaded", function() {
+  const slides = document.querySelectorAll(".c-testimonial-slide");
+  let currentSlide = 0;
+
+  function showSlide(index) {
+      slides.forEach((slide) => slide.style.display = "none");
+      for (let i = 0; i < 3; i++) {
+          const adjustedIndex = (index + i) % slides.length;
+          slides[adjustedIndex].style.display = "block";
+      }
+  }
+
+  document.querySelector(".u-prevBtn").addEventListener("click", function() {
+      currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+      showSlide(currentSlide);
   });
 
-  
+  document.querySelector(".u-nextBtn").addEventListener("click", function() {
+      currentSlide = (currentSlide + 1) % slides.length;
+      showSlide(currentSlide);
+  });
+
+  document.querySelector(".u-prevBtn-mobile").addEventListener("click", function() {
+    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+    showSlide(currentSlide);
+});
+
+document.querySelector(".u-nextBtn-mobile").addEventListener("click", function() {
+    currentSlide = (currentSlide + 1) % slides.length;
+    showSlide(currentSlide);
+});
+  // Show the first three slides initially
+  showSlide(currentSlide);
+});
