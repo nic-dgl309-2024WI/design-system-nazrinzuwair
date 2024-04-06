@@ -550,8 +550,14 @@ body{
 .header {
   background-color: var(--clr-secondary-text);
   margin-bottom: var(--margin-2-5);
-  
+/* Add this CSS code to make the navigation bar fixed */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000; /* Ensure it appears above other content */
 }
+
 
 header .header__wrapper-width {
   padding: 14px;
@@ -613,7 +619,7 @@ header .header__wrapper-width {
   .c-hero{
     background: var(--clr-primary-bg) 0% 0% no-repeat padding-box;
     text-align: center;
-    margin-top: -35px;
+    margin-top: 20px;
   }    
 
   .c-hero__content{
@@ -914,6 +920,58 @@ border-color: var(--clr-secondary-text);
 }
 
 
+/*  --------------Journey section coding begins her  -------------- */
+
+/*  --------------Journey section coding begins her  -------------- */
+
+.c-testimonial-slider {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: center; /* Center cards horizontally */
+}
+
+.c-testimonial-slide {
+  flex: 0 0 calc(100%); /* Display one card per row on mobile */
+}
+
+.c-testimonial-card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.c-testimonial-card img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.c-testimonial-content {
+  margin-top: 10px;
+}
+
+.c-button-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+.u-prevBtn,
+.u-nextBtn {
+ display: none;
+}
+
+.u-prevBtn-mobile, .u-nextBtn-mobile{
+  font-size: 24px; 
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 999;
+}
+
+
 
 /* Media Query for Desktop */
 @media screen and (min-width: 1200px) {
@@ -948,6 +1006,10 @@ border-color: var(--clr-secondary-text);
 
 
   /* MEDIA QUERIES FOR HERO SECTION*/
+
+  .c-hero{
+    margin-top: 80px;
+  }
 
   .c-hero__wrapper {
     height: 450px;
@@ -1103,5 +1165,25 @@ border-color: var(--clr-secondary-text);
   .c-journey__details{
     margin-top: var(--margin-2);
   }
+
+   /* MEDIA QUERIES FOR TESTOMONIAL SECTION*/
+
+   .c-testimonial-slide {
+    flex: 0 0 calc(90% / 3); /* Display three cards per row on desktop */
+}
+
+.u-prevBtn,
+.u-nextBtn {
+  display: block;
+  font-size: 24px; 
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.u-prevBtn-mobile, .u-nextBtn-mobile{
+  display: none;
+}
 
 }
