@@ -38,6 +38,7 @@ body{
   --clr-white:#FFFFFF; /*White*/
   --clr-hover-text:#219d3D;
   --clr-additional-bg:#784a21;
+  --clr-card1-bg: rgb(248, 239, 228);
 
 
   /* Font families */
@@ -54,6 +55,7 @@ body{
   --font-size-list: 14px;
   --font-size-buttons: 15px;
   --font-size-forms: 16px;
+  --font-size-cite: 14px;
 
   /* Font Weight */
   --font-weight-heading: 700; /* Bold */
@@ -714,7 +716,7 @@ header .header__wrapper-width {
 }
 
 .c-category__card{
-  background-color: rgb(248, 239, 228);
+  background-color:var(--clr-card1-bg);
   padding: 5px;
   margin: 20px 50px 40px 50px;
   transition: border-color 0.3s ease-in-out; 
@@ -924,37 +926,64 @@ border-color: var(--clr-secondary-text);
 
 /*  --------------Journey section coding begins her  -------------- */
 
+.c-testimonial__title{
+  text-align: center;
+  font-size: var(--font-size-h2);
+  font-family: var(--ff-lato);
+  margin: var(--margin-1-5);
+  line-height: var(--line-height-heading);
+}
+
 .c-testimonial-slider {
+  padding: var(--padding-1) 0;
   display: flex;
   overflow: hidden;
   width: 100%;
   margin: 0 auto;
-  justify-content: center; /* Center cards horizontally */
+  justify-content: center; 
 }
 
 .c-testimonial-slide {
   flex: 0 0 calc(100%); /* Display one card per row on mobile */
+  text-align: center;
 }
 
 .c-testimonial-card {
-  border: 1px solid #ccc;
+  border: 1px solid var(--clr-secondary-text);
   border-radius: 5px;
-  padding: 10px;
-  margin: 10px;
+  padding: var(--padding-1);
+  margin: var(--margin-1) var(--margin-3);
+  background-color: var(--clr-secondary-bg);
+
 }
 
 .c-testimonial-card img {
-  width: 100%;
-  border-radius: 5px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-top: var(--margin-1);
 }
 
 .c-testimonial-content {
-  margin-top: 10px;
+  margin-top: var(--margin-1);
+  height: 180px;
+}
+
+.c-testimonial-content p{
+  font-family: var(--ff-roboto);
+  font-size: var(--font-size-list);
+  margin: var(--margin-1);
+}
+
+.c-testimonial-content cite, span{
+  font-weight: var(--font-weight-heading);
+  font-family: var(--ff-montserrat);
+  font-size: var(--font-size-cite);
 }
 
 .c-button-container {
   text-align: center;
-  margin-top: 20px;
 }
 
 
@@ -965,7 +994,8 @@ border-color: var(--clr-secondary-text);
 
 .u-prevBtn-mobile, .u-nextBtn-mobile{
   font-size: 24px; 
-  background-color: transparent;
+  background-color: var(--clr-primary-bg);
+  color: var(--clr-secondary-text);
   border: none;
   cursor: pointer;
   z-index: 999;
@@ -1029,7 +1059,7 @@ border-color: var(--clr-secondary-text);
    }
  
   .c-hero__image img{
-    margin-right: var(--margin-2);
+    /* margin-right: var(--margin-2); */
     width: 400px;
     height: 360px;
     object-fit: cover;
@@ -1079,7 +1109,7 @@ border-color: var(--clr-secondary-text);
   }
 
   .c-services__content{
-    margin:var(--margin-3) 0;
+    margin:var(--margin-3) var(--margin-1-25);
     display: flex;
     flex-direction: row;
   }
@@ -1134,6 +1164,7 @@ border-color: var(--clr-secondary-text);
 
   .c-giftcertificate__content{
     text-align: justify;
+    margin: var(--margin-3) var(--margin-1);
   }
 
   .c-giftcertificate__title{
@@ -1175,15 +1206,25 @@ border-color: var(--clr-secondary-text);
 .u-prevBtn,
 .u-nextBtn {
   display: block;
-  font-size: 24px; 
+  font-size: 38px; 
   background-color: transparent;
   border: none;
   cursor: pointer;
   z-index: 999;
+  color: var(--clr-secondary-text);
 }
 
 .u-prevBtn-mobile, .u-nextBtn-mobile{
   display: none;
+}
+
+.c-testimonial-content {
+  height: 200px;
+  /* width: 280px; */
+}
+
+.c-testimonial-card{
+  margin: var(--margin-1);
 }
 
 }
