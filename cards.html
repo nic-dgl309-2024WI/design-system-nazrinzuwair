@@ -65,7 +65,61 @@
         </aside>
 
 
-        <main>
+        <main class="c-main l-max-width-desktop">
+          <div class="c-main__content">
+              <h1 class="c-main__heading u-font-subheading u-ff-lato u-font-size-h2 u-font-weight-bold"> Cards</h1>
+              <p class="c-main__paragraph u-font-size-p u-ff-roboto l-my-1-5">Cards are versatile UI components used in web design to present content in a visually appealing and organized manner. They typically consist of an image, title, brief description, and optional action buttons. Cards provide a modular approach to displaying information, making it easy for users to digest and interact with content. They are often used for displaying products, articles, or user profiles on websites and applications. With their flexible layout and consistent design, cards contribute to a cohesive user experience across different screen sizes and devices.</p>
+          </div>  
+
+          <div class="view-container">
+            <h2 class="view-container__title l-my-3 u-font-subheading u-ff-lato u-font-size-h2  u-font-weight-bold"> Cards View</h2>
+            <div class="view-container__cards">
+              <div class="c-category__cards " style="margin: 0;">
+                <div class="c-category__card c-category__card-design">
+                    <img src="images/conifers_image.jpg" alt="Conifers">
+                    <h3 class="c-category__card-title">Conifers</h3>
+                </div>
+                <div class="c-category__card c-category__card-design">
+                    <img src="images/decidous_image.jpg" alt="Deciduous">
+                    <h3 class="c-category__card-title">Deciduous</h3>
+                </div>
+                <div class="c-category__card c-category__card-design">
+                    <img src="images/evergreen_image.jpg" alt="Evergreen">
+                    <h3 class="c-category__card-title">Evergreen</h3>
+                </div>
+                <div class="c-category__card c-category__card-design">
+                    <img src="images/edibles_image.jpg" alt="Edibles">
+                    <h3 class="c-category__card-title">Edibles</h3>
+                </div>
+              </div>  
+            </div>
+          </div>    
+
+          <section class="c-code-snippet l-pb-2">
+            <div id="headerContainer">
+              <pre id="headerCodeSnippet">
+                &lt;div class=&quot;c-category__cards&quot;&gt;
+                    &lt;div class=&quot;c-category__card&quot;&gt;
+                        &lt;img src=&quot;images/conifers_image.jpg&quot; alt=&quot;Conifers&quot;&gt;
+                        &lt;h3 class=&quot;c-category__card-title&quot;&gt;Conifers&lt;/h3&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;c-category__card&quot;&gt;
+                        &lt;img src=&quot;images/decidous_image.jpg&quot; alt=&quot;Deciduous&quot;&gt;
+                        &lt;h3 class=&quot;c-category__card-title&quot;&gt;Deciduous&lt;/h3&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;c-category__card&quot;&gt;
+                        &lt;img src=&quot;images/evergreen_image.jpg&quot; alt=&quot;Evergreen&quot;&gt;
+                        &lt;h3 class=&quot;c-category__card-title&quot;&gt;Evergreen&lt;/h3&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;c-category__card&quot;&gt;
+                        &lt;img src=&quot;images/edibles_image.jpg&quot; alt=&quot;Edibles&quot;&gt;
+                        &lt;h3 class=&quot;c-category__card-title&quot;&gt;Edibles&lt;/h3&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            </pre>
+            <button onclick="copyCategoryToClipboard()" id="copyButton">Copy</button>
+        </div>
+          </section>
           
         </main>
     </div>
