@@ -10,7 +10,7 @@ body {
 /* Ensure the wrapper div has a minimum height of 100% 
 and horizontally centers its content */
 .wrapper {
-    margin: var(--margin-2) var(--margin-4);
+    margin: var(--margin-2) var(--margin-2);
     min-height: 100%;
     justify-content: center; /* Horizontally center the content */
 }
@@ -258,7 +258,7 @@ a{
 
 /* Width, padding, and margins for color boxes, swatches, and text sublists */
 .c-color-box, .c-swatches-sublist, .c-swatches-text-sublist {
-    width: 80%; /* Set width */
+    width: 100%; /* Set width */
     padding: 20px; /* Padding inside elements */
     margin-bottom: 10px; /* Margin at the bottom */
 }
@@ -305,6 +305,10 @@ a{
 /* Padding for color text */
 .c-color-text {
     padding-bottom: 20px; /* Padding at the bottom */
+}
+
+.c-main__paragraph{
+    margin-bottom: var(--margin-2);
 }
 
 /* -------------------- Tyography page codings begings here------------------------- */
@@ -470,6 +474,147 @@ pre{
 
 .view-container__hero img{
     width: 250px;
+}
+
+
+/* -------------------Carousal page coding begins here-------------- */
+
+.c-testomonial-card-design{
+    margin: 0;
+}
+
+.c-testimonial-slider-design{
+    padding: 0;
+}
+
+
+/* -------------------Cards page coding begins here-------------- */
+
+.view-container__cards .c-category__cards{
+   margin: 0;
+   text-align: center;
+}
+
+.c-category__card-design{
+    padding: 15px 5px;
+    margin: 0 0 var(--margin-3) 0;
+}
+
+
+/* -------------------Form page coding begins here------------ */
+
+.c-newsletter-form__design{
+    background-color: var(--clr-secondary-text);
+    padding: 30px;
+    
+}
+
+.view-container__form{
+    margin-bottom: var(--margin-5);
+}
+
+
+
+/* -------------------Accordion page coding begins here------------ */
+
+
+.view-container__accordion .c-faq__item{
+    margin: 0;
+}
+
+.view-container__accordion .c-faq__question{
+    margin: 0 0 var(--margin-1) 0;
+}
+
+
+/* -------------------List page coding begins here------------ */
+
+.view-container__lists li{
+    list-style-type: square;
+    margin-left: var(--margin-2);
+}
+
+
+/* -------------------Image page coding begins here------------ */
+.view-container__images{
+    text-align: center;
+}
+.view-container__images img{
+    width: 280px; /* Set width */
+    height: 250px; /* Set height */
+    object-fit: cover;
+}
+
+
+/* --------------------- Interactive page coding begins here ---------------------- */
+.view-container__button .c-category{
+    text-align: left;
+}
+
+.view-container__button .c-hero__content{
+   margin: 0;
+   padding-bottom: 0;
+}
+
+.view-container__rotating p{
+    margin: 0 0 var(--margin-1-5) var(--margin-1-5); 
+    padding-top: var(--padding-1); 
+}
+
+.view-container__rotating .c-hero__content{
+    margin: 0;
+    padding: 0;
+}
+
+.view-container__rotating .c-services__sub-container{
+    margin: 0;
+    padding: 0;
+}
+
+.view-container__rotating .c-services__sub{
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+/* ------------- Breadcrumbs page coding begins here--------------- */
+
+.view-container__breadcrumb {
+    font-family: var(--ff-lato); /* Set font family */
+    font-size: var(--font-size-list); /* Set font size */
+    background-color: var(--clr-card1-bg);
+    padding: var(--padding-1)
+}
+
+.view-container__breadcrumb ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.view-container__breadcrumb li {
+    display: inline;
+    margin-right: 5px;
+}
+
+.view-container__breadcrumb li:after {
+    content: ">";
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.view-container__breadcrumb li:last-child:after {
+    content: "";
+}
+
+.view-container__breadcrumb li a {
+    color: var(--clr-primary-text); /* Default color for breadcrumb links */
+    text-decoration: none;
+    font-weight: var(--font-weight-heading);
+}
+
+.view-container__breadcrumb li.current-page {
+    color: var(--clr-hover-text); /* Highlight color for the current page breadcrumb */
+    font-weight: var(--font-weight-heading);
 }
 
 
@@ -641,14 +786,14 @@ body {
     
 
     .c-content {
-        display: flex;
+        /* display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: space-between; */
         margin-right: 100px;
     }
 
     .c-content-container {
-        flex-basis: calc(50% - 20px); 
+        /* flex-basis: calc(50% - 20px);  */
         margin: 10px; 
         text-align: initial;
     }
@@ -662,5 +807,27 @@ body {
   .view-container__hero img{
     width: 350px;
 }
+
+.c-testomonial-card-design{
+    margin: var(--margin-1);
+}
+
+.c-category__card-design{
+    /* padding: 5px; /* Set padding */
+    /* margin: 20px 50px 40px 50px; Set margins */
+    padding: 20px 30px; 
+    margin: 20px;
+}
+
+.view-container__images{
+    text-align: left;
+}
+.view-container__images img{
+    width: 400px; /* Set width */
+    height: 350px; /* Set height */
+    object-fit: cover;
+}
+
+
 
 }   
