@@ -65,8 +65,43 @@
         </aside>
 
 
-        <main>
+        <main class="c-main l-max-width-desktop">
           
+          <div class="c-main__content">
+            <h1 class="c-main__heading u-font-subheading u-ff-lato u-font-size-h1 u-font-weight-bold"> Breadcrumbs</h1>
+            <p class="c-main__paragraph u-font-size-p u-ff-roboto l-my-1-5">Breadcrumbs are a navigational aid commonly used in websites to show users their current location within the website's hierarchy and provide a trail of the pages they have visited. They typically appear near the top of a webpage and consist of a series of links separated by a delimiter, such as a greater-than sign (>).  </p>
+        </div>  
+          
+
+        <div class="view-container">
+          <h2 class="view-container__title l-my-3 u-ff-lato u-font-size-h2 u-font-weight-bold"> Breadcrumbs View</h2>
+          <div class="view-container__breadcrumb">
+              <ul>
+                  <li><a href="/">Home</a></li>
+                  <li><a href="/products">Products</a></li>
+                  <li><a href="/products/category">Category</a></li>
+                  <li class="current-page">Current Page</li>
+              </ul>
+          </div>
+        </div>    
+
+        <section class="c-code-snippet l-pb-2">
+          <div id="headerContainer">
+            <pre id="headerCodeSnippet">
+              &lt;div class=&quot;view-container__breadcrumb&quot;&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;a href=&quot;/&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;/products&quot;&gt;Products&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;/products/category&quot;&gt;Category&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;Current Page&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+            </pre>
+            <button onclick="copyBreadcrumbToClipboard()" id="copyButton">Copy</button>
+        </div>
+
+
+
         </main>
     </div>
 
