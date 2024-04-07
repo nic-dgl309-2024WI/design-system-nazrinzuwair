@@ -102,3 +102,9 @@ document.addEventListener("DOMContentLoaded", function() {
   // Show the first three slides initially
   showSlide(currentSlide);
 });
+
+
+function toggleAnswer(faqItem) {
+    const answer = faqItem.querySelector('.c-faq__answer');
+    answer.classList.toggle('u-show-answer');
+}
