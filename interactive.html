@@ -65,8 +65,109 @@
         </aside>
 
 
-        <main>
+        <main class="c-main l-max-width-desktop">
           
+          <div class="c-main__content">
+            <h1 class="c-main__heading u-font-subheading u-ff-lato u-font-size-h1 u-font-weight-bold"> Interactive</h1>
+            <p class="c-main__paragraph u-font-size-p u-ff-roboto l-my-1-5">Interactivity on websites enables users to engage actively with the content, fostering dynamic user experiences. Through interactive elements such as clickable buttons, forms, and multimedia, users can participate in navigating, exploring, and manipulating the webpage's features.  </p>
+        </div>  
+
+        <div class="view-container">
+          <h2 class="view-container__title l-my-3 u-ff-lato u-font-size-h2 u-font-weight-bold"> Hover Effect In Button</h2>
+          <div class="view-container__button">
+            <div class="c-category">
+               <a href="coming-soon.html" class="c-category__link">Pick Your Favorite Plant!</a>
+            </div>
+          </div>
+        </div>  
+        
+        <section class="c-code-snippet l-pb-2">
+          <div id="headerContainer">
+            <pre id="headerCodeSnippet">
+              &lt;div class=&quot;c-category&quot;&gt;
+                  &lt;a href=&quot;coming-soon.html&quot; class=&quot;c-category__link&quot;&gt;Pick Your Favorite Plant!&lt;/a&gt;
+              &lt;/div&gt;
+            </pre>
+            <button onclick="copyCategoryToClipboard()" id="copyButton">Copy</button>
+        </div>
+        </section>
+          
+
+        <div class="view-container">
+          <h2 class="view-container__title l-mb-3 u-ff-lato u-font-size-h2 u-font-weight-bold"> Slide Up Effect In Button</h2>
+          <div class="view-container__button">
+            <div class="c-hero__content">
+            <a href="coming-soon.html" class="c-hero__link">Explore Our Offerings</a>
+            </div>
+          </div>
+        </div>  
+        
+        <section class="c-code-snippet l-pb-2">
+          <div id="headerContainer">
+            <pre id="headerCodeSnippet">
+              &lt;a href=&quot;coming-soon.html&quot; class=&quot;c-hero__link&quot;&gt;Explore Our Offerings&lt;/a&gt;
+            </pre>
+            <button onclick="copyHeroContentToClipboard()" id="copyButton">Copy</button>
+        </div>
+        </section>
+
+
+        <div class="view-container">
+          <h2 class="view-container__title l-mb-3 u-ff-lato u-font-size-h2 u-font-weight-bold"> Rotating Effect</h2>
+          <div class="view-container__rotating">
+            <div class="c-hero__content">
+              <div class="c-services__sub-container">
+                <div class="c-services__sub">
+                    <img src="images/plant_sale.png" alt="Plant Sale" class="c-services__icon">
+                    <p class="c-services__name">Plant Sale</p>
+                </div>
+            </div>
+            </div>
+          </div>
+        </div>  
+        
+        <section class="c-code-snippet l-pb-2">
+          <div id="headerContainer">
+            <pre id="headerCodeSnippet">
+              &lt;div class=&quot;c-services__sub-container&quot;&gt;
+                    &lt;div class=&quot;c-services__sub&quot;&gt;
+                        &lt;img src=&quot;images/plant_sale.png&quot; alt=&quot;Plant Sale&quot; class=&quot;c-services__icon&quot;&gt;
+                        &lt;p class=&quot;c-services__name&quot;&gt;Plant Sale&lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            </pre>
+            <button onclick="copyServicesSubContainerToClipboard()" id="copyButton">Copy</button>
+        </div>
+
+
+        <div class="view-container">
+          <h2 class="view-container__title l-my-3 u-font-subheading u-ff-lato u-font-size-h2  u-font-weight-bold">Border Effect</h2>
+          <div class="view-container__cards ">
+            <div class="c-category__cards" style="margin: 0; justify-content: left;">
+              <div class="c-category__card c-category__card-design">
+                  <img src="images/conifers_image.jpg" alt="Conifers">
+                  <h3 class="c-category__card-title">Conifers</h3>
+              </div>
+            </div>  
+          </div>
+        </div>
+
+        <section class="c-code-snippet l-pb-2">
+          <div id="headerContainer">
+            <pre id="headerCodeSnippet">
+              &lt;div class=&quot;c-category__cards&quot;&gt;
+              &lt;div class=&quot;c-category__card c-category__card-design&quot;&gt;
+                  &lt;img src=&quot;images/conifers_image.jpg&quot; alt=&quot;Conifers&quot;&gt;
+                  &lt;h3 class=&quot;c-category__card-title&quot;&gt;Conifers&lt;/h3&gt;
+              &lt;/div&gt;
+          &lt;/div&gt;
+      </pre>
+      <button onclick="copyCategoryCardsToClipboard()" id="copyButton">Copy</button>
+  </div>
+        </section>
+
+
+
         </main>
     </div>
 
@@ -129,7 +230,6 @@
       }
       appendUtilitiesTemplate();
     </script>
-
 
 
 </body>
