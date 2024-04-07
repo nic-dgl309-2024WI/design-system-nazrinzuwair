@@ -7,10 +7,11 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="design-system.css">
     <script src="design-system.js"></script>
-    <title>Document</title>
+    <title>Accordion</title>
 </head>
 <body>
 
+    
       <!-- Mobile Navbar -->
       <nav class="c-mobile-navbar u-font-list-item">
         <a class="c-mobile-navbar__toggle" onclick="showMobileNav()"><i id="toggle-icon" class="fa fa-bars" aria-hidden="true"></i></a>
@@ -62,69 +63,15 @@
             </nav>
           </div>
         </aside>
-        <main class="wrapper">
-          <div class="c-flex-list">
-            <h2 class="u-font-subheading u-ff-lato u-font-size-h2 u-font-weight-bold">Flex Layout</h2>
-            <div style="overflow-x:auto;">
-            <table>
-                <tr class="u-font-body-text u-ff-roboto u-font-size-h3 u-font-weight-regular u-line-height-body">
-                    <th>Utility Class Name</th>
-                    <th>Value</th>
-                </tr>
-                <tr class="c-flex-sublist u-ff-lato u-font-size-p u-font-weight-regular u-line-height-body">
-                  <td>.l-flex</td>
-                  <td>display: flex;</td>
-                </tr>
-            </table>    
-            </div>  
-          </div>
 
-          <div class="c-content">
-          <div class="c-content-container">
-            <h2 class="u-font-subheading u-ff-lato u-font-size-h2 u-font-weight-bold l-ml-1">Max-width-Desktop</h2>
-            <div class="c-font-container">
-                <img src="images/Max_width_desktop.jpeg" alt="" class="c-font-container__image l-pb-2">
-                <p class="c-font-container__value l-pb-1 l-pl-1">Utility Class Name: .l-max-width-desktop</p>
-                <p class="c-font-container__value l-pl-1">Value: max-width: 1200px;</p>
-            </div>
-          </div>
 
-          <div class="c-content-container">
-            <h2 class="u-font-subheading u-ff-lato u-font-size-h2 u-font-weight-bold ">Max-width-Mobile</h2>
-            <div class="c-font-container">
-                <img src="images/l-max-width-mobile.jpeg" alt="" class="c-font-container__image l-pb-2">
-                <p class="c-font-container__value l-pb-1 l-pl-1">Utility Class Name: .max-width: 100%;</p>
-                <p class="c-font-container__value l-pl-1">Value: max-width: 100%;</p>
-            </div>
-          </div>
-
-          <div class="c-content-container">
-            <h2 class="u-font-subheading u-ff-lato u-font-size-h2 u-font-weight-bold l-ml-1">Full-width-Desktop</h2>
-            <div class="c-font-container">
-                <img src="images/full-width-desktop.jpeg" alt="" class="c-font-container__image l-pb-2">
-                <p class="c-font-container__value l-pb-1 l-pl-1">Utility Class Name: .l-full-width</p>
-                <p class="c-font-container__value l-pl-1">Value: width: 100%;</p>
-            </div>
-          </div>
-
-          <div class="c-content-container">
-            <h2 class="u-font-subheading u-ff-lato u-font-size-h2 u-font-weight-bold l-ml-1">Full-width-mobile</h2>
-            <div class="c-font-container">
-                <img src="images/full-width-mobile.jpeg" alt="" class="c-font-container__image l-pb-2">
-                <p class="c-font-container__value l-pb-1 l-pl-1">Utility Class Name: .l-full-width</p>
-                <p class="c-font-container__value l-pl-1">Value: width: 100%;</p>
-            </div>
-          </div>
-        
-        </div>
-            
-            
-
+        <main>
+          
         </main>
-      </div>
+    </div>
 
-      <!-- Script for including the template -->
-      <script id="utilities-template" type="text/html">    
+    <!-- Script for including the template -->
+    <script id="utilities-template" type="text/html">    
         <ol>
           <li class="c-side-navbar__item">
             <h2 class="c-side-navbar__heading u-font-heading">Branding</h2>
@@ -172,16 +119,16 @@
           </li>
         </ol>
       </script>
-      
-      <!-- Call the function to append the template -->
-      <script>
-        function appendUtilitiesTemplate() {
-            var template = document.getElementById('utilities-template').innerHTML;
-            document.getElementById('navi-items').innerHTML = template;
-            document.getElementById('mobile-navig-items').innerHTML = template;
-        }
-        appendUtilitiesTemplate();
-      </script>
+    
+    <!-- Call the function to append the template -->
+    <script>
+      function appendUtilitiesTemplate() {
+          var template = document.getElementById('utilities-template').innerHTML;
+          document.getElementById('navi-items').innerHTML = template;
+          document.getElementById('mobile-navig-items').innerHTML = template;
+      }
+      appendUtilitiesTemplate();
+    </script>
 
 
 

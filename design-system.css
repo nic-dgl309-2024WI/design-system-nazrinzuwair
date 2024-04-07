@@ -10,6 +10,7 @@
    /* Ensure the wrapper div has a minimum height of 100% 
       and horizontally centers its content */
    .wrapper {
+    margin: var(--margin-2) var(--margin-4);
      min-height: 100%;
      justify-content: center; /* Horizontally center the content */
    }
@@ -39,10 +40,11 @@ a {
 
 .c-desktop-navbar{
     background-color: rgb(255, 255, 255);
-    padding: 5px;
+    padding: 15px;
     position: fixed;
     width: 100%;
-    
+    /* border-bottom: 1px solid var(--clr-primary-text); */
+    background-color: var(--clr-primary-bg);
 }
 
 
@@ -58,6 +60,16 @@ a {
     display: none;
 }
 
+.c-desktop-sidenavbar__items{
+    margin-top: var(--margin-2);
+    margin-left: 10px;
+}
+
+aside{
+    /* padding-top: var(--padding-2); */
+    background-color: var(--clr-primary-bg);
+    /* border-right: 1px solid var(--clr-primary-text); */
+}
 
 
 .c-side-navbar__list, .c-side-navbar__sub-list, ol{
@@ -338,10 +350,7 @@ td {
     margin-top: 20px;
 }
 
-.c-margin-list table, .c-padding-list table, .c-grid-list table, .c-flex-list table{
-    margin-left: var(--margin-2);
 
-}
 
 /* Padding for character set header */
 .char-set-header {
@@ -480,7 +489,7 @@ body {
 
 /* Adjust margin for swatch text group */
 .c-swatch-text-group {
-    margin-left: 25px;
+    /* margin-left: 25px; */
 }
 
 body{
