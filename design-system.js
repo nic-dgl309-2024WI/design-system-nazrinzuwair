@@ -31,3 +31,11 @@ function showMobileNav() {
 }
 
 
+function copyHeaderToClipboard() {
+    var headerCodeSnippet = document.getElementById('headerCodeSnippet').innerText;
+    navigator.clipboard.writeText(headerCodeSnippet).then(function() {
+        alert('Header code snippet copied to clipboard!');
+    }, function() {
+        alert('Failed to copy header code snippet to clipboard!');
+    });
+}

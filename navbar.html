@@ -65,12 +65,63 @@
         </aside>
 
 
-        <main class="wrapper">
-          <div class="c-navigation u-font-list-item">
-              <h2 class="u-font-subheading u-ff-lato u-font-size-h2 u-font-weight-bold"> Navigation</h2>
-              <p>The code below represents a navigation bar (navbar) designed for both desktop and mobile views. The desktop view provides a horizontal navigation bar typically seen on larger screens, while the mobile view adapts the navigation into a collapsible menu accessible through a toggle button, commonly known as a "hamburger" icon. This responsive design ensures optimal user experience across various devices and screen sizes.</p>
+        <main class="c-main l-max-width-desktop">
+          <div class="c-main__content">
+              <h1 class="c-main__heading u-font-subheading u-ff-lato u-font-size-h2 u-font-weight-bold"> Navigation</h1>
+              <p class="c-main__paragraph u-font-size-p u-ff-roboto l-my-1-5">The code below represents a navigation bar (navbar) designed for both desktop and mobile views. The desktop view provides a horizontal navigation bar typically seen on larger screens, while the mobile view adapts the navigation into a collapsible menu accessible through a toggle button, commonly known as a "hamburger" icon. This responsive design ensures optimal user experience across various devices and screen sizes.</p>
           </div>  
-      </main>
+
+          <div class="navbar-container">
+            <h2 class="header__title l-my-3"> Navbar View</h2>
+            <div class="header__content">
+            <div class="header__wrapper-width l-max-width-desktop">
+              <nav class="header__c-navbar l-py-1">
+                  <div class="heade__c-navbar-top">
+                  <img src="images/logo.jpg" alt="Outback Nursery Logo" class="header__logo">
+                  <a class="header__c-navbar-toggle" onclick="showNav()"><i class="fa fa-bars header__c-navbar-icon" aria-hidden="true"></i></a>
+                  </div>
+                  <div class="header__c-navbar-elements">
+                      <ul id="c-navbar-items" class="show-items header__c-navbar-items"> 
+                          <li class="header__c-navbar-link"><a href="coming-soon.html">Product</a></li>
+                          <li class="header__c-navbar-link"><a href="coming-soon.html">Services</a></li>
+                          <li class="header__c-navbar-link"><a href="coming-soon.html">Resources</a></li>
+                          <li class="header__c-navbar-link"><a href="coming-soon.html">About Us</a></li>
+                          <li class="header__c-navbar-link"><a href="coming-soon.html">Contact</a></li>
+                      </ul>
+                  </div>
+              </nav>
+             </div>
+             </div>
+            </div>
+
+            <div id="headerContainer">
+              <pre id="headerCodeSnippet">
+          &lt;header class=&quot;header&quot;&gt;
+              &lt;div class=&quot;header__wrapper-width l-max-width-desktop&quot;&gt;
+                  &lt;nav class=&quot;header__c-navbar&quot;&gt;
+                      &lt;div class=&quot;header__c-navbar-top&quot;&gt;
+                          &lt;img src=&quot;images/logo.jpg&quot; alt=&quot;Outback Nursery Logo&quot; class=&quot;header__logo&quot;&gt;
+                          &lt;a class=&quot;header__c-navbar-toggle&quot; onclick=&quot;showNav()&quot;&gt;&lt;i class=&quot;fa fa-bars header__c-navbar-icon&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+                      &lt;/div&gt;
+                      &lt;div class=&quot;header__c-navbar-elements&quot;&gt;
+                          &lt;ul id=&quot;c-navbar-items&quot; class=&quot;show-items header__c-navbar-items&quot;&gt; 
+                              &lt;li class=&quot;header__c-navbar-link&quot;&gt;&lt;a href=&quot;coming-soon.html&quot;&gt;Product&lt;/a&gt;&lt;/li&gt;
+                              &lt;li class=&quot;header__c-navbar-link&quot;&gt;&lt;a href=&quot;coming-soon.html&quot;&gt;Services&lt;/a&gt;&lt;/li&gt;
+                              &lt;li class=&quot;header__c-navbar-link&quot;&gt;&lt;a href=&quot;coming-soon.html&quot;&gt;Resources&lt;/a&gt;&lt;/li&gt;
+                              &lt;li class=&quot;header__c-navbar-link&quot;&gt;&lt;a href=&quot;coming-soon.html&quot;&gt;About Us&lt;/a&gt;&lt;/li&gt;
+                              &lt;li class=&quot;header__c-navbar-link&quot;&gt;&lt;a href=&quot;coming-soon.html&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
+                          &lt;/ul&gt;
+                      &lt;/div&gt;
+                  &lt;/nav&gt;
+              &lt;/div&gt;
+          &lt;/header&gt;
+              </pre>
+              <button onclick="copyHeaderToClipboard()" id="copyButton">Copy</button>
+          </div>
+          
+          
+      
+    </main>
       
 
         
@@ -136,6 +187,7 @@
       appendUtilitiesTemplate();
     </script>
 
+    <script src="main.js"></script>
 
 
 </body>

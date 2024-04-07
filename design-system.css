@@ -1,28 +1,26 @@
 /* Making the content centered into the page */
 /* Set the height of the HTML and body elements to 100% 
    and remove any default margin */
-   html,
-   body {
-     height: 100%;
-     margin: 0;
-   }
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
    
-   /* Ensure the wrapper div has a minimum height of 100% 
-      and horizontally centers its content */
-   .wrapper {
+/* Ensure the wrapper div has a minimum height of 100% 
+and horizontally centers its content */
+.wrapper {
     margin: var(--margin-2) var(--margin-4);
-     min-height: 100%;
-     justify-content: center; /* Horizontally center the content */
-   }
+    min-height: 100%;
+    justify-content: center; /* Horizontally center the content */
+}
 
 /* Header - desktop device */
-
-
 /* Set text alignment for all nav elements to left */
 nav {
     text-align: left;
     
-  }
+}
 
 /* Remove default text decoration from anchor elements */
 a {
@@ -39,12 +37,12 @@ a {
 /* desktop Navbar */
 
 .c-desktop-navbar{
-    background-color: rgb(255, 255, 255);
+    background-color:var( --clr-white);
     padding: 15px;
     position: fixed;
     width: 100%;
-    /* border-bottom: 1px solid var(--clr-primary-text); */
-    background-color: var(--clr-primary-bg);
+    border-bottom: 1px solid var(--clr-secondary-text);
+    /* background-color: var( --clr-card1-bg); */
 }
 
 
@@ -66,9 +64,8 @@ a {
 }
 
 aside{
-    /* padding-top: var(--padding-2); */
-    background-color: var(--clr-primary-bg);
-    /* border-right: 1px solid var(--clr-primary-text); */
+    background-color:var( --clr-white);
+    border-right: 1px solid var(--clr-secondary-text);
 }
 
 
@@ -384,23 +381,6 @@ td {
     width:fit-content; /* Set width */
 }
 
-.c-margin-outer-box{
-}
-
-/* 
-.margin-container {
-    display: flex;
-    justify-content: center;
-    background-color: #f0f0f0; 
-    padding: 20px;
-}
-
-.margin-box {
-    background-color: #ffffff; 
-    border: 1px solid #ccc;
-    padding: 20px;
-    margin: 1rem;
-} */
 
 /* --------------------------Containers page coding begins here--------------------------- */
 .c-content-container{
@@ -441,6 +421,36 @@ td {
     width: 300px;
     height: auto;
 }
+
+/* --------------------Navigation Page Coding Begins here---------------------- */
+
+.c-main__paragraph{
+    text-align: justify;
+}
+
+.header__content{
+    background-color: var(--clr-secondary-text);
+   
+}
+
+
+
+.c-main{
+    margin: var(--margin-2) var(--margin-4);
+}
+
+#headerContainer {
+    position: relative;
+    background-color: var(--clr-primary-bg);
+    padding: var(--padding-1);
+}
+
+#copyButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
 
 /* Desktop view media query */
 @media screen and (min-width: 768px) {
@@ -487,16 +497,8 @@ body {
     margin-left: 35px;
 }
 
-/* Adjust margin for swatch text group */
-.c-swatch-text-group {
-    /* margin-left: 25px; */
-}
 
-body{
-    margin: 5px;
-  }
-
-  .c-desktop-navbar__toggle {
+.c-desktop-navbar__toggle {
     display: none;
 }
 
@@ -517,7 +519,6 @@ body{
 
   .c-swatch-group{
     display: flex;
-    /* text-align: center; */
 }
 
 .c-swatches-sublist{
@@ -544,7 +545,6 @@ body{
       "footer footer";
     grid-template-columns: 14rem 1fr;
     gap: 16px;
-    /* max-width: 1200px; */
     margin: 0 auto;
     isolation: isolate;
   }
@@ -573,7 +573,6 @@ body{
 
   main {
     grid-area: main;
-    /* min-height: 180vh; */
   }
 
  
@@ -633,5 +632,10 @@ body{
         text-align: initial;
     }
 
+
+    .l-max-width-desktop {
+    max-width: 1200px; 
+    margin: var(--margin-4) var(--margin-5);
+  }
     
 }   

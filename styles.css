@@ -413,6 +413,26 @@ body{
   margin-bottom: var(--margin-2);
 }
 
+
+/*----------Margins of 3rem 48px)---------- */
+
+/* Set margin-top and margin-bottom to the value of --margin-3 */
+.l-my-3 {
+  margin-top: var(--margin-3);
+  margin-bottom: var(--margin-3);
+}
+
+
+
+
+/*----------Margins of 4rem (64px)---------- */
+
+/* Set margin-top and margin-bottom to the value of --margin-4 */
+.l-my-4 {
+  margin-top: var(--margin-4);
+  margin-bottom: var(--margin-4);
+}
+
 /* ------------------------------- Padding ------------------------------- */
    
 /*----------Padding of 1rem (16px)---------- */
