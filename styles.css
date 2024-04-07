@@ -259,6 +259,10 @@ body{
 /* ------------------------------- Margins ------------------------------- */
    
 /* ------Margins of 0 rem-------- */
+/* Set margin to the value of --margin-0 */
+.l-m-0 {
+  margin: var(--margin-0);
+}
 
 
 /*----------Margins of 1rem (16px)---------- */
@@ -425,6 +429,9 @@ body{
   margin-bottom: var(--margin-3);
 }
 
+.l-mb-3{
+  margin-bottom: var(--margin-3);
+}
 
 
 
@@ -438,6 +445,13 @@ body{
 
 /* ------------------------------- Padding ------------------------------- */
    
+/* Set Padding to the value of --Padding-0 */
+.l-p-0 {
+  padding: var(--padding-0);
+}
+
+
+
 /*----------Padding of 1rem (16px)---------- */
 /* Set padding to the value of --padding-1 */
 .l-p {
@@ -788,6 +802,15 @@ header .header__wrapper-width {
 .c-hero__content a:hover {
   transform: translateY(-8px); /* Move element up */
 }
+
+/* Hover effect for links */
+.c-category a:hover,
+.c-services a:hover,
+.c-giftcertificate a:hover,
+.c-journey a:hover {
+  background-color: var(--clr-hover-text);
+
+}  
 
 /* Styles for the hero image */
 .c-hero__image img {
@@ -1171,6 +1194,51 @@ header .header__wrapper-width {
   border: none; /* Remove border */
   cursor: pointer; /* Set cursor pointer */
   z-index: 999; /* Set z-index */
+}
+
+
+/* ---------------------------- FAQ SECTION CODING BEGINS HERE----------------------------- */
+
+.c-faq{
+  margin: var(--margin-4) 0;
+}
+
+/* Styles for faq title */
+.c-faq__title{
+  text-align: center; /* Align text center */
+  font-size: var(--font-size-h2); /* Set font size */
+  font-family: var(--ff-lato); /* Set font family */
+  margin: var(--margin-2) var(--margin-2) var(--margin-3) var(--margin-2); /* Set margin */
+  line-height: var(--line-height-heading); /* Set line height */
+}
+
+.c-faq__answer {
+  display: none;
+  margin: var(--margin-1-25);
+  text-align: justify;
+}
+
+.c-faq__question{
+  font-family: var(--ff-roboto); /* Set font family */
+  font-size: var(--font-size-list); /* Set font size */
+  margin: var(--margin-1);
+  border: 1px solid var(--clr-secondary-text);
+  padding: 15px 5px;
+  background-color: var(--clr-primary-bg);
+}
+
+.u-show-answer {
+  display: block;
+}
+
+.c-faq__item {
+  margin: var(--margin-2);
+  
+}
+
+
+.c-faq__item .c-faq__question .c-faq__arrow:hover {
+  cursor: pointer;
 }
 
 
@@ -1595,7 +1663,13 @@ header .header__wrapper-width {
   margin-right: var(--margin-5); /* Set right margin using custom property */
 }
 
-/* Media queries for footer */
+/* Animation for submit button within the form */
+input[type="submit"]:hover {
+  background-color: var(--clr-hover-text);
+  cursor: pointer;
+}
+
+/* Style for footer */
 .c-footer__copyright{
   border-top: none; /* Remove top border */
   padding-top: var(--padding-0); /* Set top padding using custom property */
