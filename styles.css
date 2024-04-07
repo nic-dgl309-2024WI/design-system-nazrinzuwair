@@ -3,26 +3,28 @@
   box-sizing: border-box;
 }
 
+/* Reset margins for common elements */
 body, h1, h2, h3, h4, h5, h6, p, figure, picture {
   margin: 0;
 }
 
+/* Reset padding for lists */
 ul, ol {
   padding: 0;
 }
 
+/* Set line height for body */
 body{
   line-height: var(--line-height-body);
 }
 
-/*-----------------------Color Varialbles------------------------------------*/
+
 
 :root {
-
   /* To prevent the bounce of the page */
   overscroll-behavior: none;
 
-
+/*-----------------------Color Varialbles------------------------------------*/
   /* Primary Colors */
 
   --clr-primary-text:#000000;  /*Black*/
@@ -43,36 +45,37 @@ body{
 
   /* Font families */
 
-  --ff-lato: "Lato", sans-serif;
-  --ff-roboto: "Roboto", sans-serif;
-  --ff-montserrat: "Montserrat", sans-serif;
+  --ff-lato: "Lato", sans-serif;/* Heading font family */
+  --ff-roboto: "Roboto", sans-serif; /* Body, list and forms font family */
+  --ff-montserrat: "Montserrat", sans-serif; /* Buttons font family */
 
-  /* Font Sizes */
-  --font-size-h1: 28px;
-  --font-size-h2: 24px;
-  --font-size-h3: 20px;
-  --font-size-p: 16px;
-  --font-size-list: 14px;
-  --font-size-buttons: 15px;
-  --font-size-forms: 16px;
-  --font-size-cite: 14px;
+  /* Font sizes */
+--font-size-h1: 28px; /* Heading 1 */
+--font-size-h2: 24px; /* Heading 2 */
+--font-size-h3: 20px; /* Heading 3 */
+--font-size-p: 16px; /* Paragraph */
+--font-size-list: 14px; /* List */
+--font-size-buttons: 15px; /* Buttons */
+--font-size-forms: 16px; /* Form elements */
+--font-size-cite: 14px; /* Citation */
 
   /* Font Weight */
   --font-weight-heading: 700; /* Bold */
   --font-weight-body: 400; /* Regular */
   --font-weight-buttons: 500; /* Medium */
-  --font-weight-button-extrabold: 700;
+  --font-weight-button-extrabold: 700; /*Extra bold*/
 
-   /* Letter spacing */
- 
-   --letter-spacing-1: 1px;
-   --letter-spacing-2: 2px; 
-   --letter-spacing-3: 3px; 
+   /* Letter Spacing */
+--letter-spacing-1: 1px; /* Small letter spacing */
+--letter-spacing-2: 2px; /* Medium letter spacing */
+--letter-spacing-3: 3px; /* Large letter spacing */
 
-   --line-height-body: 24px;
-   --line-height-heading: 30px;
-   --line-height-list:20px;
-   --line-height-button: 26px;
+/* Line Height */
+--line-height-body: 24px; /* Line height for body text */
+--line-height-heading: 30px; /* Line height for headings */
+--line-height-list: 20px; /* Line height for lists */
+--line-height-button: 26px; /* Line height for buttons */
+
 
 
    /* margin value */
@@ -100,250 +103,311 @@ body{
 /* Color Combinations */
 
 /*------------------------------------ background colors------------------------------------ */
+/* Set background color to the value of --clr-primary-bg */
 .u-bg-primary { 
   background-color: var(--clr-primary-bg); 
 }
 
+/* Set background color to the value of --clr-primary-accent */
 .u-bg-accent-primary { 
   background-color: var(--clr-primary-accent); 
 }
 
+/* Set background color to the value of --clr-secondary-bg */
 .u-bg-secondary { 
   background-color: var(--clr-secondary-bg); 
 }
 
+/* Set background color to the value of --clr-secondary-text */
 .u-bg-text-secondary { 
   background-color: var(--clr-secondary-text); 
 }
 
+
 /*------------------------------------ text colors------------------------------------ */
-.u-text-primary{ 
+/* Set text color to the value of --clr-primary-text */
+.u-text-primary { 
   color: var(--clr-primary-text); 
 }
 
+/* Set text color to the value of --clr-secondary-text */
 .u-text-secondary { 
   color: var(--clr-secondary-text); 
 }
 
-.u-text-white{
-  color:var(--clr-white)
+/* Set text color to the value of --clr-white */
+.u-text-white {
+  color: var(--clr-white);
 }
 
-.u-text-accent{
-  color:var(--clr-secondary-accent);
+/* Set text color to the value of --clr-secondary-accent */
+.u-text-accent {
+  color: var(--clr-secondary-accent);
 }
 
-.u-text-hover{
+/* Set text color to the value of --clr-hover-text */
+.u-text-hover {
   color: var(--clr-hover-text);
 }
 
-/*------------------------------------ Typography ------------------------------------*/
 
+/*------------------------------------ Typography ------------------------------------*/
+/* Set font family to the value of --ff-lato */
 .u-ff-lato {
   font-family: var(--ff-lato);
 }
 
+/* Set font family to the value of --ff-roboto */
 .u-ff-roboto {
   font-family: var(--ff-roboto);
 }
 
+/* Set font family to the value of --ff-montserrat */
 .u-ff-montserrat {
   font-family: var(--ff-montserrat);
 }
 
+/* Set font weight to the value of --font-weight-heading */
 .u-font-weight-bold {
   font-weight: var(--font-weight-heading);
 }
 
+/* Set font weight to the value of --font-weight-body */
 .u-font-weight-regular {
   font-weight: var(--font-weight-body);
 }
 
+/* Set font weight to the value of --font-weight-buttons */
 .u-font-weight-medium {
   font-weight: var(--font-weight-buttons);
 }
 
+/* Set font size to the value of --font-size-h1 */
 .u-font-size-h1 {
   font-size: var(--font-size-h1);
 }
 
+/* Set font size to the value of --font-size-h2 */
 .u-font-size-h2 {
   font-size: var(--font-size-h2);
 }
 
+/* Set font size to the value of --font-size-h3 */
 .u-font-size-h3 {
   font-size: var(--font-size-h3);
 }
 
+/* Set font size to the value of --font-size-p */
 .u-font-size-p {
   font-size: var(--font-size-p);
 }
 
+/* Set font size to the value of --font-size-list */
 .u-font-size-list {
   font-size: var(--font-size-list);
 }
 
+/* Set font size to the value of --font-size-buttons */
 .u-font-size-buttons {
   font-size: var(--font-size-buttons);
 }
 
+/* Set font size to the value of --font-size-forms */
 .u-font-size-forms {
   font-size: var(--font-size-forms);
 }
 
 /* ------------------------------------Utility classes for letter spacing------------------------------------ */
+/* Set letter spacing to 1px */
 .u-letter-spacing-1 {
   letter-spacing: 1px;
 }
 
+/* Set letter spacing to 2px */
 .u-letter-spacing-2 {
   letter-spacing: 2px;
 }
 
+/* Set letter spacing to 3px */
 .u-letter-spacing-3 {
   letter-spacing: 3px;
 }
 
 /* ------------------------------------Utility classes for line height------------------------------------ */
+/* Set line height to the value of --line-height-body */
 .u-line-height-body {
   line-height: var(--line-height-body);
 }
 
+/* Set line height to the value of --line-height-heading */
 .u-line-height-heading {
   line-height: var(--line-height-heading);
 }
 
+/* Set line height to the value of --line-height-list */
 .u-line-height-list {
   line-height: var(--line-height-list);
 }
 
-.u-line-height-button{
+/* Set line height to the value of --line-height-button */
+.u-line-height-button {
   line-height: var(--line-height-button);
 }
+
 /*------------------------------- Spacing classes-------------------------------  */
 
 /* ------------------------------- Margins ------------------------------- */
    
 /*----------Margins of 1rem (16px)---------- */
+/* Set margin to the value of --margin-1 */
 .l-m {
   margin: var(--margin-1);
 }
 
+/* Set margin-top to the value of --margin-1 */
 .l-mt-1 {
   margin-top: var(--margin-1);
 }
 
+/* Set margin-bottom to the value of --margin-1 */
 .l-mb-1 {
   margin-bottom: var(--margin-1);
 }
 
+/* Set margin-left to the value of --margin-1 */
 .l-ml-1 {
   margin-left: var(--margin-1);
 }
 
+/* Set margin-right to the value of --margin-1 */
 .l-mr-1 {
   margin-right: var(--margin-1);
 }
 
+/* Set margin-right and margin-left to the value of --margin-1 */
 .l-mx-1 {
   margin-right: var(--margin-1);
   margin-left: var(--margin-1);
 }
 
+/* Set margin-top and margin-bottom to the value of --margin-1 */
 .l-my-1 {
   margin-top: var(--margin-1);
   margin-bottom: var(--margin-1);
 }
 
 /*----------Margins of 1.25rem (20px)---------- */
+
+/* Set margin to the value of --margin-1-25 */
 .l-m-1-25 {
   margin: var(--margin-1-25);
 }
 
+/* Set margin-top to the value of --margin-1-25 */
 .l-mt-1-25 {
   margin-top: var(--margin-1-25);
 }
 
+/* Set margin-bottom to the value of --margin-1-25 */
 .l-mb-1-25 {
   margin-bottom: var(--margin-1-25);
 }
 
+/* Set margin-left to the value of --margin-1-25 */
 .l-ml-1-25 {
   margin-left: var(--margin-1-25);
 }
 
+/* Set margin-right to the value of --margin-1-25 */
 .l-mr-1-25 {
   margin-right: var(--margin-1-25);
 }
 
+/* Set margin-right and margin-left to the value of --margin-1-25 */
 .l-mx-1-25 {
   margin-right: var(--margin-1-25);
   margin-left: var(--margin-1-25);
 }
 
+/* Set margin-top and margin-bottom to the value of --margin-1-25 */
 .l-my-1-25 {
   margin-top: var(--margin-1-25);
   margin-bottom: var(--margin-1-25);
 }
 
 
+
 /*----------Margins of 1.5rem (24px)---------- */
+/* Set margin to the value of --margin-1-5 */
 .l-m-1-5 {
   margin: var(--margin-1-5);
 }
 
+/* Set margin-top to the value of --margin-1-5 */
 .l-mt-1-5 {
   margin-top: var(--margin-1-5);
 }
 
+/* Set margin-bottom to the value of --margin-1-5 */
 .l-mb-1-5 {
   margin-bottom: var(--margin-1-5);
 }
 
+/* Set margin-left to the value of --margin-1-5 */
 .l-ml-1-5 {
   margin-left: var(--margin-1-5);
 }
 
+/* Set margin-right to the value of --margin-1-5 */
 .l-mr-1-5 {
   margin-right: var(--margin-1-5);
 }
 
+/* Set margin-right and margin-left to the value of --margin-1-5 */
 .l-mx-1-5 {
   margin-right: var(--margin-1-5);
   margin-left: var(--margin-1-5);
 }
 
+/* Set margin-top and margin-bottom to the value of --margin-1-5 */
 .l-my-1-5 {
   margin-top: var(--margin-1-5);
   margin-bottom: var(--margin-1-5);
 }
 
 /*----------Margins of 2rem (32px)---------- */
+/* Set margin to the value of --margin-2 */
 .l-m-2 {
   margin: var(--margin-2);
 }
 
+/* Set margin-top to the value of --margin-2 */
 .l-mt-2 {
   margin-top: var(--margin-2);
 }
 
+/* Set margin-bottom to the value of --margin-2 */
 .l-mb-2 {
   margin-bottom: var(--margin-2);
 }
 
+/* Set margin-left to the value of --margin-2 */
 .l-ml-2 {
   margin-left: var(--margin-2);
 }
 
+/* Set margin-right to the value of --margin-2 */
 .l-mr-2 {
   margin-right: var(--margin-2);
 }
 
+/* Set margin-right and margin-left to the value of --margin-2 */
 .l-mx-2 {
   margin-right: var(--margin-2);
   margin-left: var(--margin-2);
 }
 
+/* Set margin-top and margin-bottom to the value of --margin-2 */
 .l-my-2 {
   margin-top: var(--margin-2);
   margin-bottom: var(--margin-2);
@@ -352,65 +416,79 @@ body{
 /* ------------------------------- Padding ------------------------------- */
    
 /*----------Padding of 1rem (16px)---------- */
-
+/* Set padding to the value of --padding-1 */
 .l-p {
   padding: var(--padding-1);
 }
 
+/* Set padding-top to the value of --padding-1 */
 .l-pt-1 {
   padding-top: var(--padding-1);
 }
 
+/* Set padding-bottom to the value of --padding-1 */
 .l-pb-1 {
   padding-bottom: var(--padding-1);
 }
 
+/* Set padding-left to the value of --padding-1 */
 .l-pl-1 {
   padding-left: var(--padding-1);
 }
 
+/* Set padding-right to the value of --padding-1 */
 .l-pr-1 {
   padding-right: var(--padding-1);
 }
 
+/* Set padding-right and padding-left to the value of --padding-1 */
 .l-px-1 {
   padding-right: var(--padding-1);
   padding-left: var(--padding-1);
 }
 
+/* Set padding-top and padding-bottom to the value of --padding-1 */
 .l-py-1 {
   padding-top: var(--padding-1);
   padding-bottom: var(--padding-1);
 }
 
 
+
   
 /*----------Padding of 1.25rem (20px)---------- */
+/* Set padding to the value of --padding-1-25 */
 .l-p-1-25 {
   padding: var(--padding-1-25);
 }
 
+/* Set padding-top to the value of --padding-1-25 */
 .l-pt-1-25 {
   padding-top: var(--padding-1-25);
 }
 
+/* Set padding-bottom to the value of --padding-1-25 */
 .l-pb-1-25 {
   padding-bottom: var(--padding-1-25);
 }
 
+/* Set padding-left to the value of --padding-1-25 */
 .l-pl-1-25 {
   padding-left: var(--padding-1-25);
 }
 
+/* Set padding-right to the value of --padding-1-25 */
 .l-pr-1-25 {
   padding-right: var(--padding-1-25);
 }
 
+/* Set padding-right and padding-left to the value of --padding-1-25 */
 .l-px-1-25 {
   padding-right: var(--padding-1-25);
   padding-left: var(--padding-1-25);
 }
 
+/* Set padding-top and padding-bottom to the value of --padding-1-25 */
 .l-py-1-25 {
   padding-top: var(--padding-1-25);
   padding-bottom: var(--padding-1-25);
@@ -418,63 +496,76 @@ body{
 
 
 /*----------Padding of 1.5rem (24px)---------- */
+/* Set padding to the value of --padding-1-5 */
 .l-p-1-5 {
   padding: var(--padding-1-5);
 }
 
+/* Set padding-top to the value of --padding-1-5 */
 .l-pt-1-5 {
   padding-top: var(--padding-1-5);
 }
 
+/* Set padding-bottom to the value of --padding-1-5 */
 .l-pb-1-5 {
   padding-bottom: var(--padding-1-5);
 }
 
+/* Set padding-left to the value of --padding-1-5 */
 .l-pl-1-5 {
   padding-left: var(--padding-1-5);
 }
 
+/* Set padding-right to the value of --padding-1-5 */
 .l-pr-1-5 {
   padding-right: var(--padding-1-5);
 }
 
+/* Set padding-right and padding-left to the value of --padding-1-5 */
 .l-px-1-5 {
   padding-right: var(--padding-1-5);
   padding-left: var(--padding-1-5);
 }
 
+/* Set padding-top and padding-bottom to the value of --padding-1-5 */
 .l-py-1-5 {
   padding-top: var(--padding-1-5);
   padding-bottom: var(--padding-1-5);
 }
 
-
 /*----------Padding of 2rem (32px)---------- */
+/* Set padding to the value of --padding-2 */
 .l-p-2 {
   padding: var(--padding-2);
 }
 
+/* Set padding-top to the value of --padding-2 */
 .l-pt-2 {
   padding-top: var(--padding-2);
 }
 
+/* Set padding-bottom to the value of --padding-2 */
 .l-pb-2 {
   padding-bottom: var(--padding-2);
 }
 
+/* Set padding-left to the value of --padding-2 */
 .l-pl-2 {
   padding-left: var(--padding-2);
 }
 
+/* Set padding-right to the value of --padding-2 */
 .l-pr-2 {
   padding-right: var(--padding-2);
 }
 
+/* Set padding-right and padding-left to the value of --padding-2 */
 .l-px-2 {
   padding-right: var(--padding-2);
   padding-left: var(--padding-2);
 }
 
+/* Set padding-top and padding-bottom to the value of --padding-2 */
 .l-py-2 {
   padding-top: var(--padding-2);
   padding-bottom: var(--padding-2);
@@ -552,581 +643,648 @@ body{
 
 /*----------- HEADER CODING BEGINS HERE----------- */  
 
+/* Styles for the header */
 .header {
-  background-color: var(--clr-secondary-text);
-  margin-bottom: var(--margin-2-5);
-/* Add this CSS code to make the navigation bar fixed */
-  position: fixed;
+  background-color: var(--clr-secondary-text); /* Set background color */
+  margin-bottom: var(--margin-2-5); /* Set bottom margin */
+  /* Add this CSS code to make the navigation bar fixed */
+  position: fixed; /* Make the navigation bar fixed */
   top: 0;
   left: 0;
   right: 0;
   z-index: 1000; /* Ensure it appears above other content */
 }
 
-
+/* Styles for the header wrapper width */
 header .header__wrapper-width {
-  padding: 14px;
-  justify-content: space-between;
+  padding: 14px; /* Set padding */
+  justify-content: space-between; /* Align items space-between */
 }
 
+/* Styles for the navbar toggle icon */
 .header__c-navbar-toggle i {
-  color: var(--clr-white);
-  font-size:var(--font-size-p);
-
+  color: var(--clr-white); /* Set color */
+  font-size: var(--font-size-p); /* Set font size */
 }
 
-.heade__c-navbar-top{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 var(--padding-1);
- }
-
- .header__logo{
-  width: 180px;
-  height: 55px;
-  object-fit: cover;
-
+/* Styles for the top navbar */
+.heade__c-navbar-top {
+  display: flex; /* Display as flex */
+  justify-content: space-between; /* Align items space-between */
+  align-items: center; /* Align items center */
+  padding: 0 var(--padding-1); /* Set padding */
 }
 
+/* Styles for the header logo */
+.header__logo {
+  width: 180px; /* Set width */
+  height: 55px; /* Set height */
+  object-fit: cover; /* Set object-fit */
+}
+
+/* Styles for the navbar */
 .header__c-navbar {
-  text-align: right;
+  text-align: right; /* Align text right */
 }
 
+/* Styles for the navbar items */
 .header__c-navbar-items {
-  list-style-type: none;
-  margin: var(--margin-0);
-  padding: var(--padding-0);
-  display: none;
-  margin-top: var(--margin-2);
-  text-align: left;
+  list-style-type: none; /* Remove list-style */
+  margin: var(--margin-0); /* Set margin */
+  padding: var(--padding-0); /* Set padding */
+  display: none; /* Hide display */
+  margin-top: var(--margin-2); /* Set top margin */
+  text-align: left; /* Align text left */
 }
 
+/* Styles for the navbar list items */
 .header__c-navbar ul li {
-  padding: 0 0 15px 15px;
+  padding: 0 0 15px 15px; /* Set padding */
 }
 
-.header__c-navbar ul li a{
-  text-decoration: none;
-  color: var(--clr-white);
-  font-size:var(--font-size-list);
-  text-align: center;
-  font-family: var(--ff-lato);
+/* Styles for the navbar links */
+.header__c-navbar ul li a {
+  text-decoration: none; /* Remove underline */
+  color: var(--clr-white); /* Set color */
+  font-size: var(--font-size-list); /* Set font size */
+  text-align: center; /* Align text center */
+  font-family: var(--ff-lato); /* Set font family */
 }
 
+/* Styles to show navbar items */
 .show-items {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start; 
+  display: flex; /* Display as flex */
+  flex-direction: column; /* Set flex direction */
+  align-items: flex-start; /* Align items flex-start */
 }
 
   /*----------HERO SECTION BEGINS HERE----------  */
-  .c-hero{
-    background: var(--clr-primary-bg) 0% 0% no-repeat padding-box;
-    text-align: center;
-    margin-top: 20px;
-  }    
+  /* Styles for the hero section */
+.c-hero {
+  background: var(--clr-primary-bg) 0% 0% no-repeat padding-box; /* Set background */
+  text-align: center; /* Align text center */
+  margin-top: var(--margin-5); /* Set top margin */
+}
 
-  .c-hero__content{
-    padding-bottom: var(--padding-2);
-  }
-  
-  .c-hero__title{
-    padding-top: var(--padding-2);
-  }
+/* Styles for the hero content */
+.c-hero__content {
+  padding-bottom: var(--padding-2); /* Set bottom padding */
+}
 
+/* Styles for the hero title */
+.c-hero__title {
+  padding-top: var(--padding-2); /* Set top padding */
+}
 
- .c-hero__content p{
-    text-align: center;
-    font-size:var(--font-size-p);
-    font-family: var(--ff-roboto);
-  }
+/* Styles for paragraph inside hero content */
+.c-hero__content p {
+  text-align: center; /* Align text center */
+  font-size: var(--font-size-p); /* Set font size */
+  font-family: var(--ff-roboto); /* Set font family */
+}
 
-  .c-hero__content a,.c-category a, .c-services a, .c-giftcertificate a, .c-journey a{
-    color: var(--clr-white);
-    text-transform: uppercase;
-    background-color: var(--clr-secondary-text);
-    padding: 13.5px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: transform 0.3s ease-in-out;
-    display: inline-block;
-    font-family: var(--ff-montserrat);
-    font-size: var(--font-size-buttons);
-  }
+/* Styles for links inside hero content and other specified elements */
+.c-hero__content a,
+.c-category a,
+.c-services a,
+.c-giftcertificate a,
+.c-journey a {
+  color: var(--clr-white); /* Set color */
+  text-transform: uppercase; /* Transform text to uppercase */
+  background-color: var(--clr-secondary-text); /* Set background color */
+  padding: 13.5px 20px; /* Set padding */
+  border-radius: 5px; /* Set border radius */
+  text-decoration: none; /* Remove underline */
+  transition: transform 0.3s ease-in-out; /* Add transition effect */
+  display: inline-block; /* Display as inline block */
+  font-family: var(--ff-montserrat); /* Set font family */
+  font-size: var(--font-size-buttons); /* Set font size */
+}
 
-  .c-hero__content a:hover{
-    transform: translateY(-8px);
-    
-  }
+/* Hover effect for links inside hero content */
+.c-hero__content a:hover {
+  transform: translateY(-8px); /* Move element up */
+}
 
-  .c-hero__image img{
-    margin-top: 45px;
-    width: 300px;
-    height: 255px;
-    object-fit: cover;
-  }
+/* Styles for the hero image */
+.c-hero__image img {
+  margin-top: 45px; /* Set top margin */
+  width: 300px; /* Set width */
+  height: 255px; /* Set height */
+  object-fit: cover; /* Set object-fit */
+}
 
-  .c-hero__content h1{
-   display: none;
-   font-family: var(--ff-lato);
-   font-size: var(--font-size-h1);
-  }
+/* Styles for the hero title */
+.c-hero__content h1 {
+  display: none; /* Hide element */
+  font-family: var(--ff-lato); /* Set font family */
+  font-size: var(--font-size-h1); /* Set font size */
+}
 
 
 /* --------------Annoucement Section Coding Begins Here---------- */
-
-.c-announcement{
-  background: var(--clr-additional-bg) 0% 0% no-repeat padding-box;
-  text-align: center;
-  font-family: var(--ff-roboto);
-}    
-
-.c-announcement__content{
-  
-  padding: 10px;
-  color: var(--clr-white);
-  font-size: var(--font-size-list);
+/* Styles for the announcement section */
+.c-announcement {
+  background: var(--clr-additional-bg) 0% 0% no-repeat padding-box; /* Set background */
+  text-align: center; /* Align text center */
+  font-family: var(--ff-roboto); /* Set font family */
 }
 
+/* Styles for the announcement content */
+.c-announcement__content {
+  padding: 10px; /* Set padding */
+  color: var(--clr-white); /* Set color */
+  font-size: var(--font-size-list); /* Set font size */
+}
 
+/* Keyframe animation for fadeIn */
 @keyframes fadeIn {
   from {
-    opacity: 0; 
+    opacity: 0; /* Set initial opacity */
   }
   to {
-    opacity: 1; 
+    opacity: 1; /* Set final opacity */
   }
 }
 
+/* Styles for the announcement title with fadeIn animation */
 .c-announcement__title {
-  animation: fadeIn 3s ease-in-out infinite;
+  animation: fadeIn 3s ease-in-out infinite; /* Apply fadeIn animation */
 }
-
 
 /* --------------Category  section coding begins here-------------- */
-
-
-.c-category, .c-category__description{
-  text-align: center;
-  font-family: var(--ff-roboto);
-  font-size: var(--font-size-p);
-  
+/* Styles for category section and description */
+.c-category,
+.c-category__description {
+  text-align: center; /* Align text center */
+  font-family: var(--ff-roboto); /* Set font family */
+  font-size: var(--font-size-p); /* Set font size */
 }
 
-.c-category__cards{
-  margin: 35px 20px 50px 20px;
+/* Styles for category cards container */
+.c-category__cards {
+  margin: 35px 20px 50px 20px; /* Set margins */
 }
 
-.c-category__card{
-  background-color:var(--clr-card1-bg);
-  padding: 5px;
-  margin: 20px 50px 40px 50px;
-  transition: border-color 0.3s ease-in-out; 
-  border: 2px solid transparent; 
- 
+/* Styles for category card */
+.c-category__card {
+  background-color: var(--clr-card1-bg); /* Set background color */
+  padding: 5px; /* Set padding */
+  margin: 20px 50px 40px 50px; /* Set margins */
+  transition: border-color 0.3s ease-in-out; /* Add transition effect */
+  border: 2px solid transparent; /* Set border */
 }
 
-.c-category__card-title{
-  font-size: var(--font-size-p);
-  font-family: var(--ff-lato);
+/* Styles for category card title */
+.c-category__card-title {
+  font-size: var(--font-size-p); /* Set font size */
+  font-family: var(--ff-lato); /* Set font family */
 }
 
-
+/* Hover effect for category card */
 .c-category__card:hover {
-border-color: var(--clr-secondary-text);
+  border-color: var(--clr-secondary-text); /* Change border color on hover */
 }
 
-.c-category__card img{
-  width: 180px;
-  height: 180px;
-  margin-top: var(--margin-1-25);
-  padding: 8px;
-  border: 2px solid #283618;
-  object-fit: cover;
+/* Styles for images inside category card */
+.c-category__card img {
+  width: 180px; /* Set width */
+  height: 180px; /* Set height */
+  margin-top: var(--margin-1-25); /* Set top margin */
+  padding: 8px; /* Set padding */
+  border: 2px solid #283618; /* Set border */
+  object-fit: cover; /* Set object-fit */
 }
 
-.c-category__title h2{
-  font-size: var(--font-size-h2);
-  font-family: var(--ff-lato);
- 
+/* Styles for category title */
+.c-category__title h2 {
+  font-size: var(--font-size-h2); /* Set font size */
+  font-family: var(--ff-lato); /* Set font family */
 }
+
 
 /* --------------Services section coding begins here-------------- */
-
-.c-services{
-  text-align: center;
+/* Styles for services section */
+.c-services {
+  text-align: center; /* Align text center */
 }
 
-
-.c-services__image{
-  display: none;
+/* Hide services image */
+.c-services__image {
+  display: none; /* Hide element */
 }
 
-.c-services__title{
-  font-size: var(--font-size-h2);
-  font-family: var(--ff-lato);
+/* Styles for services title */
+.c-services__title {
+  font-size: var(--font-size-h2); /* Set font size */
+  font-family: var(--ff-lato); /* Set font family */
 }
 
-.c-services__description{
- margin:var(--margin-2) var(--margin-2) var(--margin-3) var(--margin-2);
- font-size: var(--font-size-p);
- font-family: var(--ff-roboto);
+/* Styles for services description */
+.c-services__description {
+  margin: var(--margin-2) var(--margin-2) var(--margin-3) var(--margin-2); /* Set margins */
+  font-size: var(--font-size-p); /* Set font size */
+  font-family: var(--ff-roboto); /* Set font family */
 }
 
-.c-services__sub{
-  background-color: var(--clr-primary-bg);
-  padding: 15px;
-  margin: 0 45px 20px 45px;
-  display: flex;
-  flex-direction: row;
-  transition: transform 0.5s ease-in-out; 
+/* Styles for services sub */
+.c-services__sub {
+  background-color: var(--clr-primary-bg); /* Set background color */
+  padding: 15px; /* Set padding */
+  margin: 0 45px 20px 45px; /* Set margins */
+  display: flex; /* Display as flex */
+  flex-direction: row; /* Set flex direction */
+  transition: transform 0.5s ease-in-out; /* Add transition effect */
 }
 
+/* Hover effect for services sub */
 .c-services__sub:hover {
-  transform: translateY(-10px);
+  transform: translateY(-10px); /* Move element up */
 }
 
-.c-services__sub img{
-  width: 60px;
-  height: 60px;
-  border: 3px solid #283618;
-  padding: 5px;
-  object-fit:cover;
-  transition: transform 0.5s ease-in-out;
+/* Styles for images inside services sub */
+.c-services__sub img {
+  width: 60px; /* Set width */
+  height: 60px; /* Set height */
+  border: 3px solid #283618; /* Set border */
+  padding: 5px; /* Set padding */
+  object-fit: cover; /* Set object-fit */
+  transition: transform 0.5s ease-in-out; /* Add transition effect */
 }
 
-.c-services__sub:hover img{
-  transform: rotate(360deg);
+/* Hover effect for images inside services sub */
+.c-services__sub:hover img {
+  transform: rotate(360deg); /* Rotate image */
 }
 
-.c-services__sub p{
-  margin: 0 0 var(--margin-1-5) var(--margin-1-5);
-  padding-top: var(--padding-1);
-  font-weight: var(--font-weight-heading);
-  font-size: var(--font-size-p);
-  font-family: var(--ff-lato);
-  
+/* Styles for text inside services sub */
+.c-services__sub p {
+  margin: 0 0 var(--margin-1-5) var(--margin-1-5); /* Set margins */
+  padding-top: var(--padding-1); /* Set top padding */
+  font-weight: var(--font-weight-heading); /* Set font weight */
+  font-size: var(--font-size-p); /* Set font size */
+  font-family: var(--ff-lato); /* Set font family */
 }
 
-.c-services__container{
-  margin-bottom: var(--margin-3);
+/* Styles for services container */
+.c-services__container {
+  margin-bottom: var(--margin-3); /* Set bottom margin */
 }
+
 
 /* --------------Gift Certificate section coding begins here-------------- */
-.c-giftcertificate{
-  text-align: center;
+/* Styles for gift certificate section */
+.c-giftcertificate {
+  text-align: center; /* Align text center */
 }
 
-.c-giftcertificate__title{
-  font-size: var(--font-size-h2);
-  font-family: var(--ff-lato);
-  margin: 0 var(--margin-1-5);
-  line-height: var(--line-height-heading);
+/* Styles for gift certificate title */
+.c-giftcertificate__title {
+  font-size: var(--font-size-h2); /* Set font size */
+  font-family: var(--ff-lato); /* Set font family */
+  margin: 0 var(--margin-1-5); /* Set margins */
+  line-height: var(--line-height-heading); /* Set line height */
 }
 
-.c-giftcertificate__description{
-  margin:var(--margin-1) var(--margin-2) var(--margin-1) var(--margin-2);
-  font-size: var(--font-size-p);
-  font-family: var(--ff-roboto);
-  
+/* Styles for gift certificate description */
+.c-giftcertificate__description {
+  margin: var(--margin-1) var(--margin-2) var(--margin-1) var(--margin-2); /* Set margins */
+  font-size: var(--font-size-p); /* Set font size */
+  font-family: var(--ff-roboto); /* Set font family */
 }
 
-.c-giftcertificate__sub{
-  margin-bottom: var(--margin-1-5);
+/* Styles for gift certificate sub section */
+.c-giftcertificate__sub {
+  margin-bottom: var(--margin-1-5); /* Set bottom margin */
 }
 
-.c-giftcertificate__sub-text{
-  margin-left: var(--margin-1-25);
-  font-size: var(--font-size-list);
-  font-family: var(--ff-roboto);
+/* Styles for text inside gift certificate sub section */
+.c-giftcertificate__sub-text {
+  margin-left: var(--margin-1-25); /* Set left margin */
+  font-size: var(--font-size-list); /* Set font size */
+  font-family: var(--ff-roboto); /* Set font family */
 }
 
-.c-giftcertificate__content{
-  text-align: left;
-  margin: var(--margin-2) var(--margin-3);
-  font-size: var(--font-size-list);
-  font-family: var(--ff-roboto);
+/* Styles for gift certificate content */
+.c-giftcertificate__content {
+  text-align: left; /* Align text left */
+  margin: var(--margin-2) var(--margin-3); /* Set margins */
+  font-size: var(--font-size-list); /* Set font size */
+  font-family: var(--ff-roboto); /* Set font family */
 }
 
-.c-giftcertificate__sub h3{
-  margin-bottom: var(--margin-1-25);
+/* Styles for gift certificate sub title */
+.c-giftcertificate__sub h3 {
+  margin-bottom: var(--margin-1-25); /* Set bottom margin */
 }
 
-.c-giftcertificate__sub-title{
-  font-size: var(--font-size-p);
-  font-family: var(--ff-lato);
+/* Styles for gift certificate sub title */
+.c-giftcertificate__sub-title {
+  font-size: var(--font-size-p); /* Set font size */
+  font-family: var(--ff-lato); /* Set font family */
 }
 
-.c-giftcertificate__container a{
-  display: none;
+/* Styles to hide links inside gift certificate container */
+.c-giftcertificate__container a {
+  display: none; /* Hide element */
 }
-
 
 /*  --------------Journey section coding begins her  -------------- */
-
-.c-journey__description{
-  text-align: justify;
-  margin: var(--margin-2) var(--margin-3);
-  font-size: var(--font-size-list);
-  font-family: var(--ff-roboto);
+/* Styles for journey description */
+.c-journey__description {
+  text-align: justify; /* Align text justified */
+  margin: var(--margin-2) var(--margin-3); /* Set margins */
+  font-size: var(--font-size-list); /* Set font size */
+  font-family: var(--ff-roboto); /* Set font family */
 }
 
-.c-journey a{
-  margin-bottom: var(--margin-3);
+/* Styles for links inside journey section */
+.c-journey a {
+  margin-bottom: var(--margin-3); /* Set bottom margin */
 }
 
+/* Styles for journey section */
 .c-journey {
-  text-align: center;
-}
-.c-journey__title{
-  text-align: center;
-  font-size: var(--font-size-h2);
-  font-family: var(--ff-lato);
-  margin: 0 var(--margin-1-5);
-  line-height: var(--line-height-heading);
+  text-align: center; /* Align text center */
 }
 
+/* Styles for journey title */
+.c-journey__title {
+  text-align: center; /* Align text center */
+  font-size: var(--font-size-h2); /* Set font size */
+  font-family: var(--ff-lato); /* Set font family */
+  margin: 0 var(--margin-1-5); /* Set margins */
+  line-height: var(--line-height-heading); /* Set line height */
+}
+
+/* Styles for journey carousel */
 .c-journey__carousel {
-  position: relative;
-  margin: var(--margin-2-5);
+  position: relative; /* Set position relative */
+  margin: var(--margin-2-5); /* Set margins */
 }
 
+/* Styles for carousel images */
 .c-carousel__images {
-  display: flex;
-  justify-content: center; 
-  align-items: center; 
-  overflow-x: auto;
-  margin-bottom: 20px; 
+  display: flex; /* Display as flex */
+  justify-content: center; /* Align items center */
+  align-items: center; /* Align items center */
+  overflow-x: auto; /* Enable horizontal scrolling */
+  margin-bottom: 20px; /* Set bottom margin */
 }
 
+/* Styles for images inside carousel */
 .c-carousel__images img {
-  width: 280px;
-  height: 250px;
-  object-fit: cover;
-  border: 2px solid var(--clr-additional-bg);
+  width: 280px; /* Set width */
+  height: 250px; /* Set height */
+  object-fit: cover; /* Set object-fit */
+  border: 2px solid var(--clr-additional-bg); /* Set border */
 }
 
+/* Styles for pagination in journey section */
 .c-journey__pagination {
-  display: flex;
-  justify-content: center; 
+  display: flex; /* Display as flex */
+  justify-content: center; /* Align items center */
 }
+
+/* Styles for pagination buttons in journey section */
 .c-journey__pagination button {
-  background-color: var(--clr-secondary-text);
-  border: none;
-  width: 15px;
-  height: 5px;
-  margin: 0 5px;
-  cursor: pointer;
+  background-color: var(--clr-secondary-text); /* Set background color */
+  border: none; /* Remove border */
+  width: 15px; /* Set width */
+  height: 5px; /* Set height */
+  margin: 0 5px; /* Set margins */
+  cursor: pointer; /* Set cursor pointer */
 }
 
+/* Styles for active pagination button in journey section */
 .c-journey__pagination button.active {
-  background-color:var(--clr-primary-accent);
+  background-color: var(--clr-primary-accent); /* Set background color */
 }
 
 
-/*  --------------Journey section coding begins her  -------------- */
+/*  --------------Testimonial section coding begins her  -------------- */
 
-.c-testimonial__title{
-  text-align: center;
-  font-size: var(--font-size-h2);
-  font-family: var(--ff-lato);
-  margin: var(--margin-1-5);
-  line-height: var(--line-height-heading);
+/* Styles for testimonial title */
+.c-testimonial__title {
+  text-align: center; /* Align text center */
+  font-size: var(--font-size-h2); /* Set font size */
+  font-family: var(--ff-lato); /* Set font family */
+  margin: var(--margin-1-5); /* Set margin */
+  line-height: var(--line-height-heading); /* Set line height */
 }
 
+/* Styles for testimonial slider */
 .c-testimonial-slider {
-  padding: var(--padding-1) 0;
-  display: flex;
-  overflow: hidden;
-  width: 100%;
-  margin: 0 auto;
-  justify-content: center; 
+  padding: var(--padding-1) 0; /* Set padding */
+  display: flex; /* Display as flex */
+  overflow: hidden; /* Hide overflow */
+  width: 100%; /* Set width */
+  margin: 0 auto; /* Center align */
+  justify-content: center; /* Align items center */
 }
 
+/* Styles for testimonial slide */
 .c-testimonial-slide {
   flex: 0 0 calc(100%); /* Display one card per row on mobile */
-  text-align: center;
+  text-align: center; /* Align text center */
 }
 
+/* Styles for testimonial card */
 .c-testimonial-card {
-  border: 1px solid var(--clr-secondary-text);
-  border-radius: 5px;
-  padding: var(--padding-1);
-  margin: var(--margin-1) var(--margin-3);
-  background-color: var(--clr-secondary-bg);
-
+  border: 1px solid var(--clr-secondary-text); /* Set border */
+  border-radius: 5px; /* Set border radius */
+  padding: var(--padding-1); /* Set padding */
+  margin: var(--margin-1) var(--margin-3); /* Set margins */
+  background-color: var(--clr-secondary-bg); /* Set background color */
 }
 
+/* Styles for images inside testimonial card */
 .c-testimonial-card img {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-top: var(--margin-1);
+  width: 120px; /* Set width */
+  height: 120px; /* Set height */
+  border-radius: 50%; /* Set border radius */
+  object-fit: cover; /* Set object-fit */
+  margin-top: var(--margin-1); /* Set margin top */
 }
 
+/* Styles for testimonial content */
 .c-testimonial-content {
-  margin-top: var(--margin-1);
-  height: 180px;
+  margin-top: var(--margin-1); /* Set margin top */
+  height: 180px; /* Set height */
 }
 
-.c-testimonial-content p{
-  font-family: var(--ff-roboto);
-  font-size: var(--font-size-list);
-  margin: var(--margin-1);
+/* Styles for text inside testimonial content */
+.c-testimonial-content p {
+  font-family: var(--ff-roboto); /* Set font family */
+  font-size: var(--font-size-list); /* Set font size */
+  margin: var(--margin-1); /* Set margin */
 }
 
-.c-testimonial-content cite, span{
-  font-weight: var(--font-weight-heading);
-  font-family: var(--ff-montserrat);
-  font-size: var(--font-size-cite);
+/* Styles for citation and span inside testimonial content */
+.c-testimonial-content cite,
+.c-testimonial-content span {
+  font-weight: var(--font-weight-heading); /* Set font weight */
+  font-family: var(--ff-montserrat); /* Set font family */
+  font-size: var(--font-size-cite); /* Set font size */
 }
 
+/* Styles for button container */
 .c-button-container {
-  text-align: center;
+  text-align: center; /* Align text center */
 }
 
-
+/* Styles to hide previous and next buttons */
 .u-prevBtn,
 .u-nextBtn {
- display: none;
+  display: none; /* Hide element */
 }
 
-.u-prevBtn-mobile, .u-nextBtn-mobile{
-  font-size: 24px; 
-  background-color: var(--clr-primary-bg);
-  color: var(--clr-secondary-text);
-  border: none;
-  cursor: pointer;
-  z-index: 999;
+/* Styles for mobile previous and next buttons */
+.u-prevBtn-mobile,
+.u-nextBtn-mobile {
+  font-size: 24px; /* Set font size */
+  background-color: var(--clr-primary-bg); /* Set background color */
+  color: var(--clr-secondary-text); /* Set text color */
+  border: none; /* Remove border */
+  cursor: pointer; /* Set cursor pointer */
+  z-index: 999; /* Set z-index */
 }
 
 
 /*  --------------Newsletter section coding begins her  -------------- */
-
-.c-newsletter{
-  background-color: var(--clr-secondary-text);
-  padding: var(--padding-2);
-  margin-top: var(--margin-3);
+/* Styles for newsletter section */
+.c-newsletter {
+  background-color: var(--clr-secondary-text); /* Set background color */
+  padding: var(--padding-2); /* Set padding */
+  margin-top: var(--margin-3); /* Set top margin */
 }
 
-
-.c-newsletter__title{
-  text-align: center;
-  color: var(--clr-white);
-  font-size: var(--font-size-h2);
-  font-family: var(--ff-lato);
-  line-height: var(--line-height-heading);
-  margin-top: var(--margin-1-5);
+/* Styles for newsletter title */
+.c-newsletter__title {
+  text-align: center; /* Align text center */
+  color: var(--clr-white); /* Set text color */
+  font-size: var(--font-size-h2); /* Set font size */
+  font-family: var(--ff-lato); /* Set font family */
+  line-height: var(--line-height-heading); /* Set line height */
+  margin-top: var(--margin-1-5); /* Set top margin */
 }
 
-.c-newsletter__description{
-  font-family: var(--ff-roboto);
-  font-size: var(--font-size-p);
-  margin: var(--margin-2-5) var(--margin-1);
-  text-align: justify;
-  color: var(--clr-white);
+/* Styles for newsletter description */
+.c-newsletter__description {
+  font-family: var(--ff-roboto); /* Set font family */
+  font-size: var(--font-size-p); /* Set font size */
+  margin: var(--margin-2-5) var(--margin-1); /* Set margins */
+  text-align: justify; /* Align text justify */
+  color: var(--clr-white); /* Set text color */
 }
 
+/* Styles for newsletter form input */
 .c-newsletter-form input {
-  width: 100%;
-  height: 40px;
-  border-radius: 3px;
-  border: 1px solid var(--clr-white);
+  width: 100%; /* Set width */
+  height: 40px; /* Set height */
+  border-radius: 3px; /* Set border radius */
+  border: 1px solid var(--clr-white); /* Set border */
   margin-bottom: 10px; /* Add some spacing between input fields */
-  text-align: center;
-  font-family: var(--ff-roboto);
-  font-size: var(--font-size-p);
+  text-align: center; /* Align text center */
+  font-family: var(--ff-roboto); /* Set font family */
+  font-size: var(--font-size-p); /* Set font size */
 }
 
+/* Styles for newsletter form submit button */
 .c-newsletter-form__submit {
-  margin-top: var(--margin-1-5);
-  font-family: var(--ff-montserrat);
-  font-weight: var(--font-weight-button-extrabold);
-  background-color: var(--clr-additional-bg);
-  color: var(--clr-white);
-  width: 100%;
-  
+  margin-top: var(--margin-1-5); /* Set top margin */
+  font-family: var(--ff-montserrat); /* Set font family */
+  font-weight: var(--font-weight-button-extrabold); /* Set font weight */
+  background-color: var(--clr-additional-bg); /* Set background color */
+  color: var(--clr-white); /* Set text color */
+  width: 100%; /* Set width */
 }
 
 
 
 /*  --------------Footer section coding begins her  -------------- */
-
-.c-footer{
-  background-color: var(--clr-primary-bg);
-  text-align: center;
-  padding: var(--padding-1) var(--padding-0);
-  font-family: var(--ff-roboto);
-  font-size: var(--font-size-p);
+/* Styles for footer section */
+.c-footer {
+  background-color: var(--clr-primary-bg); /* Set background color */
+  text-align: center; /* Align text center */
+  padding: var(--padding-1) var(--padding-0); /* Set padding */
+  font-family: var(--ff-roboto); /* Set font family */
+  font-size: var(--font-size-p); /* Set font size */
 }
 
-.c-footer__title{
-  margin-top: var(--margin-1-25);
+/* Styles for footer title */
+.c-footer__title {
+  margin-top: var(--margin-1-25); /* Set top margin */
 }
 
-.c-footer__title, .c-footer__social-media{
-  margin-bottom: var(--margin-1);
+/* Styles for footer title and social media */
+.c-footer__title,
+.c-footer__social-media {
+  margin-bottom: var(--margin-1); /* Set bottom margin */
 }
 
-.c-footer__copyright{
-  padding-top: var(--padding-1);
-  border-top: 2px solid var(--clr-primary-text);
-  font-size: var(--font-size-list);
+/* Styles for footer copyright */
+.c-footer__copyright {
+  padding-top: var(--padding-1); /* Set top padding */
+  border-top: 2px solid var(--clr-primary-text); /* Set top border */
+  font-size: var(--font-size-list); /* Set font size */
 }
 
-.c-footer__icon{
-  margin:0 4px;
-
+/* Styles for footer icon */
+.c-footer__icon {
+  margin: 0 4px; /* Set margins */
 }
 
-.c-footer__social-media{
-  font-size: var(--font-size-h3);
+/* Styles for footer social media */
+.c-footer__social-media {
+  font-size: var(--font-size-h3); /* Set font size */
 }
+
 
 /* ----------------------------------------- COMING-SOON.HTML PAGE CODING BEGINS HERE ----------------------------------------- */
-
-
+/* Styles for container */
 .c-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  margin: 0 var(--margin-2-5);
+  display: flex; /* Display as flex */
+  flex-direction: column; /* Set flex direction to column */
+  align-items: center; /* Align items center */
+  justify-content: center; /* Justify content center */
+  height: 95vh; /* Set height to 95% of viewport height */
+  margin: 0 var(--margin-2-5); /* Set margins */
 }
 
+/* Styles for header */
 .c-header {
-  text-align: center;
-  color: var(--clr-secondary-text);
-  font-size: var(--font-size-h1);
-  font-family: var(--ff-lato);
-  line-height: var(--line-height-heading);
-  margin: var(--margin-2) 0;
-
+  text-align: center; /* Align text center */
+  color: var(--clr-secondary-text); /* Set text color */
+  font-size: var(--font-size-h1); /* Set font size */
+  font-family: var(--ff-lato); /* Set font family */
+  line-height: var(--line-height-heading); /* Set line height */
+  margin: var(--margin-2) 0; /* Set margins */
 }
 
+/* Styles for image */
 .c-image {
-  width: 250px;
-  height: 250px;
-  object-fit: cover;
-  margin-bottom: var(--margin-1-25);
+  width: 250px; /* Set width */
+  height: 250px; /* Set height */
+  object-fit: cover; /* Set object fit */
+  margin-bottom: var(--margin-1-25); /* Set bottom margin */
 }
 
+/* Styles for text */
 .c-text {
-
-  font-family: var(--ff-roboto);
-  font-size: var(--font-size-p);
-  margin-top: var(--margin-1);
-  text-align: center;
+  font-family: var(--ff-roboto); /* Set font family */
+  font-size: var(--font-size-p); /* Set font size */
+  margin-top: var(--margin-1); /* Set top margin */
+  text-align: center; /* Align text center */
 }
 
+/* Styles for link */
 .u-link {
-  text-decoration: none;
-  color: var(--clr-hover-text);
-  font-weight: var(--font-weight-button-extrabold);
+  text-decoration: none; /* Remove underline */
+  color: var(--clr-hover-text); /* Set text color */
+  font-weight: var(--font-weight-button-extrabold); /* Set font weight */
 }
+
 
 
 /* Media Query for Desktop */
@@ -1136,254 +1294,302 @@ border-color: var(--clr-secondary-text);
     margin: auto;
   }
 
-
-  
   /* MEDIA QUERIES FOR NAVIGATION */
-
+/* Hide the navigation toggle button */
   .header__c-navbar-toggle {
     display: none;
   }
 
+  /* Display navigation items as a flexbox row */
   .header__c-navbar-elements ul{
     display: flex;
     flex-direction: row;
     margin-top: 0;
   }
 
+  /* Display the navigation bar as a flexbox row with space-between alignment */
   .header__c-navbar{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
 
+  /* Set margin for navigation items */
   .header__c-navbar-items li{
     margin: 10px 30px 0 0; 
   }
 
 
   /* MEDIA QUERIES FOR HERO SECTION*/
-
-  .c-hero{
-    margin-top: 80px;
-  }
-
-  .c-hero__wrapper {
-    height: 450px;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-    padding: 0 14px 14px 14px;
-  }
-
-  .c-hero__title{
-    display: none;
-  }
-
-  .c-hero__content h1{
-    display: block;
-    font-size: var(--font-size-h1);
-   }
- 
-  .c-hero__image img{
-    /* margin-right: var(--margin-2); */
-    width: 400px;
-    height: 360px;
-    object-fit: cover;
-  }
-
-  .c-hero__content{
-    text-align: left;
-    margin-top: 110px;
-    margin-left: var(--margin-0);
-    padding-left: var(--padding-0);
-  }
-
-  .c-hero__content p{
-    text-align: justify;
-    padding: var(--padding-2)  0;
-    margin: var(--margin-0);
-    width: 80%;
-    font-size: var(--font-size-p);
-  } 
-  
-   /* MEDIA QUERIES FOR CATEGORY SECTION*/
-
-  .c-category__title{
-    margin-top: var(--margin-3);
-  }
-
-  .c-category__cards{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-
-  .c-category__card{
-    padding: 10px 30px;
-    margin: 10px;
-  }
-
-  .c-category{
-    margin-bottom: var(--margin-3);
-  }
-
-  /* MEDIA QUERIES FOR SERVICES SECTION*/
-
-
-  .c-services__image{
-    display: block;
-  }
-
-  .c-services__content{
-    margin:var(--margin-3) var(--margin-1-25);
-    display: flex;
-    flex-direction: row;
-  }
-
-  .c-services__image img{
-    width: 500px;
-    height: 400px;
-  }
- 
-  .c-services__text{
-    text-align: justify;
-  }
-
-  .c-services__description{
-    margin: var(--margin-2-5) var(--margin-3) var(--margin-2) var(--margin-2);
-  }
-
-  .c-services__sub-container {
-    display: flex;
-    margin-left: var(--margin-3);
+/* Set margin on top for the hero section */
+.c-hero{
+  margin-top: 80px;
 }
 
-  .c-services__sub {
-      flex: 1;
-      padding: 0;
-      margin: 10px 10px 10px 0;
-      background-color: inherit;
-  }
-
-  .c-services__link{
-    margin-bottom: var(--margin-3);
-  }
-
-
-  /* MEDIA QUERIES FOR GIFT CERTIFICATE SECTION*/
-
-  .c-giftcertifcate__main{
-    display: flex;
-    flex-direction: row;
-  }
-
-  .c-giftcertificate__anchor a{
-    display: none;
-  }
-
-  .c-giftcertificate__container a{
-    display: block;
-    width: 55%;
-    margin-left: var(--margin-1-5);
-    margin-top: var(--margin-3);
-  }
-
-  .c-giftcertificate__content{
-    text-align: justify;
-    margin: var(--margin-3) var(--margin-1);
-  }
-
-  .c-giftcertificate__title{
-    margin-top: 100px;
-    text-align: left;
-    margin-left: var(--margin-1-5);
-  }
-
-  .c-giftcertificate__description{
-    text-align: justify;
-    margin-left: initial;
-    margin-left: var(--margin-1-5);
-  }
-
-    /* MEDIA QUERIES FOR JOURNERY SECTION*/
-
-  .c-journey__content{
-    display: flex;
-    flex-direction: row;
-  }
-
-
-  .c-carousel__images img {
-    width: 500px;
-    height: 400px;
-  }
-
-
-  .c-journey__details{
-    margin-top: var(--margin-2);
-  }
-
-/* MEDIA QUERIES FOR TESTOMONIAL SECTION*/
-
-   .c-testimonial-slide {
-    flex: 0 0 calc(90% / 3); /* Display three cards per row on desktop */
+/* Style the wrapper of the hero content */
+.c-hero__wrapper {
+  height: 450px; /* Set height */
+  display: flex; /* Display as flexbox */
+  flex-direction: row-reverse; /* Reverse the direction of items */
+  justify-content: center; /* Center the content horizontally */
+  padding: 0 14px 14px 14px; /* Set padding */
 }
 
-.u-prevBtn,
-.u-nextBtn {
-  display: block;
-  font-size: 38px; 
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  z-index: 999;
-  color: var(--clr-secondary-text);
-}
-
-.u-prevBtn-mobile, .u-nextBtn-mobile{
+/* Hide the title of the hero section */
+.c-hero__title{
   display: none;
 }
 
-.c-testimonial-content {
-  height: 200px;
-  /* width: 280px; */
+/* Style the h1 elements within the hero content */
+.c-hero__content h1{
+  display: block; /* Display as block */
+  font-size: var(--font-size-h1); /* Set font size */
 }
 
-.c-testimonial-card{
-  margin: var(--margin-1);
+ /* Style the images within the hero section */
+.c-hero__image img{
+  width: 400px; /* Set width */
+  height: 360px; /* Set height */
+  object-fit: cover; /* Cover the entire container */
 }
+
+/* Style the content within the hero section */
+.c-hero__content{
+  text-align: left; /* Align text to the left */
+  margin-top: 110px; /* Set top margin */
+  margin-left: var(--margin-0); /* Use custom margin */
+  padding-left: var(--padding-0); /* Use custom padding */
+}
+
+/* Style the paragraphs within the hero content */
+.c-hero__content p{
+  text-align: justify; /* Justify text */
+  padding: var(--padding-2)  0; /* Set padding */
+  margin: var(--margin-0); /* Set margin */
+  width: 80%; /* Set width */
+  font-size: var(--font-size-p); /* Set font size */
+}
+
+  
+   /* MEDIA QUERIES FOR CATEGORY SECTION*/
+
+  /* Style the title of the category */
+.c-category__title{
+  margin-top: var(--margin-3); /* Set top margin */
+}
+
+/* Style the cards within the category */
+.c-category__cards{
+  display: flex; /* Display as flexbox */
+  flex-direction: row; /* Arrange items in a row */
+  justify-content: center; /* Center items horizontally */
+}
+
+/* Style individual cards within the category */
+.c-category__card{
+  padding: 10px 30px; /* Set padding */
+  margin: 10px; /* Set margin */
+}
+
+/* Style the category container */
+.c-category{
+  margin-bottom: var(--margin-3); /* Set bottom margin */
+}
+
+
+  /* MEDIA QUERIES FOR SERVICES SECTION*/
+
+/* Style the services image */
+.c-services__image{
+  display: block; /* Set the image display to block */
+}
+
+/* Style the content of the services */
+.c-services__content{
+  margin:var(--margin-3) var(--margin-1-25); /* Set margin */
+  display: flex; /* Display as flexbox */
+  flex-direction: row; /* Arrange items in a row */
+}
+
+/* Style the image within the services */
+.c-services__image img{
+  width: 500px; /* Set width */
+  height: 400px; /* Set height */
+}
+
+/* Style the text within the services */
+.c-services__text{
+  text-align: justify; /* Justify text */
+}
+
+/* Style the description of the services */
+.c-services__description{
+  margin: var(--margin-2-5) var(--margin-3) var(--margin-2) var(--margin-2); /* Set margin */
+}
+
+/* Style the sub-container within the services */
+.c-services__sub-container {
+  display: flex; /* Display as flexbox */
+  margin-left: var(--margin-3); /* Set margin */
+}
+
+/* Style the sub-services */
+.c-services__sub {
+  flex: 1; /* Grow to fill available space */
+  padding: 0; /* Reset padding */
+  margin: 10px 10px 10px 0; /* Set margin */
+  background-color: inherit; /* Inherit background color */
+}
+
+/* Style the links within the services */
+.c-services__link{
+  margin-bottom: var(--margin-3); /* Set bottom margin */
+}
+
+
+  /* MEDIA QUERIES FOR GIFT CERTIFICATE SECTION*/
+/* Style the main gift certificate section */
+.c-giftcertifcate__main{
+  display: flex; /* Display as flexbox */
+  flex-direction: row; /* Arrange items in a row */
+}
+
+/* Hide anchor links within the gift certificate */
+.c-giftcertificate__anchor a{
+  display: none; /* Hide the anchor links */
+}
+
+/* Style the container links within the gift certificate */
+.c-giftcertificate__container a{
+  display: block; /* Display as block */
+  width: 55%; /* Set width */
+  margin-left: var(--margin-1-5); /* Set left margin */
+  margin-top: var(--margin-3); /* Set top margin */
+}
+
+/* Style the content of the gift certificate */
+.c-giftcertificate__content{
+  text-align: justify; /* Justify text */
+  margin: var(--margin-3) var(--margin-1); /* Set margin */
+}
+
+/* Style the title of the gift certificate */
+.c-giftcertificate__title{
+  margin-top: 100px; /* Set top margin */
+  text-align: left; /* Align text to left */
+  margin-left: var(--margin-1-5); /* Set left margin */
+}
+
+/* Style the description of the gift certificate */
+.c-giftcertificate__description{
+  text-align: justify; /* Justify text */
+  margin-left: initial; /* Reset left margin */
+  margin-left: var(--margin-1-5); /* Set left margin */
+}
+
+
+    /* MEDIA QUERIES FOR JOURNERY SECTION*/
+/* Style the content of the journey section */
+.c-journey__content{
+  display: flex; /* Display as flexbox */
+  flex-direction: row; /* Arrange items in a row */
+}
+
+/* Style the images within the carousel */
+.c-carousel__images img {
+  width: 500px; /* Set width */
+  height: 400px; /* Set height */
+}
+
+/* Style the details of the journey section */
+.c-journey__details{
+  margin-top: var(--margin-2); /* Set top margin */
+}
+
+
+/* MEDIA QUERIES FOR TESTOMONIAL SECTION*/
+
+ /* Style the testimonial slides */
+.c-testimonial-slide {
+  flex: 0 0 calc(90% / 3); /* Set flex properties to display three cards per row on desktop */
+}
+
+/* Style the previous and next buttons */
+.u-prevBtn,
+.u-nextBtn {
+  display: block; /* Display as block */
+  font-size: 38px; /* Set font size */
+  background-color: transparent; /* Transparent background */
+  border: none; /* No border */
+  cursor: pointer; /* Set cursor to pointer */
+  z-index: 999; /* Set z-index */
+  color: var(--clr-secondary-text); /* Set text color */
+}
+
+/* Style the previous and next buttons for mobile */
+.u-prevBtn-mobile, .u-nextBtn-mobile{
+  display: none; /* Hide on mobile */
+}
+
+/* Style the testimonial content */
+.c-testimonial-content {
+  height: 200px; /* Set height */
+  /* width: 280px; */ /* Commented out width */
+}
+
+/* Style the testimonial card */
+.c-testimonial-card{
+  margin: var(--margin-1); /* Set margin */
+}
+
 
 
 /* MEDIA QUERIES FOR NEWSLETTER SECTION*/
-
+/* Style the newsletter container */
 .c-newsletter__container{
-  display: flex;
-  flex-direction: row;
-  margin-top: var(--margin-1-5);
-  margin-bottom: var(--margin-1-5);
+  display: flex; /* Set display to flex */
+  flex-direction: row; /* Arrange items in a row */
+  margin-top: var(--margin-1-5); /* Set top margin using custom property */
+  margin-bottom: var(--margin-1-5); /* Set bottom margin using custom property */
 }
 
+/* Style the newsletter title */
 .c-newsletter__title{
-  text-align: left;
-  margin: var(--margin-0) var(--margin-5) var(--margin-2) var(--margin-5);
-  
+  text-align: left; /* Align text to the left */
+  margin: var(--margin-0) var(--margin-5) var(--margin-2) var(--margin-5); /* Set margins */
 }
 
+/* Style the newsletter description */
 .c-newsletter__description{
-  text-align: justify;
-  margin-left: var(--margin-5);
-  line-height: var(--line-height-heading);
-  width: 75%;
+  text-align: justify; /* Justify text alignment */
+  margin-left: var(--margin-5); /* Set left margin using custom property */
+  line-height: var(--line-height-heading); /* Set line height using custom property */
+  width: 75%; /* Set width */
 }
 
+/* Style the newsletter form */
 .c-newsletter__form{
-  margin-right: var(--margin-5);
+  margin-right: var(--margin-5); /* Set right margin using custom property */
 }
 
-/* MEDIA QUERIES FOR FOOTER */
+/* Media queries for footer */
 .c-footer__copyright{
-  border-top: none;
-  padding-top: var(--padding-0);
+  border-top: none; /* Remove top border */
+  padding-top: var(--padding-0); /* Set top padding using custom property */
 } 
 
+
+/* MEDIA QUERIES FOR COMING-SOON PAGE */
+
+/* Style the container */
+.c-container {
+  margin-top: var(--margin-2); /* Set top margin using custom property */
+  height: 81vh; /* Set height to 81% of the viewport height */
+}
+
+/* Style the image */
+.c-image {
+  width: 350px; /* Set width */
+  height: 350px; /* Set height */
+} 
 }
