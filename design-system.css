@@ -433,22 +433,43 @@ td {
    
 }
 
-
-
 .c-main{
-    margin: var(--margin-2) var(--margin-4);
+    margin: var(--margin-2) var(--margin-3);
 }
 
 #headerContainer {
     position: relative;
     background-color: var(--clr-primary-bg);
     padding: var(--padding-1);
+    border: 1px solid #ddd;
+    margin: var(--margin-3) 0;
+    /* margin: 20px 0; */
+    /* margin-left: 0px; */
+    /* margin-right: 20px; */
 }
 
 #copyButton {
     position: absolute;
     top: 10px;
     right: 10px;
+}
+
+pre{
+    margin: 0;
+    white-space: pre-wrap; 
+}
+
+  
+
+/* ------------------Hero page coding begins here------------------------------- */
+
+.view-container__hero{
+    background: var(--clr-primary-bg) 0% 0% no-repeat padding-box; /* Set background */
+    text-align: center;
+}
+
+.view-container__hero img{
+    width: 250px;
 }
 
 
@@ -638,4 +659,8 @@ body {
     margin: var(--margin-4) var(--margin-5);
   }
     
+  .view-container__hero img{
+    width: 350px;
+}
+
 }   
