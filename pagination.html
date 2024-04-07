@@ -65,9 +65,49 @@
         </aside>
 
 
-        <main>
+        <main class="c-main l-max-width-desktop">
+          <div class="c-main__content">
+            <h1 class="c-main__heading u-font-subheading u-ff-lato u-font-size-h1 u-font-weight-bold"> Pagination</h1>
+            <p class="c-main__paragraph u-font-size-p u-ff-roboto l-my-1-5">Pagination is a user interface element often utilized in web applications to divide large sets of content into manageable chunks across multiple pages. For instance, imagine an e-commerce website with numerous products. Pagination allows users to navigate through these products, displaying a limited number per page, thus avoiding overwhelming the user with excessive information at once. Users can easily move between pages to find the desired content, enhancing the overall browsing experience and improving website usability..</p>
+        </div>  
+
+        <div class="view-container">
+          <h2 class="view-container__title l-my-3 u-font-subheading u-ff-lato u-font-size-h2 u-font-weight-bold"> Pagination View</h2>
+          <div class="view-container__carousal">
+            <div class="c-journey__carousel">
+              <div class="c-carousel__images">
+                  <img src="images/outback-nursery-flowers.jpg" alt="Outback Nursery Flowers" class="c-carousel__image">
+                  <img src="images/outback-nursery-interior.jpg" alt="Interior look of Outback Nursery" class="c-carousel__image">
+                  <img src="images/outback-nursery-plants.jpg" alt="Plants at Outback Nursery" class="c-carousel__image">
+                  <img src="images/outback-nursery.jpg" alt="Greenhouses at Outback Nursery" class="c-carousel__image">
+                  <img src="images/outback-nursery-containers.jpg" alt="Containers at outback nursery" class="c-carousel__image">
+              </div>
+              <div class="c-journey__pagination"></div>
+          </div>
+          </div>
+        </div>    
           
+
+        <div id="headerContainer">
+          <pre id="headerCodeSnippet">
+              &lt;div class=&quot;c-journey__carousel&quot;&gt;
+                  &lt;div class=&quot;c-carousel__images&quot;&gt;
+                      &lt;img src=&quot;images/outback-nursery-flowers.jpg&quot; alt=&quot;Outback Nursery Flowers&quot; class=&quot;c-carousel__image&quot;&gt;
+                      &lt;img src=&quot;images/outback-nursery-interior.jpg&quot; alt=&quot;Interior look of Outback Nursery&quot; class=&quot;c-carousel__image&quot;&gt;
+                      &lt;img src=&quot;images/outback-nursery-plants.jpg&quot; alt=&quot;Plants at Outback Nursery&quot; class=&quot;c-carousel__image&quot;&gt;
+                      &lt;img src=&quot;images/outback-nursery.jpg&quot; alt=&quot;Greenhouses at Outback Nursery&quot; class=&quot;c-carousel__image&quot;&gt;
+                      &lt;img src=&quot;images/outback-nursery-containers.jpg&quot; alt=&quot;Containers at outback nursery&quot; class=&quot;c-carousel__image&quot;&gt;
+                  &lt;/div&gt;
+                  &lt;div class=&quot;c-journey__pagination&quot;&gt;&lt;/div&gt;
+              &lt;/div&gt;
+          </pre>
+          <button onclick="copyCarouselToClipboard()" id="copyButton">Copy</button>
+      </div>
+      
         </main>
+
+
+
     </div>
 
     <!-- Script for including the template -->
@@ -130,6 +170,8 @@
       appendUtilitiesTemplate();
     </script>
 
+
+    <script src="main.js"></script>
 
 
 </body>
