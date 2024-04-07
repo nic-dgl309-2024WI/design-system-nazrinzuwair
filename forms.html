@@ -65,7 +65,44 @@
         </aside>
 
 
-        <main>
+        <main class="c-main l-max-width-desktop">
+          <div class="c-main__content">
+              <h1 class="c-main__heading u-font-subheading u-ff-lato u-font-size-h2 u-font-weight-bold"> Forms</h1>
+              <p class="c-main__paragraph u-font-size-p u-ff-roboto l-my-1-5">Forms on websites are crucial for gathering user input and facilitating interactions. They typically include various input fields such as text boxes, dropdown menus, checkboxes, and radio buttons. Labels accompanying each input field provide context and guidance to users. Validation mechanisms ensure that submitted data meets specified criteria, enhancing data integrity. Submit buttons enable users to finalize their input and trigger the form submission process. Overall, forms streamline user engagement and data collection, playing a pivotal role in user interaction and data acquisition on websites.</p>
+          </div>  
+
+          <div class="view-container">
+            <h2 class="view-container__title l-my-3 u-font-subheading u-ff-lato u-font-size-h2 u-font-weight-bold"> Form View</h2>
+            <div class="view-container__form">
+              <div class="c-newsletter__form">
+                <form action="#" class="c-newsletter-form c-newsletter-form__design">
+                    <input type="text" id="nameInput" name="name" placeholder="Your Name">
+                    <input type="email" id="emailInput" name="email" placeholder="Your Email">
+                    <input type="tel" id="contactInput" name="contact" placeholder="Contact Number">
+                    <br>
+                    <input type="submit" value="SIGN UP NOW" class="c-newsletter-form__submit">
+                </form>
+            </div>
+            </div>
+          </div>
+
+          <section class="c-code-snippet l-pb-2">
+            <div id="headerContainer">
+              <pre id="headerCodeSnippet">
+                &lt;div class=&quot;c-newsletter__form&quot;&gt;
+                    &lt;form action=&quot;#&quot; class=&quot;c-newsletter-form&quot;&gt;
+                        &lt;input type=&quot;text&quot; id=&quot;nameInput&quot; name=&quot;name&quot; placeholder=&quot;Your Name&quot;&gt;
+                        &lt;input type=&quot;email&quot; id=&quot;emailInput&quot; name=&quot;email&quot; placeholder=&quot;Your Email&quot;&gt;
+                        &lt;input type=&quot;tel&quot; id=&quot;contactInput&quot; name=&quot;contact&quot; placeholder=&quot;Contact Number&quot;&gt;
+                        &lt;br&gt;
+                        &lt;input type=&quot;submit&quot; value=&quot;SIGN UP NOW&quot; class=&quot;c-newsletter-form__submit&quot;&gt;
+                    &lt;/form&gt;
+                &lt;/div&gt;
+            </pre>
+            <button onclick="copyNewsletterToClipboard()" id="copyButton">Copy</button>
+        </div>
+          </section>
+          
           
         </main>
     </div>
