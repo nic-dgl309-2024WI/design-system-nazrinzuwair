@@ -65,8 +65,90 @@
         </aside>
 
 
-        <main>
+        <main class="c-main l-max-width-desktop">
+          <div class="c-main__content">
+              <h1 class="c-main__heading u-font-subheading u-ff-lato u-font-size-h2 u-font-weight-bold"> Accordion</h1>
+              <p class="c-main__paragraph u-font-size-p u-ff-roboto l-my-1-5">An accordion is a user interface component commonly used in web design to present collapsible content sections. It typically consists of a series of headers or tabs, each associated with a content panel. When a header is clicked or tapped, its associated content panel expands or collapses, revealing or hiding additional information. Accordions are useful for organizing and presenting large amounts of content in a compact and accessible manner, allowing users to selectively view the information they are interested in. They enhance user experience by providing an intuitive and interactive way to navigate through content sections, making websites more user-friendly and efficient.</p>
+          </div>  
           
+
+          <div class="view-container">
+            <h2 class="view-container__title l-my-3 u-font-subheading u-ff-lato u-font-size-h2 u-font-weight-bold"> Accordion View</h2>
+            <div class="view-container__accordion">
+                <div class="c-faq__item" onclick="toggleAnswer(this)">
+                    <h4 class="c-faq__question">
+                        How do I make a reservation?
+                        <span class="c-faq__arrow">&#9660;</span>
+                    </h4>
+                    <div class="c-faq__answer">
+                        <p>You can easily make a reservation by filling out our online form or by contacting our reservation department directly.</p>
+                    </div>
+                </div>
+                
+                <div class="c-faq__item" onclick="toggleAnswer(this)">
+                    <h4 class="c-faq__question">
+                        Can I cancel my reservation?
+                        <span class="c-faq__arrow">&#9660;</span>
+                    </h4>
+                    <div class="c-faq__answer">
+                        <p>Yes, you can cancel your reservation. Please refer to our cancellation policy or contact our support team for assistance.</p> 
+                    </div>
+                </div>
+    
+                <div class="c-faq__item" onclick="toggleAnswer(this)">
+                    <h4 class="c-faq__question">
+                        What payment methods do you accept?
+                        <span class="c-faq__arrow">&#9660;</span>
+                    </h4>
+                    <div class="c-faq__answer">
+                        <p>We accept payments via cash, debit cards, and major credit cards like Visa and Mastercard.</p> 
+                    </div>
+                </div>
+                
+                <div class="c-faq__item" onclick="toggleAnswer(this)">
+                    <h4 class="c-faq__question">
+                        Is there a minimum notice required for reservations?
+                        <span class="c-faq__arrow">&#9660;</span>
+                    </h4>
+                    <div class="c-faq__answer">
+                        <p>Yes, we require a minimum notice of 24 hours for reservations. For immediate service, please contact our team directly.</p> 
+                    </div>
+                </div>
+    
+                <div class="c-faq__item" onclick="toggleAnswer(this)">
+                    <h4 class="c-faq__question">
+                        Can I modify my reservation details?
+                        <span class="c-faq__arrow">&#9660;</span>
+                    </h4>
+                    <div class="c-faq__answer">
+                        <p>Yes, you can modify your reservation details by contacting our reservation department. Certain conditions may apply.</p>
+                    </div>
+                </div>
+                <!-- All the contents and headings are Written by ChatGPT --> 
+            </div>
+            </div>
+
+            <section class="c-code-snippet l-py-1-5">
+              <div id="headerContainer">
+                <pre id="headerCodeSnippet">
+                            &lt;section class=&quot;c-faq l-my-2 l-max-width-desktop&quot;&gt;
+                      &lt;h2 class=&quot;c-faq__title&quot;&gt;Frequently Asked Questions (FAQ)&lt;/h2&gt;
+                      &lt;div class=&quot;c-faq__item&quot; onclick=&quot;toggleAnswer(this)&quot;&gt;
+                          &lt;h4 class=&quot;c-faq__question&quot;&gt;
+                              How do I make a reservation?
+                              &lt;span class=&quot;c-faq__arrow&quot;&gt;&amp;#9660;&lt;/span&gt;
+                          &lt;/h4&gt;
+                          &lt;div class=&quot;c-faq__answer&quot;&gt;
+                              &lt;p&gt;You can easily make a reservation by filling out our online form or by contacting our reservation department directly.&lt;/p&gt;
+                          &lt;/div&gt;
+                      &lt;/div&gt;
+                      &lt;!-- Repeat additional FAQ items as needed --&gt;
+                  &lt;/section&gt;
+              </pre>
+              <button onclick="copyFAQToClipboard()" id="copyButton">Copy</button>
+          </div>
+
+
         </main>
     </div>
 
@@ -129,6 +211,8 @@
       }
       appendUtilitiesTemplate();
     </script>
+
+    <script src="main.js"></script>
 
 
 
