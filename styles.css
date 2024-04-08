@@ -1398,6 +1398,12 @@ header .header__wrapper-width {
     margin-top: 0;
   }
 
+  /* CSS for hover effect for navigation links*/
+  .header__c-navbar-link a:hover{
+    color:var(--clr-primary-accent);/* Change color on hover */
+    cursor: pointer;/* Change cursor on hover */
+  }
+
   /* Display the navigation bar as a flexbox row with space-between alignment */
   .header__c-navbar{
     display: flex;
