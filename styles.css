@@ -705,7 +705,7 @@ header .header__wrapper-width {
 }
 
 /* Styles for the top navbar */
-.heade__c-navbar-top {
+.header__c-navbar-top {
   display: flex; /* Display as flex */
   justify-content: space-between; /* Align items space-between */
   align-items: center; /* Align items center */
