@@ -429,6 +429,7 @@ body{
   margin-bottom: var(--margin-3);
 }
 
+/* Set margin-bottom to the value of --margin-3 */
 .l-mb-3{
   margin-bottom: var(--margin-3);
 }
@@ -1215,34 +1216,38 @@ header .header__wrapper-width {
   line-height: var(--line-height-heading); /* Set line height */
 }
 
+/* Styles for FAQ answer container */
 .c-faq__answer {
-  display: none;
-  margin: var(--margin-1-25);
-  text-align: justify;
+  display: none; /* Hide the answer content by default */
+  margin: var(--margin-1-25); /* Set margin */
+  text-align: justify; /* Align text to justify */
 }
 
-.c-faq__question{
+/* Styles for FAQ question container */
+.c-faq__question {
   font-family: var(--ff-roboto); /* Set font family */
   font-size: var(--font-size-list); /* Set font size */
-  margin: var(--margin-1);
-  border: 1px solid var(--clr-secondary-text);
-  padding: 15px 5px;
-  background-color: var(--clr-primary-bg);
+  margin: var(--margin-1); /* Set margin */
+  border: 1px solid var(--clr-secondary-text); /* Add border */
+  padding: 15px 5px; /* Set padding */
+  background-color: var(--clr-primary-bg); /* Set background color */
 }
 
+/* Styles to show the answer when clicked */
 .u-show-answer {
-  display: block;
+  display: block; /* Make the answer visible */
 }
 
+/* Styles for each FAQ item */
 .c-faq__item {
-  margin: var(--margin-2);
-  
+  margin: var(--margin-2); /* Set margin */
 }
 
-
+/* Styles for the FAQ arrow when hovered */
 .c-faq__item .c-faq__question .c-faq__arrow:hover {
-  cursor: pointer;
+  cursor: pointer; /* Change cursor to pointer on hover */
 }
+
 
 
 /*  --------------Newsletter section coding begins her  -------------- */
@@ -1295,7 +1300,7 @@ header .header__wrapper-width {
 }
 
 .c-visually__hidden {
-  display: none;
+  display: none;/* Hide elements with this class from visual display */
 }
 
 
