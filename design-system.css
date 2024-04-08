@@ -327,7 +327,7 @@ table {
 /* Style for table headers and cells */
 th, td {
     border: 1px solid #ddd; /* Border style */
-    padding: 8px; /* Padding inside cells */
+    padding: 20px 35px; /* Padding inside cells */
     text-align: left; /* Align text to left */
 }
 
@@ -338,7 +338,7 @@ th {
 
 /* Additional padding for table cells */
 td {
-    padding: 20px;
+    padding: 10px 30px;
 }
 
 /* Margins for typography list and font uses */
