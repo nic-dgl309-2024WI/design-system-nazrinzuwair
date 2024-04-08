@@ -1546,7 +1546,7 @@ header .header__wrapper-width {
 
   /* MEDIA QUERIES FOR GIFT CERTIFICATE SECTION*/
 /* Style the main gift certificate section */
-.c-giftcertifcate__main{
+.c-giftcertificate__main{
   display: flex; /* Display as flexbox */
   flex-direction: row; /* Arrange items in a row */
 }
