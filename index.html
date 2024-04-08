@@ -132,7 +132,7 @@
         <div class="c-giftcertificate__container">
             <h2 class="c-giftcertificate__title l-py-1">Steps to Order a Gift Certificate</h2>
             <p class="c-giftcertificate__description">Looking for the perfect gift for a plant enthusiast? Our gift certificates are the ideal solution! With Outback Nursery's gift certificates, your loved ones can explore our wide selection of plants and gardening supplies, finding the perfect additions to their green spaces. Give the gift of greenery today!</p>
-            <a href="contact.html" class="c-giftcertificate__link">Need Help With Gift Certificate!</a>
+            <a href="coming-soon.html" class="c-giftcertificate__link">Need Help With Gift Certificate!</a>
         </div>
         <div class="c-giftcertificate__content">
             <div class="c-giftcertificate__sub">
@@ -319,10 +319,10 @@
             </div>
 
             <div class="c-newsletter__form">
-                <form action="#" class="c-newsletter-form">
-                    <input type="text" id="nameInput" name="name" placeholder="Your Name">
-                    <input type="email" id="emailInput" name="email" placeholder="Your Email">
-                    <input type="tel" id="contactInput" name="contact" placeholder="Contact Number">
+                <form action="#" class="c-newsletter-form" onsubmit="return validateForm()">
+                    <input type="text" id="nameInput" name="name" placeholder="Your Name" required pattern="[A-Za-z\s]+">
+                    <input type="email" id="emailInput" name="email" placeholder="Your Email" required>
+                    <input type="tel" id="contactInput" name="contact" placeholder="Contact Number" required pattern="[0-9]{10}">
                     <br>
                     <input type="submit" value="SIGN UP NOW" class="c-newsletter-form__submit">
                 </form>

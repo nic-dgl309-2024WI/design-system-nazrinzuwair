@@ -108,3 +108,25 @@ function toggleAnswer(faqItem) {
     const answer = faqItem.querySelector('.c-faq__answer');
     answer.classList.toggle('u-show-answer');
 }
+
+function validateForm() {
+    var nameInput = document.getElementById("nameInput");
+    var emailInput = document.getElementById("emailInput");
+    var contactInput = document.getElementById("contactInput");
+
+    if (nameInput.validity.valid && emailInput.validity.valid && contactInput.validity.valid) {
+        alert("Form submitted successfully! Thank you for signing up.");
+        return true; // Form submission allowed
+    } else {
+        // Display error messages or perform other actions
+        if (!nameInput.validity.valid) {
+            alert("Please enter a valid name.");
+        } else if (!emailInput.validity.valid) {
+            alert("Please enter a valid email address.");
+        } else if (!contactInput.validity.valid) {
+            alert("Please enter a 10-digit contact number.");
+        }
+        return false; // Prevent form submission
+    }
+}
+
