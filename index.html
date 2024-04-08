@@ -320,8 +320,11 @@
 
             <div class="c-newsletter__form">
                 <form action="#" class="c-newsletter-form" onsubmit="return validateForm()">
+                    <label for="nameInput" class="c-visually__hidden">Your Name:</label>
                     <input type="text" id="nameInput" name="name" placeholder="Your Name" required pattern="[A-Za-z\s]+">
+                    <label for="emailInput" class="c-visually__hidden">Your Email:</label>
                     <input type="email" id="emailInput" name="email" placeholder="Your Email" required>
+                    <label for="contactInput" class="c-visually__hidden">Contact Number:</label>
                     <input type="tel" id="contactInput" name="contact" placeholder="Contact Number" required pattern="[0-9]{10}">
                     <br>
                     <input type="submit" value="SIGN UP NOW" class="c-newsletter-form__submit">

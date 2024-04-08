@@ -27,6 +27,8 @@ document.addEventListener("DOMContentLoaded", function() {
   // Iterate over each image in the carousel
   images.forEach((img, index) => {
       const button = document.createElement('button'); // Create a button element
+      button.textContent = index + 1; // Set text content to the index + 1
+      
       button.addEventListener('click', () => {
           setActive(index); // Add event listener to set active image on click
       });

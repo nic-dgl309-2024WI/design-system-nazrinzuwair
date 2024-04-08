@@ -1100,6 +1100,9 @@ header .header__wrapper-width {
   height: 5px; /* Set height */
   margin: 0 5px; /* Set margins */
   cursor: pointer; /* Set cursor pointer */
+  /* Add the following styles to visually hide the text content */
+  color: transparent; /* Set text color to transparent */
+  font-size: 0; /* Set font size to 0 */
 }
 
 /* Styles for active pagination button in journey section */
@@ -1289,6 +1292,10 @@ header .header__wrapper-width {
   background-color: var(--clr-additional-bg); /* Set background color */
   color: var(--clr-white); /* Set text color */
   width: 100%; /* Set width */
+}
+
+.c-visually__hidden {
+  display: none;
 }
 
 
