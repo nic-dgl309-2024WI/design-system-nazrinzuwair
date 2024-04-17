@@ -490,7 +490,7 @@ pre{
 
 /* -------------------Cards page coding begins here-------------- */
 
-.view-container__cards .c-category__cards{
+.c-view-container__cards .c-category__cards{
    margin: 0;
    text-align: center;
 }
