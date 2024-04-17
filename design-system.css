@@ -529,7 +529,7 @@ pre{
 
 /* -------------------List page coding begins here------------ */
 
-.view-container__lists li{
+.c-view-container__lists li{
     list-style-type: square;
     margin-left: var(--margin-2);
 }
