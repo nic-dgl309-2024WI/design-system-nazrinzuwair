@@ -694,13 +694,13 @@ body{
 }
 
 /* Styles for the header wrapper width */
-header .header__wrapper-width {
+header .c-header__wrapper-width {
   padding: 14px; /* Set padding */
   justify-content: space-between; /* Align items space-between */
 }
 
 /* Styles for the navbar toggle icon */
-.header__c-navbar-toggle i {
+.c-header__navbar-toggle i {
   color: var(--clr-white); /* Set color */
   font-size: var(--font-size-p); /* Set font size */
 }

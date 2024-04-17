@@ -1,7 +1,7 @@
 'use strict';
 // Function to toggle the visibility of navigation items
 function showNav() {
-  var element = document.getElementById("c-navbar-items"); // Select the navigation items container
+  var element = document.getElementById("c-header-navbar-items"); // Select the navigation items container
   element.classList.toggle("show-items"); // Toggle the 'show-items' class to show/hide the navigation items
 }
 
