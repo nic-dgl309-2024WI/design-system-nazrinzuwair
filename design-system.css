@@ -547,31 +547,31 @@ pre{
 
 
 /* --------------------- Interactive page coding begins here ---------------------- */
-.view-container__button .c-category{
+.c-view-container__button .c-category{
     text-align: left;
 }
 
-.view-container__button .c-hero__content{
+.c-view-container__button .c-hero__content{
    margin: 0;
    padding-bottom: 0;
 }
 
-.view-container__rotating p{
+.c-view-container__rotating p{
     margin: 0 0 var(--margin-1-5) var(--margin-1-5); 
     padding-top: var(--padding-1); 
 }
 
-.view-container__rotating .c-hero__content{
+.c-view-container__rotating .c-hero__content{
     margin: 0;
     padding: 0;
 }
 
-.view-container__rotating .c-services__sub-container{
+.c-view-container__rotating .c-services__sub-container{
     margin: 0;
     padding: 0;
 }
 
-.view-container__rotating .c-services__sub{
+.c-view-container__rotating .c-services__sub{
     margin-bottom: 0;
     padding-bottom: 0;
 }
