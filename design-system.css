@@ -578,41 +578,41 @@ pre{
 
 /* ------------- Breadcrumbs page coding begins here--------------- */
 
-.view-container__breadcrumb {
+.c-view-container__breadcrumb {
     font-family: var(--ff-lato); /* Set font family */
     font-size: var(--font-size-list); /* Set font size */
     background-color: var(--clr-card1-bg);
     padding: var(--padding-1)
 }
 
-.view-container__breadcrumb ul {
+.c-view-container__breadcrumb ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
 
-.view-container__breadcrumb li {
+.c-view-container__breadcrumb li {
     display: inline;
     margin-right: 5px;
 }
 
-.view-container__breadcrumb li:after {
+.c-view-container__breadcrumb li:after {
     content: ">";
     margin-left: 5px;
     margin-right: 5px;
 }
 
-.view-container__breadcrumb li:last-child:after {
+.c-view-container__breadcrumb li:last-child:after {
     content: "";
 }
 
-.view-container__breadcrumb li a {
+.c-view-container__breadcrumb li a {
     color: var(--clr-primary-text); /* Default color for breadcrumb links */
     text-decoration: none;
     font-weight: var(--font-weight-heading);
 }
 
-.view-container__breadcrumb li.current-page {
+.c-view-container__breadcrumb li.current-page {
     color: var(--clr-hover-text); /* Highlight color for the current page breadcrumb */
     font-weight: var(--font-weight-heading);
 }
