@@ -58,7 +58,7 @@ a {
     display: none;
 }
 
-.c-desktop-sidenavbar__items{
+.c-desktop-sidenavbar__list{
     margin-top: var(--margin-2);
     margin-left: 10px;
 }
@@ -509,7 +509,7 @@ pre{
     
 }
 
-.view-container__form{
+.c-view-container__form{
     margin-bottom: var(--margin-5);
 }
 
