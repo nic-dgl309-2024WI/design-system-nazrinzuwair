@@ -5,6 +5,7 @@ function showNav() {
   element.classList.toggle("show-items"); // Toggle the 'show-items' class to show/hide the navigation items
 }
 
+
 // Function to handle scrolling and fix the navigation bar
 function handleScroll() {
   var header = document.querySelector('.header'); // Select the header element
