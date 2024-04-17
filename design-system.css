@@ -518,11 +518,11 @@ pre{
 /* -------------------Accordion page coding begins here------------ */
 
 
-.view-container__accordion .c-faq__item{
+.c-view-container__accordion .c-faq__item{
     margin: 0;
 }
 
-.view-container__accordion .c-faq__question{
+.c-view-container__accordion .c-faq__question{
     margin: 0 0 var(--margin-1) 0;
 }
 

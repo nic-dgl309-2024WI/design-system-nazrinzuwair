@@ -55,14 +55,15 @@
         </header>
 
         <!-- Side Navbar Desktop View -->
-        <aside>
-          <div >
-            <nav class="sticky-sidebar">
-                <ul id="navi-items" class="c-desktop-sidenavbar__items">
-              </ul>
-            </nav>
-          </div>
+        <aside class="c-desktop-sidenavbar">
+            <div class="c-desktop-sidenavbar__container">
+                <nav class="c-desktop-sidenavbar__nav sticky-sidebar">
+                    <ul id="navi-items" class="c-desktop-sidenavbar__list">
+                    </ul>
+                </nav>
+            </div>
         </aside>
+        
 
 
         <main class="c-main l-max-width-desktop">
@@ -72,9 +73,9 @@
           </div>  
           
 
-          <div class="view-container">
-            <h2 class="view-container__title l-my-3 u-font-subheading u-ff-lato u-font-size-h2 u-font-weight-bold"> Accordion View</h2>
-            <div class="view-container__accordion">
+          <div class="c-view-container">
+            <h2 class="c-view-container__title l-my-3 u-font-subheading u-ff-lato u-font-size-h2 u-font-weight-bold"> Accordion View</h2>
+            <div class="c-view-container__accordion">
                 <div class="c-faq__item" onclick="toggleAnswer(this)">
                     <h4 class="c-faq__question">
                         How do I make a reservation?
@@ -147,6 +148,7 @@
               </pre>
               <button onclick="copyFAQToClipboard()" id="copyButton">Copy</button>
           </div>
+       </section>
 
 
         </main>
