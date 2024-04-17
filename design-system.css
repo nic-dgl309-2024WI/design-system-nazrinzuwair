@@ -467,12 +467,12 @@ pre{
 
 /* ------------------Hero page coding begins here------------------------------- */
 
-.view-container__hero{
+.c-view-container__hero{
     background: var(--clr-primary-bg) 0% 0% no-repeat padding-box; /* Set background */
     text-align: center;
 }
 
-.view-container__hero img{
+.c-view-container__hero img{
     width: 250px;
 }
 
@@ -804,7 +804,7 @@ body {
     margin: var(--margin-4) var(--margin-5);
   }
     
-  .view-container__hero img{
+  .c-view-container__hero img{
     width: 350px;
 }
 
