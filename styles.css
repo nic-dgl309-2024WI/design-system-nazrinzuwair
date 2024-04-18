@@ -756,6 +756,11 @@ header .c-header__wrapper-width {
   align-items: flex-start; /* Align items flex-start */
 }
 
+
+#header-center{
+  text-align: center;
+}
+
   /*----------HERO SECTION BEGINS HERE----------  */
   /* Styles for the hero section */
 .c-hero {
@@ -1221,6 +1226,7 @@ header .c-header__wrapper-width {
   display: none; /* Hide the answer content by default */
   margin: var(--margin-1-25); /* Set margin */
   text-align: initial;  /* Align text to justify */
+  padding-left: var(--padding-1); /* Adjust the padding as needed */
 }
 
 /* Styles for FAQ question container */
@@ -1247,7 +1253,28 @@ header .c-header__wrapper-width {
 .c-faq__item .c-faq__question .c-faq__arrow:hover {
   cursor: pointer; /* Change cursor to pointer on hover */
 }
+.c-faq__question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
+.c-faq__question-text {
+  flex-grow: 1; /* Allows the text to take up remaining space */
+}
+
+/* Add padding to the right of the arrow and left of the question text */
+.c-faq__question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: var(--padding-1); /* Adjust the padding as needed */
+}
+
+.c-faq__question-text {
+  flex-grow: 1; /* Allows the text to take up remaining space */
+  padding-left: var(--padding-1); /* Adjust the padding as needed */
+}
 
 
 /*  --------------Newsletter section coding begins her  -------------- */
@@ -1280,27 +1307,33 @@ header .c-header__wrapper-width {
 /* Styles for newsletter form input */
 .c-newsletter-form input {
   width: 100%; /* Set width */
-  height: 40px; /* Set height */
+  height: 35px; /* Set height */
   border-radius: 3px; /* Set border radius */
   border: 1px solid var(--clr-white); /* Set border */
-  margin-bottom: 10px; /* Add some spacing between input fields */
-  text-align: center; /* Align text center */
+  margin-top: 10px;
+  margin-bottom: 20px; /* Add some spacing between input fields */
+  text-align: left; /* Align text center */
   font-family: var(--ff-roboto); /* Set font family */
-  font-size: var(--font-size-p); /* Set font size */
+  font-size: var(--font-size-list); /* Set font size */
 }
 
-/* Styles for newsletter form submit button */
-.c-newsletter-form__submit {
+
+#form-submit{
+  text-align: center;
   margin-top: var(--margin-1-5); /* Set top margin */
   font-family: var(--ff-montserrat); /* Set font family */
   font-weight: var(--font-weight-button-extrabold); /* Set font weight */
   background-color: var(--clr-additional-bg); /* Set background color */
   color: var(--clr-white); /* Set text color */
   width: 100%; /* Set width */
+  text-align: center;
 }
-
-.c-visually__hidden {
-  display: none;/* Hide elements with this class from visual display */
+.c-form-label {
+  /* padding-bottom: 20px; Add some spacing between input fields */
+  text-align: left; /* Align text center */
+  font-family: var(--ff-roboto); /* Set font family */
+  font-size: var(--font-size-list); /* Set font size */
+  color: var(--clr-white);
 }
 
 
@@ -1420,12 +1453,12 @@ header .c-header__wrapper-width {
   .c-header__navbar{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
   }
 
   /* Set margin for navigation items */
   .c-header__navbar-items li{
-    margin: 10px 30px 0 0; 
+    margin: 15px 30px 0 10px; 
   }
 
 
@@ -1656,6 +1689,13 @@ header .c-header__wrapper-width {
 }
 
 
+/* MEDIA QUERIES FOR FAQ SECTION */
+.c-faq__item {
+  width: 80%; /* Adjust the width as needed */
+  margin: 0 auto; /* Center the accordion */
+}
+
+
 
 /* MEDIA QUERIES FOR NEWSLETTER SECTION*/
 /* Style the newsletter container */
@@ -1691,6 +1731,7 @@ input[type="submit"]:hover {
   cursor: pointer;
 }
 
+
 /* Style for footer */
 .c-footer__copyright{
   border-top: none; /* Remove top border */
@@ -1710,5 +1751,10 @@ input[type="submit"]:hover {
 .c-image {
   width: 350px; /* Set width */
   height: 350px; /* Set height */
-} 
+}
+
+#c-font-style{
+  width: 70%;
+}
+
 }
