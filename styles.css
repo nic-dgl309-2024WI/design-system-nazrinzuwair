@@ -1039,7 +1039,7 @@ header .c-header__wrapper-width {
 /*  --------------Journey section coding begins her  -------------- */
 /* Styles for journey description */
 .c-journey__description {
-  text-align: justify; /* Align text justified */
+  text-align: initial;  /* Align text justified */
   margin: var(--margin-2) var(--margin-3); /* Set margins */
   font-size: var(--font-size-list); /* Set font size */
   font-family: var(--ff-roboto); /* Set font family */
@@ -1220,7 +1220,7 @@ header .c-header__wrapper-width {
 .c-faq__answer {
   display: none; /* Hide the answer content by default */
   margin: var(--margin-1-25); /* Set margin */
-  text-align: justify; /* Align text to justify */
+  text-align: initial;  /* Align text to justify */
 }
 
 /* Styles for FAQ question container */
@@ -1273,7 +1273,7 @@ header .c-header__wrapper-width {
   font-family: var(--ff-roboto); /* Set font family */
   font-size: var(--font-size-p); /* Set font size */
   margin: var(--margin-2-5) var(--margin-1); /* Set margins */
-  text-align: justify; /* Align text justify */
+  text-align: initial;  /* Align text justify */
   color: var(--clr-white); /* Set text color */
 }
 
@@ -1472,7 +1472,7 @@ header .c-header__wrapper-width {
 
 /* Style the paragraphs within the hero content */
 .c-hero__content p{
-  text-align: justify; /* Justify text */
+  text-align: initial;  /* Justify text */
   padding: var(--padding-2)  0; /* Set padding */
   margin: var(--margin-0); /* Set margin */
   width: 80%; /* Set width */
@@ -1528,7 +1528,7 @@ header .c-header__wrapper-width {
 
 /* Style the text within the services */
 .c-services__text{
-  text-align: justify; /* Justify text */
+  text-align: initial;  /* Justify text */
 }
 
 /* Style the description of the services */
@@ -1578,7 +1578,7 @@ header .c-header__wrapper-width {
 
 /* Style the content of the gift certificate */
 .c-giftcertificate__content{
-  text-align: justify; /* Justify text */
+  text-align: initial;  /* Justify text */
   margin: var(--margin-3) var(--margin-1); /* Set margin */
 }
 
@@ -1591,7 +1591,7 @@ header .c-header__wrapper-width {
 
 /* Style the description of the gift certificate */
 .c-giftcertificate__description{
-  text-align: justify; /* Justify text */
+  text-align: initial;  /* Justify text */
   margin-left: initial; /* Reset left margin */
   margin-left: var(--margin-1-5); /* Set left margin */
 }
@@ -1670,7 +1670,7 @@ header .c-header__wrapper-width {
 
 /* Style the newsletter description */
 .c-newsletter__description{
-  text-align: justify; /* Justify text alignment */
+  text-align: initial;  /* Justify text alignment */
   margin-left: var(--margin-5); /* Set left margin using custom property */
   line-height: var(--line-height-heading); /* Set line height using custom property */
   width: 75%; /* Set width */

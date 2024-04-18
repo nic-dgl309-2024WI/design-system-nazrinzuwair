@@ -426,12 +426,14 @@ td {
     height: auto;
 }
 
-/* --------------------Navigation Page Coding Begins here---------------------- */
 
+/* --------------------Styling for the Main Paragraph of every pages---------------------- */
 .c-main__paragraph{
-    text-align: justify;
+    text-align:initial;
 }
 
+
+/* --------------------Navigation Page Coding Begins here---------------------- */
 .c-view-container__content{
     background-color: var(--clr-secondary-text);
    
