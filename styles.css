@@ -1039,7 +1039,7 @@ header .c-header__wrapper-width {
 /*  --------------Journey section coding begins her  -------------- */
 /* Styles for journey description */
 .c-journey__description {
-  text-align: initial;  /* Align text justified */
+  text-align: center;  /* Align text justified */
   margin: var(--margin-2) var(--margin-3); /* Set margins */
   font-size: var(--font-size-list); /* Set font size */
   font-family: var(--ff-roboto); /* Set font family */
@@ -1273,7 +1273,7 @@ header .c-header__wrapper-width {
   font-family: var(--ff-roboto); /* Set font family */
   font-size: var(--font-size-p); /* Set font size */
   margin: var(--margin-2-5) var(--margin-1); /* Set margins */
-  text-align: initial;  /* Align text justify */
+  text-align: center;  /* Align text justify */
   color: var(--clr-white); /* Set text color */
 }
 
@@ -1602,6 +1602,10 @@ header .c-header__wrapper-width {
 .c-journey__content{
   display: flex; /* Display as flexbox */
   flex-direction: row; /* Arrange items in a row */
+}
+
+.c-journey__description{
+  text-align: initial;
 }
 
 /* Style the images within the carousel */
