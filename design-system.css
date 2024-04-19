@@ -623,6 +623,9 @@ pre{
 
 /* ------------- Design-system page coding begins here--------------- */
 
+/* Setting the entire content to center align*/
+
+
 /* Custom styling for ordered list items */
 .c-view-container__list li {
     list-style: decimal-leading-zero; /* Use leading zero numbering */
