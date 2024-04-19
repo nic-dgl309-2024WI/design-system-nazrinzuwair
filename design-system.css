@@ -738,6 +738,11 @@ body {
     grid-area: sidebar;
     position: relative;
     z-index: 1;
+   
+  }
+
+  aside{
+    margin-top: 15px;
   }
 
   header {
