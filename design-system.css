@@ -626,9 +626,15 @@ pre{
 /* Custom styling for ordered list items */
 .c-view-container__list li {
     list-style: decimal-leading-zero; /* Use leading zero numbering */
-    margin-bottom: 10px; /* Add some spacing between list items */
+    margin-bottom: var(--margin-1); /* Add some spacing between list items */
     margin-left: var(--margin-1-5);
+    
 }
+/* Custom styling for undered list items */
+.c-view-container__ulist li{
+    margin-left: var(--margin-2-5);
+}
+
 /* Desktop view media query */
 @media screen and (min-width: 768px) {
     /* Set margin for the body */
